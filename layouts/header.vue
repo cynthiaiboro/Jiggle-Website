@@ -24,6 +24,12 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/vendor">Vendor</router-link>
           </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/dashboard/home">Dashboard</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/dashboard/pricing">Pricing</router-link>
+          </li>
         </ul>
       </div>
     </nav>
