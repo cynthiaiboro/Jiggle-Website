@@ -2,10 +2,9 @@
   <div>
     <div class="jumbotron">
       <div class="container">
-        <logo/>
-        <h1 class="display-3">Offical Jiggle website repository</h1>
+        <h1 class="display-3">Official Jiggle website repository</h1>
         <p class="lead">Pay once, eat whenever and wherever</p>
-        <h2>My name is Emmanuel Michael, I like to smoke cigarratte when I am coding.</h2>
+        <h2>My name is Emmanuel Michael, I like to smoke cigarette when I am coding.</h2>
         <p class="lead">
           <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Get Started</a>
         </p>
@@ -16,13 +15,7 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
+export default {}
 </script>
 
 <style>
