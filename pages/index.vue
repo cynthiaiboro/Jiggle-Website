@@ -1,21 +1,18 @@
 <template>
-
   <div>
     <div class="jumbotron">
-      <logo />
-      <h1 class="display-3">Offical Jiggle website repository
-
-      </h1>
-      <p class="lead">Pay once, eat whenever and wherever</p>
-      
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Get Started</a>
-      </p>
+      <div class="container">
+        <logo/>
+        <h1 class="display-3">Offical Jiggle website repository</h1>
+        <p class="lead">Pay once, eat whenever and wherever</p>
+        <h2>My name is Emmanuel Michael, I like to smoke cigarratte when I am coding.</h2>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Get Started</a>
+        </p>
+      </div>
     </div>
-    <section class="container">
-    </section>  
+    <section class="container"></section>
   </div>
- 
 </template>
 
 <script>
@@ -29,14 +26,14 @@ export default {
 </script>
 
 <style>
-.container {
+/* .container {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
+} */
 
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
