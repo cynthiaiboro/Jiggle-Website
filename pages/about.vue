@@ -1,21 +1,24 @@
 <template>
   <div>
-    <Header/>
-    <OurStory/>
-    <OurTeam/>
+    <Header />
+    <aboutJiggle />
+    <trustedBrands />
+    <Footer />
   </div>
 </template>
 
 <script>
-import aboutHeader from '../components/about/header'
-import OurStory from '../components/about/our-story'
-import OurTeam from '../components/about/our-team'
+import Header from '../components/about/header'
+import aboutJiggle from '../components/about/aboutJiggle'
+import trustedBrands from '../layouts/trustedBrands'
+import Footer from '../layouts/footer'
 
 export default {
   components: {
-    Header: aboutHeader,
-    OurStory,
-    OurTeam
+    Header,
+    aboutJiggle,
+    trustedBrands,
+    Footer
   }
 }
 </script>
