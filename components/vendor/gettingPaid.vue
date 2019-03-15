@@ -3,7 +3,7 @@
     <section id="get-payment">
       <div class="container">
         <div class="d-flex justify-content-center align-items-center">
-          <div class="pt-4">
+          <div class="">
             <h3 class="text-center get-started" style="font-weight:400">
               Start Getting Payment with Jiggle
             </h3>
@@ -88,8 +88,8 @@
                 </div>
               </div>                
             </div>
-            <div class="d-none d-sm-block col-md-6 mt-5">
-              <div class="d-flex justify-content-center align-items-center" style="height:60vh;">
+            <div class="d-none d-sm-block col-md-6">
+              <div class="d-flex justify-content-center align-items-center" style="height:90%;">
                 <img src="jiggle phone.svg" alt="" class="top-phones">
               </div>
             </div>
@@ -115,7 +115,7 @@ export default {}
 }
 #get-payment {
   background-color: #e5e5e5;
-  padding: 30px 0;
+  padding: 5% 0 !important;
 }
 p {
   font-size: 1rem !important;
@@ -162,5 +162,21 @@ p {
 }
 .get-started-main-number {
   margin-bottom: 0px;
+}
+@media only screen and (max-width: 700px) {
+  .get-started-normal-background {
+    text-align: center;
+  }
+  .get-started-black-background {
+    text-align: center !important;
+  }
+  .top-phones {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .top-phones {
+    display: none;
+  }
 }
 </style>

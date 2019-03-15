@@ -57,7 +57,7 @@
           <div class="col-md-6">
             <div class="after-nav-col-one">
               <div>
-                <h1 class="great-app pt-3">
+                <h1 class="great-app">
                   Great app for your food budgeting and payment.
                 </h1>
                 <p class="great-app-text pb-2" style="font-size:1.1rem; color:#2d3448">
@@ -66,7 +66,7 @@
                   stay on top of your budget effortlessly with jiggle.
                 </p>
                 <div class="d-sm-inline">
-                  <img src="/googleplay dark.svg" alt="" height="45px" class=" d-md-inline-block pr-2"> 
+                  <img src="/googleplay dark.svg" alt="" height="45px" class="d-md-inline-block pr-2"> 
                   <button class="call-to-action btnStarted" style="font-weight:400; font-size: 0.9rem;">
                     GET STARTED
                   </button>
@@ -100,7 +100,7 @@ export default {}
 }
 #nav {
   background-color: #ffffff;
-  padding: 20px 0;
+  padding: 3% 0;
 }
 .nav-link {
   color: #000000 !important;
@@ -158,7 +158,10 @@ export default {}
     width: 100%;
     text-align: center;
     font-size: 20px;
-    padding-top: 20px !important;
+    padding-top: 50px !important;
+  }
+  .after-nav-col-one {
+    text-align: center;
   }
   .after-nav-col-one p {
     font-size: 13px;
@@ -173,11 +176,20 @@ export default {}
     color: #ffffff;
     margin-top: 5px;
   }
+}
+
+@media only screen and (max-width: 700px) {
   #after-nav {
-    display: flex;
-    align-items: center;
-    background-color: #ffffff;
-    padding-top: 20px;
+    text-align: center !important;
+  }
+  .great-app {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 5px !important;
+  }
+  .call-to-action {
+    margin-bottom: 5px;
   }
 }
 </style>

@@ -51,7 +51,7 @@ export default {}
 }
 #trusted-brands {
   background-color: #ffffff;
-  padding: 70px 0;
+  padding: 5% 0;
 }
 .main-brand-logo {
   width: 100%;

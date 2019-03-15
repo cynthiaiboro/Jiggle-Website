@@ -121,11 +121,7 @@ export default {}
 }
 #why-us {
   background: linear-gradient(180deg, #2f6deb 0%, #0657cd 100%);
-  padding: 70px 0;
-}
-#why-us-vendor {
-  background: #3e4353;
-  padding: 70px 0;
+  padding: 5% 0;
 }
 .get-started {
   font-family: 'Circularmedium' !important;
@@ -149,5 +145,12 @@ h5 {
 }
 p {
   font-family: 'Circularbook';
+}
+
+@media only screen and (max-width: 700px) {
+  .get-started-normal-background {
+    padding: 15px 30px;
+    text-align: center !important;
+  }
 }
 </style>

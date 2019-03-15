@@ -157,7 +157,7 @@ export default {}
   src: url('../../assets/fonts/circularmedium.ttf');
 }
 #get-started-quickly {
-  padding: 10% 0;
+  padding: 5% 0;
   background: #f2f2f2;
   color: #ffffff;
 }
@@ -196,5 +196,21 @@ p {
 }
 .get-started-main-number {
   margin-bottom: 0px;
+}
+@media only screen and (max-width: 700px) {
+  .get-started-normal-background {
+    text-align: center;
+  }
+  .get-started-blue-background {
+    text-align: center !important;
+  }
+  .top-phones {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .top-phones {
+    display: none;
+  }
 }
 </style>

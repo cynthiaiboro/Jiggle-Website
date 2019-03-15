@@ -96,4 +96,15 @@ h6 {
   font-size: 1rem !important;
   color: white;
 }
+/* @media only screen and (max-width: 800px) {
+  #footer {
+    padding-right: 30px;
+  }
+} */
+
+@media only screen and (max-width: 700px) {
+  .footer-jiggle {
+    text-align: center !important;
+  }
+}
 </style>

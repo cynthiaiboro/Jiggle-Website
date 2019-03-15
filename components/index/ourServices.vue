@@ -79,7 +79,7 @@ export default {}
   font-weight: 650;
 }
 #our-services {
-  padding: 70px 0;
+  padding: 5% 0;
   background-color: #ffffff;
 }
 .blue-hr {

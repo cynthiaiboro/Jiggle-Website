@@ -34,7 +34,7 @@ export default {}
   src: url('../../assets/fonts/circularmedium.ttf');
 }
 #about-jiggle {
-  padding: 70px 0;
+  padding: 5% 0;
   background: #fcfcfc;
 }
 .get-started {
@@ -50,5 +50,10 @@ export default {}
   width: 100px;
   height: 3px;
   background-color: #2f6deb;
+}
+@media only screen and (max-width: 700px) {
+  .about-jiggle-hidden-text {
+    display: none;
+  }
 }
 </style>

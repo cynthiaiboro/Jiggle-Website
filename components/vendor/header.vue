@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="navHeader pb-4">
+    <section class="navHeader">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light pl-0 pr-0">
           <router-link to="/">   
@@ -61,9 +61,9 @@
                   Receive payment the fast and easy way, see transactions directly from your
                   phone and  keep track of your business on the go with jiggle vendor app.
                 </p>
-                <div class="mt-4  mb-2 d-sm-inline">
+                <div class="d-sm-inline">
                   <img src="/google play white.svg" alt="" height="45px" class="d-md-inline-block pr-2"> 
-                  <button class="call-to-action btnStarted" style="font-weight:400; font-size: 0.9rem; width: 34%">
+                  <button class="call-to-action btnStarted" style="font-weight:400; font-size: 0.9rem;">
                     BECOME A VENDOR
                   </button>
                 </div>
@@ -111,7 +111,7 @@ export default {}
 }
 .call-to-action {
   height: 45px;
-  width: 26%;
+  width: 35%;
   border-radius: 3px;
   background-color: #2f6deb;
   border: none;
@@ -142,7 +142,7 @@ export default {}
 .navHeader {
   background: #3e4353 !important;
   color: #ffffff;
-  padding: 20px 0;
+  padding: 3% 0;
 }
 .great-app {
   width: 80%;
@@ -158,5 +158,44 @@ export default {}
   margin-top: 20px;
   font-size: 1rem !important;
   font-family: 'Circularbook' !important;
+}
+@media only screen and (max-width: 800px) {
+  .great-app {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 60px !important;
+  }
+  .after-nav-col-one {
+    text-align: center;
+  }
+  .after-nav-col-one p {
+    font-size: 13px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .call-to-action {
+    height: 50px;
+    width: 100%;
+    border: none;
+    color: #ffffff;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #after-nav {
+    text-align: center !important;
+  }
+  .great-app {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 5px !important;
+  }
+  .call-to-action {
+    margin-bottom: 5px;
+  }
 }
 </style>

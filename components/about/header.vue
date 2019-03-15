@@ -83,7 +83,7 @@ export default {}
 }
 #about-us-nav {
   background: url(/Frame.svg);
-  padding: 20px 0;
+  padding: 3% 0;
 }
 .about-get-started-button {
   border: 2px solid #ffffff;
