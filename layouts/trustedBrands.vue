@@ -57,4 +57,10 @@ export default {}
   width: 100%;
   height: 40px;
 }
+h3 {
+  font-family: 'Circularmedium';
+}
+p {
+  font-family: 'Circularbook';
+}
 </style>

@@ -95,6 +95,7 @@ h6 {
 .footer-text {
   font-size: 1rem !important;
   color: white;
+  font-family: 'Circularbook';
 }
 /* @media only screen and (max-width: 800px) {
   #footer {

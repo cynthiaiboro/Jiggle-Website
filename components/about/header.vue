@@ -26,13 +26,13 @@
                 </router-link>
               </li> -->
               <li class="nav-item">
-                <router-link to="/about" class="about-nav-link active">
-                  About Us
+                <router-link to="/vendor" class="about-nav-link">
+                  Vendors
                 </router-link>
               </li>
               <li class="nav-item">
-                <router-link to="/vendor" class="about-nav-link">
-                  Vendors
+                <router-link to="/about" class="about-nav-link active">
+                  About Us
                 </router-link>
               </li>
               <li class="nav-item">
@@ -47,7 +47,7 @@
           </div>
         </nav>
         <div class="best-solution">
-          <h3 class="get-started">
+          <h3 class="get-started text-center">
             Best solution for your food <br> budgeting
           </h3>
         </div>
