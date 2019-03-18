@@ -114,6 +114,9 @@ export default {}
   transition: 1s;
   text-decoration: none !important;
 }
+.nav-item:last-of-type .nav-link {
+  padding: 0 40px 0 20px !important;
+}
 .get-started-button {
   border-radius: 3px !important;
   font-family: 'Circularbook' !important;

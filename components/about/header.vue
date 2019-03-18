@@ -20,11 +20,11 @@
             
           <div id="navbarSupportedContent" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <router-link to="/" class="about-nav-link">
                   Products
                 </router-link>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <router-link to="/about" class="about-nav-link active">
                   About Us
@@ -47,7 +47,7 @@
           </div>
         </nav>
         <div class="best-solution">
-          <h3 class="text-center get-started">
+          <h3 class="get-started">
             Best solution for your food <br> budgeting
           </h3>
         </div>
@@ -80,6 +80,9 @@ export default {}
   padding: 0 20px !important;
   transition: 1s;
   text-decoration: none !important;
+}
+.nav-item:last-of-type .about-nav-link {
+  padding: 0 40px 0 20px !important;
 }
 #about-us-nav {
   background: url(/Frame.svg);
