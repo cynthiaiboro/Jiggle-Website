@@ -25,13 +25,13 @@
                 </router-link>
               </li>
               <li class="nav-item">
-                <router-link to="/about" class="nav-link">
-                  About Us
+                <router-link to="/vendor" class="nav-link active">
+                  Vendors
                 </router-link>
               </li>
               <li class="nav-item">
-                <router-link to="/vendor" class="nav-link active">
-                  Vendors
+                <router-link to="/about" class="nav-link">
+                  About Us
                 </router-link>
               </li>
               <li class="nav-item">
@@ -41,7 +41,7 @@
               </li>
             </ul>
             <button class="get-started-button">
-              GET STARTED
+              <a href="#get-payment">GET STARTED</a>
             </button>
           </div>
         </nav>
@@ -72,7 +72,7 @@
           </div>
           <div class="col-md-6 d-none d-md-block pb-3">
             <div class="d-flex justify-content-center align-items-center">
-              <img src="/jiggle phone.svg" height="450vh" class="top-phones">
+              <img src="/jiggle phone.svg" height="420vh" class="top-phones">
             </div>
           </div>
         </div>
@@ -121,8 +121,8 @@ export default {}
 .call-to-action:hover {
   cursor: pointer;
   background: #ffffff;
-  border: 2px solid #2f6deb;
-  color: rgb(200, 217, 250);
+  border: 2px solid #3e4353;
+  color: #3e4353;
   transition: ease-in 1s;
 }
 .get-started-button {
@@ -133,11 +133,17 @@ export default {}
   height: 40px;
   background-color: #ffffff;
 }
+.get-started-button a {
+  color: #3e4353;
+}
 .get-started-button:hover {
-  cursor: pointer;
   background: #3e4353;
-  color: #ffffff;
+  color: #ffffff !important;
   transition: ease-in 1s;
+}
+.get-started-button a:hover {
+  text-decoration: none;
+  color: #ffffff;
 }
 .navHeader {
   background: #3e4353 !important;

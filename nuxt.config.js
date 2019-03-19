@@ -1,5 +1,7 @@
+// eslint-disable-next-line nuxt/no-cjs-in-config
 const pkg = require('./package')
 
+// eslint-disable-next-line nuxt/no-cjs-in-config
 module.exports = {
   mode: 'universal',
 
@@ -13,7 +15,18 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    // eslint-disable-next-line no-dupe-keys
+    link: [
+      {
+        href:
+          'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
+        rel: 'stylesheet',
+        integrity:
+          'sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN',
+        crossorigin: 'anonymous'
+      }
+    ]
   },
 
   /*
@@ -29,7 +42,6 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [],
 
   /*
   ** Nuxt.js modules

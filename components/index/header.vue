@@ -28,13 +28,13 @@
                 </router-link>
               </li>
               <li class="nav-item">
-                <router-link to="/about" class="nav-link">
-                  About Us
+                <router-link to="/vendor" class="nav-link">
+                  Vendors
                 </router-link>
               </li>
               <li class="nav-item">
-                <router-link to="/vendor" class="nav-link">
-                  Vendors
+                <router-link to="/about" class="nav-link">
+                  About Us
                 </router-link>
               </li>
               <li class="nav-item">
@@ -43,8 +43,8 @@
                 </router-link>
               </li>
             </ul>
-            <button class="get-started-button navigation-link">
-              GET STARTED
+            <button class="get-started-button">
+              <a href="#get-started-quickly">GET STARTED </a>
             </button>
           </div>
         </nav>
@@ -114,6 +114,9 @@ export default {}
   transition: 1s;
   text-decoration: none !important;
 }
+.nav-item:last-of-type .nav-link {
+  padding: 0 40px 0 20px !important;
+}
 .get-started-button {
   border-radius: 3px !important;
   font-family: 'Circularbook' !important;
@@ -121,6 +124,13 @@ export default {}
   width: 130px;
   height: 40px;
   background-color: #ffffff;
+}
+.get-started-button a {
+  color: #3e4353;
+}
+.get-started-button a:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 .get-started-button:hover {
   cursor: pointer;
@@ -140,6 +150,13 @@ export default {}
   border: none;
   color: #ffffff;
   font-family: 'Circularbook' !important;
+}
+.call-to-action:hover {
+  cursor: pointer;
+  background: #ffffff;
+  border: 2px solid #3e4353;
+  color: #3e4353;
+  transition: ease-in 1s;
 }
 .after-nav-col-one {
   display: flex;

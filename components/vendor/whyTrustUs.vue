@@ -145,6 +145,19 @@ h5 {
 p {
   font-family: 'Circularbook';
 }
+.number-white {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.get-started-main-number {
+  margin-bottom: 0px;
+}
 
 @media only screen and (max-width: 700px) {
   .get-started-normal-background {

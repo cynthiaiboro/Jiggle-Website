@@ -55,6 +55,9 @@ export default {}
   font-family: 'Circularbold' !important;
   margin-top: 40%;
 }
+p {
+  font-family: 'Circularbook' !important;
+}
 @media only screen and (max-width: 800px) {
   .top-phone {
     width: 35vw;
