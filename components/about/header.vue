@@ -2,55 +2,38 @@
   <div>
     <section id="about-us-nav">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light pl-0 pr-0">
-          <router-link to="/">   
-            <img src="/logo.svg" height="38px" width="127px">
-          </router-link>
-          <button 
-            class="navbar-toggler bg-light" 
-            type="button" 
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent" 
-            aria-controls="navbarSupportedContent" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon" />
-          </button>
-            
-          <div id="navbarSupportedContent" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-              <!-- <li class="nav-item">
-                <router-link to="/" class="about-nav-link">
-                  Products
-                </router-link>
-              </li> -->
-              <li class="nav-item">
-                <router-link to="/vendor" class="about-nav-link">
-                  Vendors
-                </router-link>
-              </li>
-              <li class="nav-item">
-                <router-link to="/about" class="about-nav-link active">
-                  About Us
-                </router-link>
-              </li>
-              <li class="nav-item">
-                <router-link to="/" class="about-nav-link">
-                  Blog
-                </router-link>
-              </li>
-            </ul>
-            <button class="about-get-started-button">
-              GET STARTED
-            </button>
-          </div>
-        </nav>
-        <div class="best-solution">
-          <h3 class="get-started text-center">
-            Best solution for your food <br> budgeting
-          </h3>
-        </div>
+        <b-navbar toggleable class="navbar-expand-lg">
+          <b-navbar-brand>
+            <router-link to="/">   
+              <img src="/logo.svg" height="38px" width="127px">
+            </router-link>
+          </b-navbar-brand>
+          <b-navbar-toggle target="nav_item_collapse" class="bg-light" />
+          <b-collapse id="nav_item_collapse" is-nav>
+            <b-navbar-nav class="ml-auto">
+              <b-nav-item to="/" class="nav-link">
+                Products
+              </b-nav-item>
+              <b-nav-item to="/vendor" class="nav-link">
+                Vendors
+              </b-nav-item>
+              <b-nav-item to="/about" class="nav-link">
+                About Us
+              </b-nav-item>
+              <b-nav-item to="/" class="nav-link">
+                Blog
+              </b-nav-item>
+              <b-button class="get-started-button" href="#about-jiggle">
+                GET STARTED
+              </b-button>
+            </b-navbar-nav>
+          </b-collapse>
+        </b-navbar>
+      </div>
+      <div class="best-solution">
+        <h3 class="get-started text-center">
+          Best solution for your food <br> budgeting
+        </h3>
       </div>
     </section>
   </div>
@@ -69,41 +52,40 @@ export default {}
   font-family: 'Circularmedium';
   src: url('../../assets/fonts/circularmedium.ttf');
 }
-.about-nav-link {
+.nav-link {
   color: #ffffff !important;
-  padding: 0 20px !important;
+  padding: 4px 10px !important;
   text-decoration: none !important;
   font-family: 'Circularbook';
 }
-.about-nav-link:hover {
+.nav-link:hover {
   color: #2f6deb !important;
-  padding: 0 20px !important;
+  padding: 4px 10px !important;
   transition: 1s;
   text-decoration: none !important;
 }
-.nav-item:last-of-type .about-nav-link {
-  padding: 0 40px 0 20px !important;
+.nav-item:last-of-type .nav-link {
+  padding: 4px 30px 4px 10px !important;
 }
 #about-us-nav {
   background: url(/Frame.svg);
   padding: 3% 0;
 }
-.about-get-started-button {
-  border: 2px solid #ffffff;
-  width: 130px;
+.get-started-button {
+  border-radius: 3px !important;
+  font-family: 'Circularbook' !important;
+  border: 2px solid #3e4353;
+  width: 140px;
   height: 40px;
   background-color: #ffffff;
-  color: #2f6deb;
-  border-radius: 3px;
-  font-family: 'Circularbook';
+  color: #3e4353 !important;
+  font-size: 1rem;
 }
-.about-get-started-button:hover {
-  border: 2px solid #3e4353;
-  width: 130px;
-  height: 40px;
-  background-color: #3e4353;
-  color: #ffffff;
-  transition: 1s;
+.get-started-button:hover {
+  cursor: pointer;
+  background: #3e4353;
+  color: #ffffff !important;
+  transition: ease-in 1s;
 }
 .best-solution {
   display: flex;
