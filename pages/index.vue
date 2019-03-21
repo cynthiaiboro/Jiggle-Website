@@ -1,6 +1,7 @@
 <template>
   <div>
     <indexHeader />
+    <slideDownNav />
     <getStarted />
     <becomeAVendor />
     <ourServices />
@@ -12,6 +13,7 @@
 
 <script>
 import indexHeader from '../components/index/header'
+import slideDownNav from '../layouts/slideDownNav'
 import getStarted from '../components/index/getStarted'
 import becomeAVendor from '../components/index/becomeAVendor'
 import ourServices from '../components/index/ourServices'
@@ -21,6 +23,7 @@ import Footer from '../layouts/footer'
 export default {
   components: {
     indexHeader,
+    slideDownNav,
     getStarted,
     becomeAVendor,
     ourServices,

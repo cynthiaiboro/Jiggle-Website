@@ -116,6 +116,7 @@ export default {}
 .great-app {
   width: 80%;
   font-family: 'Circularbold' !important;
+  text-transform: capitalize;
 }
 .call-to-action {
   height: 45px;
