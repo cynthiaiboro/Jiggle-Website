@@ -54,7 +54,7 @@ import Header from '../../../../components/vendor/header'
 import Loading from '../../../../components/shared/Loading'
 import SignUpForm from '../../../../components/shared/SignUpForm'
 
-const baseURl = 'http://jiggle.test/api/v1/'
+const baseURl = 'https://api.jiggle.ng/'
 export default {
   name: 'Index',
   components: {
