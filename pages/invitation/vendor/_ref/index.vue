@@ -90,6 +90,7 @@ export default {
     },
     acceptInvite: function(reference) {
       this.loading = true
+      this.showSignUp = false
       this.$axios
         .$post(baseURl + 'account/vendor/employee-invite/' + reference)
         .then(res => {
