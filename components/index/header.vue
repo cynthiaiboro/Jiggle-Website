@@ -29,7 +29,7 @@
             <div class="after-nav-col-one">
               <div>
                 <h1 class="great-app">
-                  Hey! Are you Ok!!
+                  Hey Ooh!!
                   <br>Great app for your food budgeting and payment.
                 </h1>
                 <p class="great-app-text pb-2" style="font-size:1.1rem; color:#2d3448">
