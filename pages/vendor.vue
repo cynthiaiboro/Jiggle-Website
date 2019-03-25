@@ -1,6 +1,7 @@
 <template>
   <div>
     <Header />
+    <welcome />
     <gettingPaid />
     <ourServices />
     <whyTrustUs />
@@ -16,6 +17,7 @@ import ourServices from '../components/vendor/ourServices'
 import whyTrustUs from '../components/vendor/whyTrustUs'
 import trustedBrands from '../layouts/trustedBrands'
 import Footer from '../layouts/footer'
+import Welcome from '../components/vendor/Welcome'
 
 export default {
   components: {
@@ -24,7 +26,8 @@ export default {
     ourServices,
     whyTrustUs,
     trustedBrands,
-    Footer
+    Footer,
+    Welcome
   }
 }
 </script>
