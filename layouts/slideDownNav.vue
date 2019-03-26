@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <section id="slide-down-nav">
+  <div id="stickyheader">
+    <section class="navHeader">
       <div class="container">
         <b-navbar toggleable class="navbar-expand-lg">
           <b-navbar-brand>
@@ -23,7 +23,7 @@
               <b-nav-item to="/" class="nav-link">
                 Blog
               </b-nav-item>
-              <b-button class="get-started-button" href="#about-jiggle">
+              <b-button class="get-started-button" href="#get-payment">
                 GET STARTED
               </b-button>
             </b-navbar-nav>
@@ -35,23 +35,44 @@
 </template>
 
 <script>
-export default {}
+export default {
+  mounted() {
+    onscroll = function() {
+      scrollFunction()
+    }
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 180 ||
+        document.documentElement.scrollTop > 180
+      ) {
+        document.getElementById('stickyheader').style.top = '0'
+        alert(9)
+      } else {
+        document.getElementById('stickyheader').style.top = '200px'
+        document.getElementById('stickyheader').style.display = 'none'
+      }
+    }
+  }
+}
 </script>
 
 <style scoped>
-#slide-down-nav {
-  background-color: #333;
+@font-face {
+  font-family: 'Circularbook';
+  src: url('..//assets/fonts/circularbook.ttf');
+}
+#stickyheader {
   position: fixed;
-  top: -10px;
+  top: -50px;
   width: 100%;
   display: block;
-  transition: top 0.3s;
 }
 .nav-link {
-  color: black !important;
+  color: #ffffff !important;
   padding: 4px 10px !important;
-  text-decoration: none !important;
-  font-family: 'Circularbook';
+  font-size: 1rem !important;
+  font-family: 'Circularbook' !important;
 }
 .nav-link:hover {
   color: #2f6deb !important;
@@ -62,9 +83,21 @@ export default {}
 .nav-item:last-of-type .nav-link {
   padding: 4px 30px 4px 10px !important;
 }
-#about-us-nav {
-  background: url(/Frame.svg);
-  padding: 3% 0;
+.call-to-action {
+  height: 45px;
+  width: 35%;
+  border-radius: 3px;
+  background-color: #2f6deb;
+  border: none;
+  color: #ffffff;
+  font-family: 'Circularbook' !important;
+}
+.call-to-action:hover {
+  cursor: pointer;
+  background: #ffffff;
+  border: 2px solid #3e4353;
+  color: #3e4353;
+  transition: ease-in 1s;
 }
 .get-started-button {
   border-radius: 3px !important;
@@ -81,5 +114,10 @@ export default {}
   background: #3e4353;
   color: #ffffff !important;
   transition: ease-in 1s;
+}
+.navHeader {
+  background: #3e4353 !important;
+  color: #ffffff;
+  padding: 3% 0;
 }
 </style>

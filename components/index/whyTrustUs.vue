@@ -22,11 +22,12 @@
               </div>
               <div class="col-sm-12 col-md-10">
                 <h5 class="text-white get-started">
-                  Quick pay
+                  Great Budget Tool
                 </h5>
                 <p class="text-white">
-                  Jiggle makes ordering and paying for food and drinks 
-                  faster than ever – get what you want when you’re ready to order, and pay when you’re done.
+                  Get your meals budgeted  automatically when you fund your wallet.
+                  Stay on top of your budget as jiggle helps you guard against overspending.
+                  Also, get a well-rounded picture of how much money you spend on meals each month.
                 </p>
               </div>
             </div>
@@ -44,11 +45,11 @@
                   </div>
                   <div class="col-sm-12 col-md-10">
                     <h5 class="text-white get-started">
-                      Cashless experience
+                      Quick pay
                     </h5>
                     <p class="text-white">
-                      No need to fumble with cash or card. Jiggle provides you
-                      with an amazing cashless mobile payment experience.
+                      Jiggle makes ordering and paying for food and drinks faster than ever – get what you want when
+                      you’re ready to order, and pay when you’re done.
                     </p>
                   </div>
                 </div>
@@ -68,10 +69,10 @@
               </div>
               <div class="col-sm-12 col-md-10">
                 <h5 class="text-white get-started">
-                  Mobile
+                  Accessible
                 </h5>
                 <p class="text-white">
-                  Pay more conveniently and securely and at anywhere and anytime with your mobile phone.
+                  Fund your wallet whenever you choose. Make payment for your meals whenever at any jiggle enabled  restaurant.
                 </p>
               </div>
             </div>
@@ -92,7 +93,7 @@
                       Secure purchase
                     </h5>
                     <p class="text-white">
-                      Safety is our top priority and so we are committed to providing safe and reliable transaction.
+                      Safety is our top priority and so we are committed to providing safe and reliable transaction. We use the latest innovative technologies in IT security. 
                       Your account details are protected and stored on servers in secure locations.
                     </p>
                   </div>

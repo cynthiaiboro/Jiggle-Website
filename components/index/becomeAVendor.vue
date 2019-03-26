@@ -8,8 +8,8 @@
               Become a Vendor
             </h3>
             <p>
-              "Lorem ipsum dolor sit amt, consectetur adipiscing elit, sed do eiusmod tempor 
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              Spur your business to a whole new level<br>
+              Let’s take care of payments so you can focus on running your business.
             </p>
             <button class="call-to-action" style="font-weight:400; font-size: 0.8rem;">
               READ MORE

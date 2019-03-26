@@ -39,11 +39,11 @@
             <div class="after-nav-col-one">
               <div>
                 <h1 class="great-app pt-5" style="font-weight:500">
-                  Best Way to receive Payment
+                  Best Way to Receive Payments
                 </h1>
                 <p>
-                  Receive payment the fast and easy way, see transactions directly from your
-                  phone and  keep track of your business on the go with jiggle vendor app.
+                  Receive payment the fast and easy way, see transactions directly from your phone and keep track of your business on the go with Jiggle vendor app.
+                  It makes getting paid easy and more convenient.
                 </p>
                 <div class="d-sm-inline">
                   <img src="/google play white.svg" alt="" height="45px" class="d-md-inline-block pr-2"> 
