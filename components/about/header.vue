@@ -1,8 +1,8 @@
 <template>
   <div>
     <section id="about-us-nav">
-      <div class="container">
-        <b-navbar toggleable class="navbar-expand-lg">
+      <div class="container pb-5 py-3">
+        <b-navbar toggleable class="navbar-expand-lg px-0">
           <b-navbar-brand>
             <router-link to="/">   
               <img src="/logo.svg" height="38px" width="127px">
@@ -11,9 +11,6 @@
           <b-navbar-toggle target="nav_item_collapse" class="bg-light" />
           <b-collapse id="nav_item_collapse" is-nav>
             <b-navbar-nav class="ml-auto">
-              <b-nav-item to="/" class="nav-link">
-                Products
-              </b-nav-item>
               <b-nav-item to="/vendor" class="nav-link">
                 Vendors
               </b-nav-item>
@@ -69,7 +66,6 @@ export default {}
 }
 #about-us-nav {
   background: url(/Frame.svg);
-  padding: 3% 0;
 }
 .get-started-button {
   border-radius: 3px !important;

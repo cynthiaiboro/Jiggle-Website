@@ -1,8 +1,8 @@
 <template>
   <div>
     <section id="nav">
-      <div class="container pb-4">
-        <b-navbar toggleable class="navbar-expand-lg">
+      <div class="container pb-5 py-3">
+        <b-navbar toggleable class="navbar-expand-lg px-0">
           <b-navbar-brand>
             <router-link to="/">   
               <img src="/jiggle logo blue.svg" height="38px" width="127px">
@@ -11,9 +11,6 @@
           <b-navbar-toggle target="nav_item_collapse" />
           <b-collapse id="nav_item_collapse" is-nav>
             <b-navbar-nav class="ml-auto">
-              <b-nav-item to="/" class="nav-link">
-                Products
-              </b-nav-item>
               <b-nav-item to="/vendor" class="nav-link">
                 Vendors
               </b-nav-item>
@@ -81,7 +78,6 @@ export default {}
 }
 #nav {
   background-color: #ffffff;
-  padding: 3% 0;
 }
 .nav-link {
   color: #000000 !important;
