@@ -4,25 +4,18 @@
       <div class="container pb-5 py-3">
         <b-navbar toggleable class="navbar-expand-lg px-0">
           <b-navbar-brand>
-            <router-link to="/">   
+            <router-link to="/">
               <img src="/jiggle logo blue.svg" height="38px" width="127px">
             </router-link>
           </b-navbar-brand>
-          <b-navbar-toggle target="nav_item_collapse" />
+          <b-navbar-toggle target="nav_item_collapse"/>
           <b-collapse id="nav_item_collapse" is-nav>
             <b-navbar-nav class="ml-auto">
-              <b-nav-item to="/vendor" class="nav-link">
-                Vendors
-              </b-nav-item>
-              <b-nav-item to="/about" class="nav-link">
-                About Us
-              </b-nav-item>
-              <b-nav-item to="/" class="nav-link">
-                Blog
-              </b-nav-item>
-              <b-button class="get-started-button" href="#get-started-quickly">
-                GET STARTED
-              </b-button>
+              <b-nav-item to="/" class="nav-link">Products</b-nav-item>
+              <b-nav-item to="/vendor" class="nav-link">Vendors</b-nav-item>
+              <b-nav-item to="/about" class="nav-link">About Us</b-nav-item>
+              <b-nav-item to="/" class="nav-link">Blog</b-nav-item>
+              <b-button class="get-started-button" href="#get-started-quickly">GET STARTED</b-button>
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>
@@ -36,7 +29,8 @@
             <div class="after-nav-col-one">
               <div>
                 <h1 class="great-app">
-                  Great app for your food budgeting and payment.
+                  Hey Ooh!!
+                  <br>Great app for your food budgeting and payment.
                 </h1>
                 <p class="great-app-text pb-4" style="font-size:1.1rem; color:#2d3448">
                   Pay once to eat wherever and whenever.
@@ -44,10 +38,11 @@
                   Stay on top of your budget effortlessly with Jiggle.
                 </p>
                 <div class="d-sm-inline">
-                  <img src="/googleplay dark.svg" alt="" height="45px" class="d-md-inline-block pr-2"> 
-                  <button class="call-to-action btnStarted" style="font-weight:400; font-size: 0.9rem;">
-                    GET STARTED
-                  </button>
+                  <img src="/googleplay dark.svg" alt height="45px" class="d-md-inline-block pr-2">
+                  <button
+                    class="call-to-action btnStarted"
+                    style="font-weight:400; font-size: 0.9rem;"
+                  >GET STARTED</button>
                 </div>
               </div>
             </div>
