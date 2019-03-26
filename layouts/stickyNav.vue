@@ -59,7 +59,7 @@ export default {
   font-family: 'Circularbook' !important;
 }
 .nav-link:hover {
-  color: #2f6deb !important;
+  color: #e3e3e4 !important;
   padding: 4px 10px !important;
   transition: 1s;
   text-decoration: none !important;
