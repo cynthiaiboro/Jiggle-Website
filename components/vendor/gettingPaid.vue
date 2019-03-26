@@ -32,7 +32,7 @@
                           Download from Playstore
                         </h5>
                         <p>
-                          Download the jiggle vendor app to your mobile device.
+                          Download the Jiggle vendor app to your mobile device.
                         </p>
                       </div>
                     </div>

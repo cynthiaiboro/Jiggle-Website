@@ -33,9 +33,9 @@
                   <br>Great app for your food budgeting and payment.
                 </h1>
                 <p class="great-app-text pb-2" style="font-size:1.1rem; color:#2d3448">
-                  Pay once to eat wherever and whenever. Budget your meals
-                  with an easy, convenient and secure platform, save money and
-                  stay on top of your budget effortlessly with jiggle.
+                  Pay once to eat wherever and whenever.
+                  Budget for your meals with ease and convenience. 
+                  Stay on top of your budget effortlessly with Jiggle.
                 </p>
                 <div class="d-sm-inline">
                   <img src="/googleplay dark.svg" alt height="45px" class="d-md-inline-block pr-2">
