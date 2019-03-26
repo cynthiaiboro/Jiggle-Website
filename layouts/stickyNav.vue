@@ -4,28 +4,18 @@
       <div class="container">
         <b-navbar toggleable class="navbar-expand-lg">
           <b-navbar-brand>
-            <router-link to="/">   
+            <router-link to="/">
               <img src="/logo.svg" height="38px" width="127px">
             </router-link>
           </b-navbar-brand>
-          <b-navbar-toggle target="nav_item_collapse" class="bg-light" />
+          <b-navbar-toggle target="nav_item_collapse" class="bg-light"/>
           <b-collapse id="nav_item_collapse" is-nav>
             <b-navbar-nav class="ml-auto">
-              <b-nav-item to="/" class="nav-link">
-                Products
-              </b-nav-item>
-              <b-nav-item to="/vendor" class="nav-link">
-                Vendors
-              </b-nav-item>
-              <b-nav-item to="/about" class="nav-link">
-                About Us
-              </b-nav-item>
-              <b-nav-item to="/" class="nav-link">
-                Blog
-              </b-nav-item>
-              <b-button class="get-started-button" href="#get-payment">
-                GET STARTED
-              </b-button>
+              <b-nav-item to="/" class="nav-link">Products</b-nav-item>
+              <b-nav-item to="/vendor" class="nav-link">Vendors</b-nav-item>
+              <b-nav-item to="/about" class="nav-link">About Us</b-nav-item>
+              <b-nav-item to="/" class="nav-link">Blog</b-nav-item>
+              <b-button class="get-started-button" href="#get-payment">GET STARTED</b-button>
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>
@@ -36,23 +26,8 @@
 
 <script>
 export default {
-  mounted() {
-    onscroll = function() {
-      scrollFunction()
-    }
-
-    function scrollFunction() {
-      if (
-        document.body.scrollTop > 180 ||
-        document.documentElement.scrollTop > 180
-      ) {
-        document.getElementById('stickyheader').style.top = '0'
-        alert(9)
-      } else {
-        document.getElementById('stickyheader').style.top = '200px'
-        document.getElementById('stickyheader').style.display = 'none'
-      }
-    }
+  data() {
+    return {}
   }
 }
 </script>
@@ -65,7 +40,9 @@ export default {
 #stickyheader {
   position: fixed;
   top: -50px;
+  /* margin-top: 200px; */
   width: 100%;
+  z-index: 999;
   display: block;
 }
 .nav-link {
