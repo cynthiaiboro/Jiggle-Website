@@ -43,14 +43,12 @@ export default {
 
     function scrollFunction() {
       if (
-        document.body.scrollTop > 180 ||
-        document.documentElement.scrollTop > 180
+        document.body.scrollTop > 150 ||
+        document.documentElement.scrollTop > 150
       ) {
-        document.getElementById('stickyheader').style.top = '0'
-        alert(9)
+        document.getElementById('stickyheader').className = 'show-sticky-nav'
       } else {
-        document.getElementById('stickyheader').style.top = '200px'
-        document.getElementById('stickyheader').style.display = 'none'
+        document.getElementById('stickyheader').className = 'hide-sticky-nav'
       }
     }
   }
@@ -119,5 +117,11 @@ export default {
   background: #3e4353 !important;
   color: #ffffff;
   padding: 3% 0;
+}
+.show-sticky-nav {
+  display: block;
+}
+.hide-sticky-nav {
+  display: none;
 }
 </style>
