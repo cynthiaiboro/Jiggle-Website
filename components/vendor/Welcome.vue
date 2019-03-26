@@ -1,67 +1,39 @@
 <template>
-  <div>
-    <section class="navHeader">
-      <div class="container pb-5 py-3">
-        <b-navbar toggleable class="navbar-expand-lg px-0">
-          <b-navbar-brand>
-            <router-link to="/">
-              <img src="/logo.svg" height="38px" width="127px">
-            </router-link>
-          </b-navbar-brand>
-          <b-navbar-toggle target="nav_item_collapse" class="bg-light"/>
-          <b-collapse id="nav_item_collapse" is-nav>
-            <b-navbar-nav class="ml-auto">
-              <b-nav-item to="/" class="nav-link">Products</b-nav-item>
-              <b-nav-item to="/vendor" class="nav-link">Vendors</b-nav-item>
-              <b-nav-item to="/about" class="nav-link">About Us</b-nav-item>
-              <b-nav-item to="/" class="nav-link">Blog</b-nav-item>
-              <b-button class="get-started-button" href="#get-payment">GET STARTED</b-button>
-            </b-navbar-nav>
-          </b-collapse>
-        </b-navbar>
-      </div>
-    </section>
-
-    <section class="navHeader pt-2 pb-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="after-nav-col-one">
-              <div>
-                <h1 class="great-app pt-5" style="font-weight:500">Best Way to Receive Payments</h1>
-                <p>
-                  Receive payment the fast and easy way, see transactions directly from your phone and keep track of your business on the go with Jiggle vendor app.
-                  It makes getting paid easy and more convenient.
-                </p>
-                <div class="d-sm-inline">
-                  <img
-                    src="/google play white.svg"
-                    alt
-                    height="45px"
-                    class="d-md-inline-block pr-2"
-                  >
-                  <button
-                    class="call-to-action btnStarted"
-                    style="font-weight:400; font-size: 0.9rem;"
-                  >BECOME A VENDOR</button>
-                </div>
+  <section class="navHeader pt-2 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="after-nav-col-one">
+            <div>
+              <h1 class="great-app pt-5" style="font-weight:500">
+                Best Way to receive Payment
+              </h1>
+              <p>
+                Receive payment the fast and easy way, see transactions directly from your
+                phone and  keep track of your business on the go with jiggle vendor app.
+              </p>
+              <div class="d-sm-inline">
+                <img src="/google play white.svg" alt="" height="45px" class="d-md-inline-block pr-2">
+                <button class="call-to-action btnStarted" style="font-weight:400; font-size: 0.9rem;">
+                  BECOME A VENDOR
+                </button>
               </div>
             </div>
           </div>
-          <div class="col-md-6 d-none d-md-block pb-3">
-            <div class="d-flex justify-content-center align-items-center">
-              <img src="/jiggle phone.svg" height="420vh" class="top-phones">
-            </div>
+        </div>
+        <div class="col-md-6 d-none d-md-block pb-3">
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="/jiggle phone.svg" height="420vh" class="top-phones">
           </div>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script>
 export default {
-  components: {}
+  name: 'Welcome'
 }
 </script>
 
@@ -124,6 +96,7 @@ export default {
 .navHeader {
   background: #3e4353 !important;
   color: #ffffff;
+  padding: 3% 0;
 }
 .great-app {
   width: 80%;
