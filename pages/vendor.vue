@@ -12,6 +12,7 @@
 
 <script>
 import Header from '../components/vendor/header'
+import stickyNav from '../layouts/stickyNav'
 import gettingPaid from '../components/vendor/gettingPaid'
 import ourServices from '../components/vendor/ourServices'
 import whyTrustUs from '../components/vendor/whyTrustUs'
@@ -22,6 +23,7 @@ import Welcome from '../components/vendor/Welcome'
 export default {
   components: {
     Header,
+    stickyNav,
     gettingPaid,
     ourServices,
     whyTrustUs,

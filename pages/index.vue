@@ -1,13 +1,13 @@
 <template>
   <div>
-    <indexHeader/>
-    <stickyNav v-if="enableStickyNav"/>
-    <getStarted/>
-    <becomeAVendor/>
-    <ourServices/>
-    <whyTrustUs/>
-    <trustedBrands/>
-    <Footer/>
+    <indexHeader />
+    <stickyNav v-if="enableStickyNav" />
+    <getStarted />
+    <becomeAVendor />
+    <ourServices />
+    <whyTrustUs />
+    <trustedBrands />
+    <Footer />
   </div>
 </template>
 
@@ -37,7 +37,7 @@ export default {
     }
   },
   mounted() {
-    console.log('Index page created')
+    // console.log('Index page created')
     // console.log('Sticky Nav mounted')
     window.addEventListener('scroll', this.handleNavDisplay)
   },
@@ -48,11 +48,11 @@ export default {
   methods: {
     handleNavDisplay() {
       var y = window.scrollY
-      if (y > 200 && !this.enableStickyNav) {
-        console.log('Display New Menu')
+      if (y > 100 && !this.enableStickyNav) {
+        // console.log ('Display New Menu')
         this.enableStickyNav = true
-      } else if (y < 200 && this.enableStickyNav) {
-        console.log('Hide sticky Nav')
+      } else if (y < 100 && this.enableStickyNav) {
+        // console.log('Hide sticky Nav')
         this.enableStickyNav = false
       }
     }
