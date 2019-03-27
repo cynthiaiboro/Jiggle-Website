@@ -55,8 +55,8 @@ import StickyNav from '../../../../layouts/stickyNav'
 import Loading from '../../../../components/shared/Loading'
 import PasswordResetForm from '../../../../components/shared/PasswordResetForm'
 
-// const baseURl = 'https://api.jiggle.ng/'
-const baseURl = 'http://jiggle.test/api/v1/'
+const baseURl = 'https://api.jiggle.ng/'
+// const baseURl = 'http://jiggle.test/api/v1/'
 
 export default {
   name: 'Index',
