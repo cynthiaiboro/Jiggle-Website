@@ -16,7 +16,7 @@
               <div class="col-md-2">
                 <div class="d-none d-md-flex justify-content-center align-items-center number-white">
                   <p class="get-started-main-number">
-                    <i class="fa fa-check" aria-hidden="true" /> 
+                    <i class="fa fa-check" aria-hidden="true" />
                   </p>
                 </div>
               </div>
@@ -26,8 +26,7 @@
                 </h5>
                 <p class="text-white">
                   Get your meals budgeted  automatically when you fund your wallet.
-                  Stay on top of your budget as jiggle helps you guard against overspending.
-                  Also, get a well-rounded picture of how much money you spend on meals each month.
+                  Keep track of your spending and get a well-rounded picture of how much money you spend on meals.
                 </p>
               </div>
             </div>
@@ -39,7 +38,7 @@
                   <div class="col-md-2">
                     <div class="d-none d-md-flex justify-content-center align-items-center number-white">
                       <p class="get-started-main-number">
-                        <i class="fa fa-check" aria-hidden="true" /> 
+                        <i class="fa fa-check" aria-hidden="true" />
                       </p>
                     </div>
                   </div>
@@ -48,8 +47,8 @@
                       Quick pay
                     </h5>
                     <p class="text-white">
-                      Jiggle makes ordering and paying for food and drinks faster than ever – get what you want when
-                      you’re ready to order, and pay when you’re done.
+                      Jiggle makes ordering and paying for meal faster than
+                      ever – our payment process is quick, simple and stress-free. Avail yourself this seamless  experience.
                     </p>
                   </div>
                 </div>
@@ -63,7 +62,7 @@
               <div class="col-md-2">
                 <div class="d-none d-md-flex justify-content-center align-items-center number-white">
                   <p class="get-started-main-number">
-                    <i class="fa fa-check" aria-hidden="true" /> 
+                    <i class="fa fa-check" aria-hidden="true" />
                   </p>
                 </div>
               </div>
@@ -93,8 +92,8 @@
                       Secure purchase
                     </h5>
                     <p class="text-white">
-                      Safety is our top priority and so we are committed to providing safe and reliable transaction. We use the latest innovative technologies in IT security. 
-                      Your account details are protected and stored on servers in secure locations.
+                      Safety is our top priority and so we are committed to providing safe
+                      and reliable transaction. We use the latest innovative technologies in IT security.
                     </p>
                   </div>
                 </div>
@@ -104,7 +103,7 @@
         </div>
       </div>
     </section>
-  </div>  
+  </div>
 </template>
 
 <script>
@@ -121,7 +120,7 @@ export default {}
   src: url('../../assets/fonts/circularmedium.ttf');
 }
 #why-us {
-  background: linear-gradient(180deg, #2f6deb 0%, #0657cd 100%);
+  background-color: #2f6deb;
   padding: 5% 0;
 }
 .get-started {

@@ -8,6 +8,7 @@
               Our Services
             </h3>
             <hr class="blue-hr">
+            <p>All you need for an effective meal budgeting and payment now in one place.</p>
           </div>
         </div>
         <div>
@@ -15,40 +16,43 @@
             <div class="row d-flex justify-content-center">
               <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
-                  <div class="our-services-blue-background">
-                    <i class="fa fa-briefcase" style="color:#ffffff; font-size:25px;" />
-                  </div>
+                  <img src="/budget.svg" style="height: 75px"/>
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
-                    Meal Budgeting     
+                    Meal Budgeting
                   </h5>
+                  <p class="px-3">
+                    Budget for your meal conveniently, utilize your money effectively and gain control over your spending.
+                  </p>
                 </div>
               </div>
               <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
-                  <div class="our-services-blue-background">
-                    <i class="fa fa-money" style="color:#ffffff; font-size:25px;" />                            
-                  </div>
+                  <img src="/payment.svg" style="height: 75px"/>
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
                     Easy Payment
                   </h5>
+                  <p class="px-3">
+                    Pay with a single click. Simply scan a QR code using your smartphone and voila you are good to go.
+                  </p>
                 </div>
               </div>
               <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
-                  <div class="our-services-blue-background">
-                    <i class="fa fa-google-wallet" style="color:#ffffff; font-size:25px;" />                                    
-                  </div>
+                  <img src="/wallet.svg" style="height: 75px"/>
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
                     Accessible Wallet
                   </h5>
+                  <p class="px-3">
+                    Make payment for your meals from any device. Pay seamlessly for meals anytime and at any jiggle-enabled food outlet.
+                  </p>
                 </div>
-              </div>            
+              </div>
             </div>
           </div>
         </div>
@@ -68,6 +72,7 @@ export default {}
 }
 .get-started {
   font-family: 'Circularmedium' !important;
+  color: #2f6deb;
 }
 .position-our-services-blue-background {
   display: flex;
@@ -86,14 +91,5 @@ export default {}
   width: 100px;
   height: 3px;
   background-color: #2f6deb;
-}
-.our-services-blue-background {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  background-color: #2f6deb;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 </style>

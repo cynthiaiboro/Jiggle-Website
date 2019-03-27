@@ -11,7 +11,6 @@
           <b-navbar-toggle target="nav_item_collapse" class="bg-light"/>
           <b-collapse id="nav_item_collapse" is-nav>
             <b-navbar-nav class="ml-auto">
-              <b-nav-item to="/" class="nav-link">Products</b-nav-item>
               <b-nav-item to="/vendor" class="nav-link">Vendors</b-nav-item>
               <b-nav-item to="/about" class="nav-link">About Us</b-nav-item>
               <b-nav-item to="/" class="nav-link">Blog</b-nav-item>
