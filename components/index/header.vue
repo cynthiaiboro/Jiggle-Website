@@ -91,7 +91,7 @@ export default {}
   border-radius: 3px !important;
   font-family: 'Circularbook' !important;
   border: 2px solid #3e4353;
-  width: 140px;
+  width: 150px;
   height: 40px;
   background-color: #ffffff;
   color: #3e4353;
@@ -110,7 +110,7 @@ export default {}
 }
 .call-to-action {
   height: 45px;
-  width: 26%;
+  width: 150px;
   border-radius: 3px;
   background-color: #2f6deb;
   border: none;

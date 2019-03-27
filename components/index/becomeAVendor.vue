@@ -40,6 +40,7 @@ export default {}
 }
 #become-a-vendor {
   background: url(/vendor-background.svg);
+  background-attachment: fixed;
   padding: 3% 0;
 }
 .call-to-action {
