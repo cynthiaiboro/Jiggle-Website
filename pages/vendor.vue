@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <welcome />
+    <stickyNav v-if="enableStickyNav" />
     <gettingPaid />
     <ourServices />
     <whyTrustUs />
@@ -18,7 +18,6 @@ import ourServices from '../components/vendor/ourServices'
 import whyTrustUs from '../components/vendor/whyTrustUs'
 import trustedBrands from '../layouts/trustedBrands'
 import Footer from '../layouts/footer'
-import Welcome from '../components/vendor/Welcome'
 
 export default {
   components: {
@@ -29,10 +28,8 @@ export default {
     whyTrustUs,
     trustedBrands,
     Footer,
-    Welcome
   }
 }
 </script>
-
 <style scoped>
 </style>

@@ -4,10 +4,10 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 vendor-text">
-            <h3 class="get-started" style="font-weight: 400">
+            <h3 class="get-started pb-2 text-white" style="font-weight: 400">
               Receive payment with Jiggle
             </h3>
-            <p>
+            <p class="text-white">
               Spur your business to a whole new level<br>
               Let’s take care of payments so you can focus on running your business.
             </p>
@@ -17,7 +17,7 @@
           </div>
           <div class="col-md-3" />
           <div class="col-md-5">
-            <img src="/jiggle phone.svg" class="top-phone">
+            <img src="/vendor-phone.svg" class="top-phone">
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@ export default {}
   src: url('../../assets/fonts/circularbold.ttf');
 }
 #become-a-vendor {
-  background-color: #e5e5e5;
+  background: url(/vendor-background.svg);
   padding: 3% 0;
 }
 .call-to-action {
@@ -50,6 +50,10 @@ export default {}
   border: none;
   color: #ffffff;
   font-family: 'Circularbook' !important;
+}
+.call-to-action:hover{
+  background-color: #2d3448;
+  transition: 1s;
 }
 .get-started {
   font-family: 'Circularbold' !important;
