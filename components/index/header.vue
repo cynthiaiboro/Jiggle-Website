@@ -31,7 +31,7 @@
                 <h1 class="great-app">
                   <br>Great app for your food budgeting and payment.
                 </h1>
-                <p class="great-app-text pb-2" style="font-size:1.1rem; color:#2d3448">
+                <p class="great-app-text pb-4" style="font-size:1.1rem; color:#2d3448">
                   Pay once to eat wherever and whenever.
                   Budget for your meals with ease and convenience. 
                   Stay on top of your budget effortlessly with Jiggle.
@@ -48,7 +48,7 @@
           </div>
           <div class="col-md-6 d-none d-md-block pb-3">
             <div class="d-flex justify-content-center align-items-center">
-              <img src="/screenshot_top.png" height="450vh" class="top-phones">
+              <img src="/top-phone.svg" height="450vh" class="top-phones">
             </div>
           </div>
         </div>
@@ -107,6 +107,7 @@ export default {}
   width: 80%;
   font-family: 'Circularbold' !important;
   text-transform: capitalize;
+  color : #1068F0 !important;
 }
 .call-to-action {
   height: 45px;

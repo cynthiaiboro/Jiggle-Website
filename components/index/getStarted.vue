@@ -133,7 +133,7 @@
 
           <div class="d-flex d-sm-block col-md-6">
             <div class="d-flex justify-content-center align-items-center" style="height:90%">
-              <img src="/screenshot_top.png" alt="" class="top-phones">
+              <img src="/screenshot_top.svg" alt="" class="top-phones">
             </div>
           </div>
         </div>

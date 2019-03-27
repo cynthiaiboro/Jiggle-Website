@@ -13,7 +13,7 @@
         <div>
           <div class="mt-5 our-services-four-section ">
             <div class="row d-flex justify-content-center">
-              <div class="col-md-3 col-12">
+              <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
                   <div class="our-services-blue-background">
                     <i class="fa fa-money" style="color:#ffffff; font-size:25px;" />
@@ -25,7 +25,7 @@
                   </h5>
                 </div>
               </div>
-              <div class="col-md-3 col-12">
+              <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
                   <div class="our-services-blue-background">
                     <i class="fa fa-clock-o" style="color:#ffffff; font-size:30px;" />                            
@@ -37,7 +37,7 @@
                   </h5>
                 </div>
               </div>
-              <div class="col-md-3 col-12">
+              <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
                   <div class="our-services-blue-background">
                     <i class="fa fa-mobile" style="color:#ffffff; font-size:35px;" />                                    

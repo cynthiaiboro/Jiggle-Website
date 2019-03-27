@@ -75,7 +75,7 @@ export default {}
 <style scoped>
 #footer {
   padding: 40px 0 30px 0;
-  background: linear-gradient(180deg, #2f6deb 0%, #0657cd 100%);
+  background: #3E4353;
   color: #ffffff;
 }
 h6 {
