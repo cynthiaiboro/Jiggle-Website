@@ -53,8 +53,11 @@ export default {}
   font-family: 'Circularbook' !important;
 }
 .call-to-action:hover{
-  background-color: #2d3448;
-  transition: 1s;
+  cursor: pointer;
+  background: #ffffff;
+  border: 2px solid #3e4353;
+  color: #3e4353;
+  transition: ease-in 1s;
 }
 .get-started {
   font-family: 'Circularbold' !important;
