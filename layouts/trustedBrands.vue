@@ -65,4 +65,9 @@ p {
   font-family: 'Circularbook';
   color : #aeb2bc;
 }
+@media only screen and (max-width: 700px) {
+  h3 {
+    font-size: 1.2rem !important;
+  }
+}
 </style>

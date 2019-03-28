@@ -5,7 +5,7 @@
         <div class="d-flex justify-content-center align-items-center">
           <div class="">
             <h3 class="text-center get-started" style="font-weight:400">
-              GETTING PAYMENTS MADE EASY-GET STARTED TODAY.
+              Getting Payments Made Easy - Get Started Today.
             </h3>
             <hr class="black-hr">
             <p class="heading-text text-center mb-5">
@@ -76,7 +76,7 @@
                       </div>
                       <div class="col-sm-12 col-md-10">
                         <h5 class="get-started" style="font-weight:400">
-                          Receiving Payment
+                          Receive Payment
                         </h5>
                         <p>
                           Start receiving payments right away. You receive money
@@ -177,10 +177,13 @@ p {
     display: none;
   }
   h3 {
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
   }
   h5 {
     font-size: 1rem !important;
+  }
+  p {
+    font-size: 0.9rem !important;
   }
 }
 @media only screen and (max-width: 400px) {

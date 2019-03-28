@@ -8,7 +8,7 @@
               Our Services
             </h3>
             <hr class="blue-hr">
-            <p>All you need for an effective meal budgeting and payment now in one place.</p>
+            <p class="text-center">All you need for an effective meal budgeting and payment now in one place.</p>
           </div>
         </div>
         <div>
@@ -94,5 +94,16 @@ export default {}
 }
 p {
   color: #aeb2bc;
+}
+@media only screen and (max-width: 700px) {
+h3 {
+    font-size: 1.2rem !important;
+  }
+h5 {
+    font-size: 1rem !important;
+  }
+p {
+  font-size: 0.9rem !important;
+}
 }
 </style>

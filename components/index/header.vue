@@ -11,9 +11,9 @@
           <b-navbar-toggle target="nav_item_collapse"/>
           <b-collapse id="nav_item_collapse" is-nav>
             <b-navbar-nav class="ml-auto">
+              <b-nav-item to="/about" class="nav-link">About</b-nav-item>
               <b-nav-item to="/vendor" class="nav-link">Vendors</b-nav-item>
-              <b-nav-item to="/about" class="nav-link">About Us</b-nav-item>
-              <b-nav-item to="/" class="nav-link">Blog</b-nav-item>
+              <!-- <b-nav-item to="/" class="nav-link">Blog</b-nav-item> -->
               <b-button class="get-started-button" href="#get-started-quickly">GET STARTED</b-button>
             </b-navbar-nav>
           </b-collapse>

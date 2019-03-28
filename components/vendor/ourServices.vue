@@ -5,7 +5,7 @@
         <div class="d-flex justify-content-center align-items-center">
           <div>
             <h3 class="text-center get-started" style="font-weight: 500; color:#2D3448;">
-              OUR SERVICES
+              Our Services
             </h3>
             <hr class="blue-hr">
             <p class="heading-text text-center">
@@ -107,12 +107,18 @@
   justify-content: center;
   align-items: center;
 }
+p {
+  color: #aeb2bc !important;
+  }
 @media only screen and (max-width: 700px) {
-  .get-started {
+  h5 {
     font-size: 1rem !important;
   }
-  .heading-text {
-  color: #aeb2bc;
+  h3 {
+    font-size: 1.2rem !important;
+  }
+  p {
+    font-size: 0.9rem !important;
   }
 }
 </style>

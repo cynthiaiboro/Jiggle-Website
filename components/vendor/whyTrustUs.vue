@@ -165,5 +165,14 @@ p {
     padding: 15px 30px;
     text-align: center !important;
   }
+  h3 {
+    font-size: 1.2rem !important;
+  }
+  h5 {
+    font-size: 1rem !important;
+  }
+  p {
+    font-size: 0.9rem !important;
+  }
 }
 </style>

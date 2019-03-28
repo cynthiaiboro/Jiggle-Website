@@ -107,5 +107,11 @@ h6 {
   .footer-jiggle {
     text-align: center !important;
   }
+  h6 {
+    font-size: 1rem !important;
+  }
+  .footer-text {
+    font-size: 0.9rem !important;
+  }
 }
 </style>

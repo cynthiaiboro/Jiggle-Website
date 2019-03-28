@@ -11,9 +11,9 @@
           <b-navbar-toggle target="nav_item_collapse" class="bg-light"/>
           <b-collapse id="nav_item_collapse" is-nav>
             <b-navbar-nav class="ml-auto">
+              <b-nav-item to="/about" class="nav-link">About</b-nav-item>
               <b-nav-item to="/vendor" class="nav-link">Vendors</b-nav-item>
-              <b-nav-item to="/about" class="nav-link">About Us</b-nav-item>
-              <b-nav-item to="/" class="nav-link">Blog</b-nav-item>
+              <!-- <b-nav-item to="/" class="nav-link">Blog</b-nav-item> -->
               <b-button class="get-started-button" href="#get-started-quickly">GET STARTED</b-button>
             </b-navbar-nav>
           </b-collapse>
@@ -28,9 +28,9 @@
             <div class="after-nav-col-one">
               <div>
                 <h1 class="great-app pt-5" style="font-weight:500">Best Way to Receive Payments</h1>
-                <p>
-                  Receive payment the fast and easy way, see transactions directly from your phone and keep track of your business on the go with Jiggle vendor app.
-                  It makes getting paid easy and more convenient.
+                <p class="pb-2">
+                  Receive payment the fast and easy way, see transactions directly from your phone and keep
+                  track of your business on the go with Jiggle vendor app.
                 </p>
                 <div class="d-sm-inline">
                   <img

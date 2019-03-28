@@ -216,6 +216,15 @@ p {
   .top-phones {
     display: none;
   }
+  h3 {
+    font-size: 1.2rem !important;
+  }
+  h5 {
+    font-size: 1rem !important;
+  }
+  p {
+    font-size: 0.9rem !important;
+  }
 }
 @media only screen and (max-width: 400px) {
   .top-phones {
