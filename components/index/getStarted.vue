@@ -8,6 +8,7 @@
               Get Started Quickly
             </h3>
             <hr class="blue-hr">
+            <p class="heading-text">Meal budgeting made fun and effective.</p>
           </div>
         </div>
         <div class="row">
@@ -49,10 +50,10 @@
                     </div>
                     <div class="col-sm-12 col-md-10">
                       <h5 class="get-started" style="font-weight: 400; color:#2f6deb">
-                        Create Account
+                        Create an Account
                       </h5>
                       <p>
-                        Sign up with just your email, password and name.
+                        Sign up with just your email.
                       </p>
                     </div>
                   </div>
@@ -72,10 +73,10 @@
                     </div>
                     <div class="col-sm-12 col-md-10">
                       <h5 class="get-started" style="font-weight: 400; color:#2f6deb">
-                        Create a Meal Plan
+                        Create a Budget plan
                       </h5>
                       <p class="">
-                        Create a custom meal plan or choose  from a range of attractive plans.
+                        Create a custom budget plan or choose from a range of attractive plans.
                       </p>
                     </div>
                   </div>
@@ -169,8 +170,12 @@ p {
   line-height: 1.5rem;
   font-family: 'Circularbook';
 }
+.heading-text {
+  color: #aeb2bc;
+}
 .get-started {
   font-family: 'Circularmedium' !important;
+  color: #2d3448;
 }
 .blue-hr {
   width: 100px;
@@ -199,6 +204,7 @@ p {
 }
 .get-started-main-number {
   margin-bottom: 0px;
+  color: #3170eb;
 }
 @media only screen and (max-width: 700px) {
   .get-started-normal-background {

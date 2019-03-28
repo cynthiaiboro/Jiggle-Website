@@ -22,11 +22,11 @@
               </div>
               <div class="col-sm-12 col-md-10">
                 <h5 class="text-white get-started">
-                  Improved customer experience
+                  Improved Customer Experience
                 </h5>
                 <p class="text-white">
-                  Give your customers a convenient and easy way to pay Paying with jiggle gives customers
-                  a better experience and help you set up a better and stronger relationship with them.
+                  Give your customers a simple, secure and convenient way to pay.
+                  Paying with Jiggle mean easy transactions and happy customers.
                 </p>
               </div>
             </div>
@@ -44,11 +44,11 @@
                   </div>
                   <div class="col-sm-12 col-md-10">
                     <h5 class="text-white get-started">
-                      Cashless experience
+                      Great Tracking Tool
                     </h5>
                     <p class="text-white">
-                      Receive payment without having to handle cash. 
-                      Get paid the cashless way and ensure maximum security.
+                      Use one platform to track sales volume, payment status, number of unique customers.
+                      Gain a better understanding of your business and make more informed decisions.
                     </p>
                   </div>
                 </div>
@@ -68,10 +68,11 @@
               </div>
               <div class="col-sm-12 col-md-10">
                 <h5 class="text-white get-started">
-                  Mobile
+                  Safe Payment
                 </h5>
                 <p class="text-white">
-                  Accept payments more conveniently and securely and at anywhere and anytime with just a tap on your mobile phone.
+                  Reduce the risk associated with accepting cash.
+                  Our cashless payment platform ensures maximum safety for your money.
                 </p>
               </div>
             </div>
@@ -89,11 +90,11 @@
                   </div>
                   <div class="col-sm-12 col-md-10">
                     <h5 class="text-white get-started">
-                      Security
+                      Maximum Security
                     </h5>
                     <p class="text-white">
                       Safety is our top priority.
-                      Your account details are protected and stored on servers in secure locations.
+                      Your account details are protected and stored in servers in a secure location
                     </p>
                   </div>
                 </div>

@@ -1,15 +1,15 @@
 <template>
   <div>
-    <section id="get-payment">
+    <section id="get-started-quickly">
       <div class="container">
         <div class="d-flex justify-content-center align-items-center">
           <div class="">
             <h3 class="text-center get-started" style="font-weight:400">
-              Start Getting Payment with Jiggle
+              GETTING PAYMENTS MADE EASY-GET STARTED TODAY.
             </h3>
             <hr class="black-hr">
-            <p class="text-center mb-5">
-              Getting paid made easy and more convenient.
+            <p class="heading-text text-center mb-5">
+              Power your business with our simple payment processing and watch your business grow.
             </p>
           </div>
         </div>
@@ -32,7 +32,7 @@
                           Download from Playstore
                         </h5>
                         <p>
-                          Download the Jiggle vendor app to your mobile device.
+                           Download the Jiggle vendor app to your mobile device.
                         </p>
                       </div>
                     </div>
@@ -76,11 +76,11 @@
                       </div>
                       <div class="col-sm-12 col-md-10">
                         <h5 class="get-started" style="font-weight:400">
-                          Start Receiving Payment
+                          Receiving Payment
                         </h5>
                         <p>
-                          Start receiving payments right away. You receive the
-                          money in your jiggle wallet, which you can transfer to your bank account anytime.
+                          Start receiving payments right away. You receive money
+                          in your jiggle wallet which is deposited into your bank account the next business day.
                         </p> 
                       </div>
                     </div>
@@ -113,7 +113,7 @@ export default {}
   font-family: 'Circularmedium';
   src: url('../../assets/fonts/circularmedium.ttf');
 }
-#get-payment {
+#get-started-quickly {
   background-color: #e5e5e5;
   padding: 5% 0 !important;
 }
@@ -121,6 +121,9 @@ p {
   font-size: 1rem !important;
   line-height: 1.5rem;
   font-family: 'Circularbook';
+}
+.heading-text {
+  color: #aeb2bc;
 }
 .get-started {
   font-family: 'Circularmedium' !important;
@@ -172,6 +175,12 @@ p {
   }
   .top-phones {
     display: none;
+  }
+  h3 {
+    font-size: 1rem !important;
+  }
+  h5 {
+    font-size: 1rem !important;
   }
 }
 @media only screen and (max-width: 400px) {

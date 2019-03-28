@@ -7,13 +7,13 @@
             <h3 class="get-started pb-2 text-white" style="font-weight: 400">
               Receive payment with Jiggle
             </h3>
-            <p class="text-white">
-              Spur your business to a whole new level<br>
+            <p>
+              Spur your business to a whole new level <br>
               Let’s take care of payments so you can focus on running your business.
             </p>
-            <button class="call-to-action" style="font-weight:400; font-size: 0.8rem;">
+            <b-button to="/vendor" class="call-to-action" style="font-weight:400; font-size: 0.8rem;">
               BECOME A VENDOR
-            </button>
+            </b-button>
           </div>
           <div class="col-md-3" />
           <div class="col-md-5">
@@ -51,6 +51,7 @@ export default {}
   border: none;
   color: #ffffff;
   font-family: 'Circularbook' !important;
+  padding: 12px 0px;
 }
 .call-to-action:hover{
   cursor: pointer;
@@ -65,6 +66,7 @@ export default {}
 }
 p {
   font-family: 'Circularbook' !important;
+  color: #aeb2bc;
 }
 @media only screen and (max-width: 800px) {
   .top-phone {

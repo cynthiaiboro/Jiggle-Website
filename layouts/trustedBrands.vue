@@ -59,8 +59,10 @@ export default {}
 }
 h3 {
   font-family: 'Circularmedium';
+  color: #2d3448;
 }
 p {
   font-family: 'Circularbook';
+  color : #aeb2bc;
 }
 </style>

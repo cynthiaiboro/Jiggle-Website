@@ -5,9 +5,12 @@
         <div class="d-flex justify-content-center align-items-center">
           <div>
             <h3 class="text-center get-started" style="font-weight: 500; color:#2D3448;">
-              Our Services
+              OUR SERVICES
             </h3>
             <hr class="blue-hr">
+            <p class="heading-text text-center">
+              Everything you need to collect payment and grow your business
+            </p>
           </div>
         </div>
         <div>
@@ -21,8 +24,12 @@
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
-                    Fast payment     
+                    Track Payment     
                   </h5>
+                  <p>
+                    Get quick access to all your transactions. 
+                    Check all payments received, see bank transfers and watch your business grow all within one app.
+                  </p>
                 </div>
               </div>
               <div class="col-md-4 col-12">
@@ -33,8 +40,11 @@
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
-                    Quick payout
+                    Cashless Experience
                   </h5>
+                  <p>
+                    Receive payment without having to handle cash. Get paid the cashless way and ensure maximum security.
+                  </p>
                 </div>
               </div>
               <div class="col-md-4 col-12">
@@ -45,8 +55,12 @@
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
-                    Mobile friendly
+                    Get Daily Payout
                   </h5>
+                  <p>
+                    You will love our next day payout feature.
+                    Your money is automatically deposited into your bank account the next business day.
+                  </p>
                 </div>
               </div>            
             </div>
@@ -92,5 +106,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 700px) {
+  .get-started {
+    font-size: 1rem !important;
+  }
+  .heading-text {
+  color: #aeb2bc;
+  }
 }
 </style>

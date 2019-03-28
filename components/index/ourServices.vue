@@ -92,4 +92,7 @@ export default {}
   height: 3px;
   background-color: #2f6deb;
 }
+p {
+  color: #aeb2bc;
+}
 </style>
