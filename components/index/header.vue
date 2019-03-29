@@ -11,7 +11,6 @@
           <b-navbar-toggle target="nav_item_collapse"/>
           <b-collapse id="nav_item_collapse" is-nav>
             <b-navbar-nav class="ml-auto">
-              <b-nav-item to="/" class="nav-link">Products</b-nav-item>
               <b-nav-item to="/vendor" class="nav-link">Vendors</b-nav-item>
               <b-nav-item to="/about" class="nav-link">About Us</b-nav-item>
               <b-nav-item to="/" class="nav-link">Blog</b-nav-item>
@@ -29,7 +28,6 @@
             <div class="after-nav-col-one">
               <div>
                 <h1 class="great-app">
-                  Hey Ooh!!
                   <br>Great app for your food budgeting and payment.
                 </h1>
                 <p class="great-app-text pb-4" style="font-size:1.1rem; color:#2d3448">
@@ -93,7 +91,7 @@ export default {}
   border-radius: 3px !important;
   font-family: 'Circularbook' !important;
   border: 2px solid #3e4353;
-  width: 140px;
+  width: 150px;
   height: 40px;
   background-color: #ffffff;
   color: #3e4353;
@@ -112,7 +110,7 @@ export default {}
 }
 .call-to-action {
   height: 45px;
-  width: 26%;
+  width: 150px;
   border-radius: 3px;
   background-color: #2f6deb;
   border: none;

@@ -28,7 +28,7 @@
                         Download from PlayStore
                       </h5>
                       <p>
-                        Download jiggle mobile app from google play store.
+                        Download Jiggle mobile app from google play store.
                       </p>
                     </div>
                   </div>
@@ -134,6 +134,9 @@
           <div class="d-flex d-sm-block col-md-6">
             <div class="d-flex justify-content-center align-items-center" style="height:90%">
               <img src="/screenshot_top.svg" alt="" class="top-phones">
+            </div>
+            <div class="d-flex justify-content-center align-items-center mt-3">
+              <img src="/googleplay dark.svg" alt="" class="top-phones">
             </div>
           </div>
         </div>
