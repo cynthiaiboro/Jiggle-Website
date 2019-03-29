@@ -1,5 +1,5 @@
 <template>
-  <div class="sign-up">
+  <div class="sign-up container">
     <h4>Enter New Password</h4>
     <hr>
     <p class="text-muted">
@@ -80,3 +80,11 @@ export default {
 }
 
 </script>
+
+<style>
+
+  .password-reset-form{
+    width: 20%;
+  }
+
+</style>

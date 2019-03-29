@@ -30,7 +30,7 @@
 
 
           <div v-if="passwordResetSuccessful" class="success mt-5">
-            <h3 class="text-center">
+            <h3 class="text-center mt-5">
               Success
             </h3>
             <p class="text-center">
@@ -55,8 +55,8 @@ import StickyNav from '../../../../layouts/stickyNav'
 import Loading from '../../../../components/shared/Loading'
 import PasswordResetForm from '../../../../components/shared/PasswordResetForm'
 
-const baseURl = 'https://api.jiggle.ng/'
-// const baseURl = 'http://jiggle.test/api/v1/'
+// const baseURl = 'https://api.jiggle.ng/'
+const baseURl = 'http://jiggle.test/api/v1/'
 
 export default {
   name: 'Index',
@@ -82,16 +82,13 @@ export default {
   },
   mounted(reference) {
     this.reference = this.$route.params.ref
-    this.validateReference()
+    this.validateReference(reference)
   },
   methods: {
     showError(title, message) {
       this.error.title = title
       this.error.body = message
       this.showErrorMsg = true
-    },
-    showForm() {
-      this.showPasswordReset = true
     },
     validateReference: function() {
       this.loading = true
@@ -100,7 +97,7 @@ export default {
         .$get(baseURl + 'account/forgot-password/' + this.reference)
         .then(res => {
           console.log(res)
-          this.showForm()
+          this.showPasswordReset = true
         })
         .catch(err => {
           const data = err.response.data
@@ -149,8 +146,8 @@ export default {
         this.$axios
           .post(baseURl + 'account/reset-password/' + this.reference, user)
           .then(res => {
-            this.validateReference(this.$route.params.ref)
             this.passwordResetSuccessful = true
+            this.showPasswordReset = false
           })
           .catch(() => {
             this.showError(
