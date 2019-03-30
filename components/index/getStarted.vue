@@ -53,7 +53,7 @@
                         Create an Account
                       </h5>
                       <p>
-                        Sign up with just your email.
+                        Sign up in few minutes with just your email and password.
                       </p>
                     </div>
                   </div>
