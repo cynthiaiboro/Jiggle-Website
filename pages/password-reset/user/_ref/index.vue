@@ -55,8 +55,8 @@ import StickyNav from '../../../../layouts/stickyNav'
 import Loading from '../../../../components/shared/Loading'
 import PasswordResetForm from '../../../../components/shared/PasswordResetForm'
 
-// const baseURl = 'https://api.jiggle.ng/'
-const baseURl = 'http://jiggle.test/api/v1/'
+const baseURl = 'https://api.jiggle.ng/'
+// const baseURl = 'http://jiggle.test/api/v1/'
 
 export default {
   name: 'Index',
@@ -130,7 +130,7 @@ export default {
 
     resetPassword(user) {
       this.formLoading = true
-      console.log(user)
+      // console.log(user)
       if(user.password.length < 6)
       {
           this.showError('', 'Your password cannot be less than 6 characters. Please check and try again')
