@@ -25,8 +25,8 @@
                   Great Budget Tool
                 </h5>
                 <p class="text-white">
-                  Get your meals budgeted  automatically when you fund your wallet.
-                  Keep track of your spending and get a well-rounded picture of how much money you spend on meals.
+                  Get your meals budgeted automatically when you fund your wallet.
+                  Keep track of your spending and get a well-rounded picture of your meal expenses.
                 </p>
               </div>
             </div>
@@ -47,8 +47,8 @@
                       Quick pay
                     </h5>
                     <p class="text-white">
-                      Jiggle makes ordering and paying for meal faster than
-                      ever – our payment process is quick, simple and stress-free. Avail yourself this seamless  experience.
+                      Our payment process is quick, simple and stress-free. 
+                      Order when you are ready and pay with a click. Avail yourself this seamless  experience.
                     </p>
                   </div>
                 </div>
@@ -71,7 +71,8 @@
                   Accessible
                 </h5>
                 <p class="text-white">
-                  Fund your wallet whenever you choose. Make payment for your meals whenever at any jiggle enabled  restaurant.
+                  Fund your wallet whenever you choose. Make payment for your meals whenever at any jiggle
+                  enabled restaurant.
                 </p>
               </div>
             </div>
@@ -164,6 +165,15 @@ p {
   .get-started-normal-background {
     padding: 15px 30px;
     text-align: center !important;
+  }
+  h3 {
+    font-size: 1.2rem !important;
+  }
+  h5 {
+    font-size: 1rem !important;
+  }
+  p {
+    font-size: 0.9rem !important;
   }
 }
 </style>

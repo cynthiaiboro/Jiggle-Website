@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="nav">
-      <div class="container pb-5 py-3">
+      <div class="container py-3">
         <b-navbar toggleable class="navbar-expand-lg px-0">
           <b-navbar-brand>
             <router-link to="/">
@@ -11,9 +11,9 @@
           <b-navbar-toggle target="nav_item_collapse"/>
           <b-collapse id="nav_item_collapse" is-nav>
             <b-navbar-nav class="ml-auto">
+              <b-nav-item to="/about" class="nav-link">About</b-nav-item>
               <b-nav-item to="/vendor" class="nav-link">Vendors</b-nav-item>
-              <b-nav-item to="/about" class="nav-link">About Us</b-nav-item>
-              <b-nav-item to="/" class="nav-link">Blog</b-nav-item>
+              <!-- <b-nav-item to="/" class="nav-link">Blog</b-nav-item> -->
               <b-button class="get-started-button" href="#get-started-quickly">GET STARTED</b-button>
             </b-navbar-nav>
           </b-collapse>
@@ -36,11 +36,12 @@
                   Stay on top of your budget effortlessly with Jiggle.
                 </p>
                 <div class="d-sm-inline">
-                  <img src="/googleplay dark.svg" alt height="45px" class="d-md-inline-block pr-2">
-                  <button
-                    class="call-to-action btnStarted"
+                  <img src="/googleplay dark.svg" height="45px" class="google-play d-md-inline-block pr-2">
+                  <b-button
+                    href="#get-started-quickly"
+                    class="call-to-action"
                     style="font-weight:400; font-size: 0.9rem;"
-                  >GET STARTED</button>
+                  >GET STARTED</b-button>
                 </div>
               </div>
             </div>
@@ -73,7 +74,7 @@ export default {}
   background-color: #ffffff;
 }
 .nav-link {
-  color: #000000 !important;
+  color: #2d3448 !important;
   padding: 4px 10px !important;
   font-size: 1rem !important;
   font-family: 'Circularbook' !important;
@@ -108,6 +109,9 @@ export default {}
   text-transform: capitalize;
   color : #1068F0 !important;
 }
+.great-app-text {
+  color: #2d3448;
+}
 .call-to-action {
   height: 45px;
   width: 150px;
@@ -116,6 +120,7 @@ export default {}
   border: none;
   color: #ffffff;
   font-family: 'Circularbook' !important;
+  padding: 12px 0px !important;
 }
 .call-to-action:hover {
   cursor: pointer;
@@ -127,7 +132,7 @@ export default {}
 .after-nav-col-one {
   display: flex;
   align-items: center;
-  padding-top: 3rem !important;
+  padding-top: 2rem !important;
 }
 .after-nav-col-one p {
   width: 70%;
@@ -158,6 +163,9 @@ export default {}
     border: none;
     color: #ffffff;
     margin-top: 5px;
+  }
+  .google-play {
+    width: 100%;
   }
 }
 

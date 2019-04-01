@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="about-us-nav">
-      <div class="container pb-5 py-3">
+      <div class="container py-3">
         <b-navbar toggleable class="navbar-expand-lg px-0">
           <b-navbar-brand>
             <router-link to="/">   
@@ -11,15 +11,15 @@
           <b-navbar-toggle target="nav_item_collapse" class="bg-light" />
           <b-collapse id="nav_item_collapse" is-nav>
             <b-navbar-nav class="ml-auto">
+              <b-nav-item to="/about" class="nav-link">
+                About
+              </b-nav-item>
               <b-nav-item to="/vendor" class="nav-link">
                 Vendors
               </b-nav-item>
-              <b-nav-item to="/about" class="nav-link">
-                About Us
-              </b-nav-item>
-              <b-nav-item to="/" class="nav-link">
+              <!-- <b-nav-item to="/" class="nav-link">
                 Blog
-              </b-nav-item>
+              </b-nav-item> -->
               <b-button class="get-started-button" href="#about-jiggle">
                 GET STARTED
               </b-button>
@@ -66,6 +66,7 @@ export default {}
 }
 #about-us-nav {
   background: url(/Frame.svg);
+  background-attachment: fixed;
 }
 .get-started-button {
   border-radius: 3px !important;

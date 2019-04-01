@@ -1,6 +1,6 @@
 <template>
   <div id="stickyheader">
-    <section class="navHeader py-2">
+    <section class="transbox navHeader py-2">
       <div class="container">
         <b-navbar toggleable class="navbar-expand-lg px-0">
           <b-navbar-brand>
@@ -11,18 +11,16 @@
           <b-navbar-toggle target="nav_item_collapse" class="bg-light" />
           <b-collapse id="nav_item_collapse" is-nav>
             <b-navbar-nav class="ml-auto">
+              <b-nav-item to="/about" class="nav-link">
+                About
+              </b-nav-item>
               <b-nav-item to="/vendor" class="nav-link">
                 Vendors
-              </b-nav-item>
-              <b-nav-item to="/about" class="nav-link">
-                About Us
               </b-nav-item>
               <b-nav-item to="/" class="nav-link">
                 Blog
               </b-nav-item>
-              <b-button class="get-started-button" href="#get-payment">
-                GET STARTED
-              </b-button>
+              <b-button class="get-started-button" href="#get-started-quickly">GET STARTED</b-button>
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>
@@ -70,22 +68,22 @@ export default {
 .get-started-button {
   border-radius: 3px !important;
   font-family: 'Circularbook' !important;
-  border: 2px solid #2f6deb;
+  border: 2px solid #3c3d41;
   width: 140px;
   height: 40px;
   background-color: #ffffff;
-  color: #2f6deb !important;
+  color: #3c3d41 !important;
   font-size: 1rem;
 }
 .get-started-button:hover {
   cursor: pointer;
   background: #ffffff;
-  color: #2f6deb !important;
+  color: #3c3d41 !important;
   border: 2px solid #ffffff;
   transition: ease-in 1s;
 }
 .navHeader {
-  background: #2f6deb !important;
+  background: rgba(0, 0, 0, 0.8) !important;
   color: #ffffff;
 }
 </style>

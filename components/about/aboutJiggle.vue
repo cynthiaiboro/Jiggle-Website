@@ -8,11 +8,11 @@
         <hr class="blue-hr">
         <div class="about-jiggle-text">
           <p class="text-center ml-5 mr-5">
-            Jiggle is a meal budgeting platform where users pay once to eat whenever and wherever. 
-            It is a fun and new way of ensuring that you eat throughout the month while giving your very best at life. 
-            <span class="about-jiggle-hidden-text">It  seeks to  simplify your budgeting and make you gain control over your spending. Jiggle provides a mobile 
-              payment method that gives you the convenience to make and receive payment for meals without having to handle cash or cards.
-              Our mission is to boost your productivity  and efficiency through the excellent services provided via our platform.</span>
+            Jiggle is a meal budgeting platform where users pay once to eat whenever and wherever.
+            It seeks to simplify your budgeting for meals and make you gain control over your spending.
+            <span class="about-jiggle-hidden-text">Jiggle provides state-of-the-art payment solution that creates a safe and secure platform which
+            enables anybody to make or receive payments, with ease and convenience. Our mission is to 
+            boost your productivity and efficiency through the excellent services provided via our platform.</span>
           </p>
         </div>
       </div>
