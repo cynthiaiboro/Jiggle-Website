@@ -26,7 +26,7 @@
                   <h5 class="h6-bold get-started" style="font-weight: 400">
                     Track Payment     
                   </h5>
-                  <p>
+                  <p class="px-3">
                     Get quick access to all your transactions. 
                     Check all payments received, see bank transfers and watch your business grow all within one app.
                   </p>
@@ -42,7 +42,7 @@
                   <h5 class="h6-bold get-started" style="font-weight: 400">
                     Cashless Experience
                   </h5>
-                  <p>
+                  <p class="px-3">
                     Receive payment without having to handle cash. Get paid the cashless way and ensure maximum security.
                   </p>
                 </div>
@@ -57,7 +57,7 @@
                   <h5 class="h6-bold get-started" style="font-weight: 400">
                     Get Daily Payout
                   </h5>
-                  <p>
+                  <p class="px-3">
                     You will love our next day payout feature.
                     Your money is automatically deposited into your bank account the next business day.
                   </p>
