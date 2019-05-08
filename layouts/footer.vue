@@ -4,7 +4,7 @@
       <div class="container text-dark">
         <div class="row">
           <div class="col-md-3 col-sm-12 footer-jiggle">
-            <img src="/logo.svg" height="25px">
+            <router-link to="/"><img src="/logo.svg" height="25px"></router-link>
             <p class="py-2 pr-4 text-white footer-note">Jiggle is a meal budgeting platform where users pay once to eat whenever and wherever</p>
             <img src="/googleplay dark.svg" class="mb-3" alt="" height="40px;">
           </div>
@@ -12,8 +12,8 @@
             <h6 class="mb-1 last-footer-header-color" style="font-weight:550">
               <span class="last-border">Comp</span><span>any</span>
             </h6>
-            <p class="mb-3 mt-2">
-              <router-link to ="/about" class="footer-text">About Us</router-link>
+            <p class="mb-2 my-1">
+              <router-link to ="/about" class="footer-text-link">About Us</router-link>
             </p>
             <p class="mb-3 footer-text">
               Blog
@@ -88,12 +88,22 @@ export default {
 
 <style scoped>
 #footer {
-  padding: 40px 0 15px 0;
-  background: #3E4353;
+  padding: 40px 0px 15px 0px;
+  background: #3e4353;
   color: #ffffff;
 }
 span {
   font-family: 'Circularmedium';
+}
+.footer-text-link {
+  font-size: 1rem !important;
+  color: white;
+  font-family: 'Circularbook';
+  line-height: 12px;
+}
+.footer-text-link:hover {
+  text-decoration: none !important;
+  color: #acacac;
 }
 .footer-fa-icon {
   margin-left: 20px;
@@ -147,6 +157,9 @@ span {
     font-size: 1rem !important;
   }
   .footer-text {
+    font-size: 0.9rem !important;
+  }
+  .footer-text-link {
     font-size: 0.9rem !important;
   }
   .footer {
