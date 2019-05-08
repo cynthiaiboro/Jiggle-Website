@@ -92,4 +92,9 @@ export default {}
   font-family: 'Circularbook';
   color: #ffffff;
 }
+@media only screen and (max-width: 700px) {
+  .get-started {
+    font-size: 1.3rem !important;
+  }
+}
 </style>

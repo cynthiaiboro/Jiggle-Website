@@ -87,7 +87,7 @@ p {
     margin-top: 2% !important;
   }
   #become-a-vendor {
-    padding: 5% 0 !important;
+    padding: 7% 0 !important;
   }
   h3 {
     font-size: 1.2rem !important;

@@ -174,5 +174,8 @@ p {
   p {
     font-size: 0.9rem !important;
   }
+  #why-us {
+  padding: 40px 0 0 0;
+}
 }
 </style>

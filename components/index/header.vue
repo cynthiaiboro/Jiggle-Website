@@ -177,7 +177,7 @@ export default {}
     width: 100%;
     text-align: center;
     font-size: 20px;
-    padding-top: 5px !important;
+    padding-top: 0px !important;
   }
   .call-to-action {
     margin-bottom: 5px;

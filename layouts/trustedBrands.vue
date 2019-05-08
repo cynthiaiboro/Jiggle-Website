@@ -69,5 +69,8 @@ p {
   h3 {
     font-size: 1.2rem !important;
   }
+  #trusted-brands {
+  padding: 40px 0 0 0;
+}
 }
 </style>

@@ -2,7 +2,7 @@
   <div id="stickyheader">
     <section class="transbox navHeader py-2">
       <div class="container">
-        <b-navbar toggleable class="navbar-expand-lg px-0">
+        <b-navbar toggleable class="navbar-expand-lg px-0 py-0">
           <b-navbar-brand>
             <router-link to="/">
               <img src="/logo.svg" height="38px" width="127px">

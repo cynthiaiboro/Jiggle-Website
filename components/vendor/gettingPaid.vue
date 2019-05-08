@@ -170,6 +170,9 @@ p {
   .get-started-normal-background {
     text-align: center;
   }
+  #get-started-quickly {
+  padding: 40px 0 0 0 !important;
+}
   .get-started-black-background {
     text-align: center !important;
   }

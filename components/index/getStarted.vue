@@ -225,6 +225,9 @@ p {
   p {
     font-size: 0.9rem !important;
   }
+  #get-started-quickly {
+  padding: 40px 0 0 0;
+  }
 }
 @media only screen and (max-width: 400px) {
   .top-phones {

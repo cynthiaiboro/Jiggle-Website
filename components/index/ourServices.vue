@@ -105,5 +105,8 @@ h5 {
 p {
   font-size: 0.9rem !important;
 }
+#our-services {
+  padding: 40px 0 0 0;
+}
 }
 </style>
