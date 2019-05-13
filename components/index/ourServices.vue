@@ -16,7 +16,7 @@
             <div class="row d-flex justify-content-center">
               <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
-                  <img src="/budget.svg" style="height: 75px"/>
+                  <img src="/budget.svg" style="height: 75px" class="flaticons"/>
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
@@ -29,7 +29,7 @@
               </div>
               <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
-                  <img src="/payment.svg" style="height: 75px"/>
+                  <img src="/payment.svg" style="height: 75px" class="flaticons"/>
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
@@ -42,7 +42,7 @@
               </div>
               <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
-                  <img src="/wallet.svg" style="height: 75px"/>
+                  <img src="/wallet.svg" style="height: 75px" class="flaticons"/>
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
@@ -66,6 +66,79 @@ export default {}
 </script>
 
 <style scoped>
+@-webkit-keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+}
+
 @font-face {
   font-family: 'Circularmedium';
   src: url('../../assets/fonts/circularmedium.ttf');
@@ -94,6 +167,10 @@ export default {}
 }
 p {
   color: #aeb2bc;
+}
+.flaticons {
+  animation-name: flipInX;
+  animation-duration: 6s;
 }
 @media only screen and (max-width: 700px) {
 h3 {

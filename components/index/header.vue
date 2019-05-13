@@ -35,7 +35,7 @@
                   Budget for your meals with ease and convenience. 
                   Stay on top of your budget effortlessly with Jiggle.
                 </p>
-                <div class="d-sm-inline">
+                <div class="d-sm-inline bounce">
                   <img src="/googleplay dark.svg" height="45px" class="google-play d-md-inline-block pr-2">
                   <b-button
                     href="#get-started-quickly"
@@ -62,6 +62,85 @@ export default {}
 </script>
 
 <style scoped>
+@-webkit-keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.bounceInRight {
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
 @font-face {
   font-family: 'Circularbook';
   src: url('../../assets/fonts/circularbook.ttf');
@@ -78,6 +157,10 @@ export default {}
   padding: 4px 10px !important;
   font-size: 1rem !important;
   font-family: 'Circularbook' !important;
+}
+.top-phones {
+  animation-name: bounceInRight;
+  animation-duration: 6s;
 }
 .nav-link:hover {
   color: #2f6deb !important;
