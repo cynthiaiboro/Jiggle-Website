@@ -18,9 +18,7 @@
             <div class="row d-flex justify-content-center">
               <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
-                  <div class="our-services-blue-background">
-                    <i class="fa fa-money" style="color:#ffffff; font-size:25px;" />
-                  </div>
+                  <img src="/location.svg" style="height: 75px"/>
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
@@ -34,9 +32,7 @@
               </div>
               <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
-                  <div class="our-services-blue-background">
-                    <i class="fa fa-clock-o" style="color:#ffffff; font-size:30px;" />                            
-                  </div>
+                  <img src="/cashless.svg" style="height: 75px"/>
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
@@ -49,9 +45,7 @@
               </div>
               <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
-                  <div class="our-services-blue-background">
-                    <i class="fa fa-mobile" style="color:#ffffff; font-size:35px;" />                                    
-                  </div>
+                  <img src="/daily.svg" style="height: 75px"/>
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
@@ -79,6 +73,7 @@
 }
 .get-started {
   font-family: 'Circularmedium' !important;
+  color: #2f6deb;
 }
 .position-our-services-blue-background {
   display: flex;
