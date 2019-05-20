@@ -15,9 +15,9 @@
             <p class="mb-2 my-1">
               <router-link to ="/about" class="footer-text-link">About Us</router-link>
             </p>
-            <!-- <p class="mb-3 footer-text">
+            <p class="mb-3 footer-text">
               Blog
-            </p> -->
+            </p>
             <p class="mb-3 footer-text">
               <router-link to ="/footer/faqs" class="footer-text-link">FAQ's</router-link>
             </p>
@@ -29,12 +29,12 @@
             <p class="mb-3 footer-text mt-2">
               Features
             </p>
-            <!-- <p class="mb-3 footer-text">
+            <p class="mb-3 footer-text">
               Client App
             </p>
             <p class="mb-3 footer-text">
               Vendor App
-            </p> -->
+            </p>
           </div>
           <div class="col-md-3 footer-jiggle">
             <h6 class="mb-2 last-footer-header-color" style="font-weight:550">
@@ -43,9 +43,9 @@
             <p class="mb-3 mt-2 footer-text">
               Terms and conditions
             </p>
-            <!-- <p class="mb-3 footer-text">
+            <p class="mb-3 footer-text">
               Privacy Policy
-            </p> -->
+            </p>
           </div>
           <div class="col-md-2 footer-jiggle">
             <h6 class="mb-2 last-footer-header-color" style="font-weight:550">

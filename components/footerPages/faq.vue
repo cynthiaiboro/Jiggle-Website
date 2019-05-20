@@ -1,84 +1,168 @@
 <template>
-    <div class="container mb-3">
-        <h3 class="text-center get-started" style="font-weight: 500; color:#2D3448;">
-              Frequently Asked Questions
-            </h3>
-            <hr class="blue-hr">
+  <div class="container mb-3">
+    <h3 class="text-center get-started" style="font-weight: 500; color:#2D3448;">
+        Frequently Asked Questions
+    </h3>
+    <hr class="blue-hr" />
+      <p class="text-center"> Need some help with some questions you need answered? Check below <br>
+       If you still can't find an answer to your question, please give us a call on +234-800-0000-000
+       or send an email to support@jiggle.ng.</p>
     <div role="tablist">
-    <b-card no-body class="mb-1">
-      <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block href="#" v-b-toggle.accordion-1 variant="info">Q1. What is Jiggle about?</b-button>
-      </b-card-header>
-      <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
-        <b-card-body>
-          <b-card-text class="answer">I start opened because</b-card-text>
-        </b-card-body>
-      </b-collapse>
-    </b-card>
+      <div class="row my-4">
+        <div class="col-md-6">
+        <h5>General </h5>
+          <b-card no-body class="mb-1">
+            <b-card-header header-tag="header" class="p-1" role="tab">
+              <b-button block href="#" v-b-toggle.accordion-1 variant="link">Q. What is Jiggle about?</b-button>
+            </b-card-header>
+            <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  <b-card-text class="answer">I start opened because</b-card-text>
+                </b-card-body>
+            </b-collapse>
+          </b-card>
 
-    <b-card no-body class="mb-1">
-      <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block href="#" v-b-toggle.accordion-2 variant="info">Q2. What is Jiggle about?</b-button>
-      </b-card-header>
-      <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
-        <b-card-body>
-          <b-card-text>I start opened because</b-card-text>
-        </b-card-body>
-      </b-collapse>
-    </b-card>
+          <b-card no-body class="mb-1">
+            <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block href="#" v-b-toggle.accordion-2 variant="link">Q. What is Jiggle about?</b-button>
+            </b-card-header>
+            <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                <b-card-text>{{ text }}</b-card-text>
+                </b-card-body>
+            </b-collapse>
+            </b-card>
 
-    <b-card no-body class="mb-1">
-      <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block href="#" v-b-toggle.accordion-3 variant="info">Q3. What is Jiggle about?</b-button>
-      </b-card-header>
-      <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
-        <b-card-body>
-          <b-card-text>{{ text }}</b-card-text>
-        </b-card-body>
-      </b-collapse>
-    </b-card>
-    <b-card no-body class="mb-1">
-      <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block href="#" v-b-toggle.accordion-4 variant="info">Q4. What is Jiggle about?</b-button>
-      </b-card-header>
-      <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
-        <b-card-body>
-          <b-card-text>I start opened because</b-card-text>
-        </b-card-body>
-      </b-collapse>
-    </b-card>
-    <b-card no-body class="mb-1">
-      <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block href="#" v-b-toggle.accordion-5 variant="info">Q5. What is Jiggle about?</b-button>
-      </b-card-header>
-      <b-collapse id="accordion-5" accordion="my-accordion" role="tabpanel">
-        <b-card-body>
-          <b-card-text>I start opened because</b-card-text>
-        </b-card-body>
-      </b-collapse>
-    </b-card>
-    <b-card no-body class="mb-1">
-      <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block href="#" v-b-toggle.accordion-6 variant="info">Q6. What is Jiggle about?</b-button>
-      </b-card-header>
-      <b-collapse id="accordion-6" accordion="my-accordion" role="tabpanel">
-        <b-card-body>
-          <b-card-text>I start opened because</b-card-text>
-        </b-card-body>
-      </b-collapse>
-    </b-card>
-    <b-card no-body class="mb-1">
-      <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block href="#" v-b-toggle.accordion-7 variant="info">Q7. What is Jiggle about?</b-button>
-      </b-card-header>
-      <b-collapse id="accordion-7" accordion="my-accordion" role="tabpanel">
-        <b-card-body>
-          <b-card-text>I start opened because</b-card-text>
-        </b-card-body>
-      </b-collapse>
-    </b-card>
+            <b-card no-body class="mb-1">
+            <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block href="#" v-b-toggle.accordion-3 variant="link">Q. What is Jiggle about?</b-button>
+            </b-card-header>
+            <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                <b-card-text>I start opened because</b-card-text>
+                </b-card-body>
+            </b-collapse>
+            </b-card>
+        </div>
+        
+        <div class="col-md-6">
+        <h5>Payments </h5>
+            <b-card no-body class="mb-1">
+            <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block href="#" v-b-toggle.accordion-4 variant="link">Q. What is Jiggle about?</b-button>
+            </b-card-header>
+            <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
+            <b-card-body>
+                <b-card-text>I start opened because</b-card-text>
+            </b-card-body>
+            </b-collapse>
+            </b-card>
+
+            <b-card no-body class="mb-1">
+            <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block href="#" v-b-toggle.accordion-5 variant="link">Q. What is Jiggle about?</b-button>
+            </b-card-header>
+            <b-collapse id="accordion-5" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                <b-card-text>I start opened because</b-card-text>
+                </b-card-body>
+            </b-collapse>
+            </b-card>
+
+            <b-card no-body class="mb-1">
+            <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block href="#" v-b-toggle.accordion-6 variant="link">Q. What is Jiggle about?</b-button>
+            </b-card-header>
+            <b-collapse id="accordion-6" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                <b-card-text>I start opened because</b-card-text>
+                </b-card-body>
+            </b-collapse>
+            </b-card>
+        </div>
+      </div>
+
+        
+
+        <div class="row mb-5">
+        <div class="col-md-6">
+        <h5>Plans </h5>
+          <b-card no-body class="mb-1">
+            <b-card-header header-tag="header" class="p-1" role="tab">
+              <b-button block href="#" v-b-toggle.accordion-7 variant="link">Q. What is Jiggle about?</b-button>
+            </b-card-header>
+            <b-collapse id="accordion-7" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  <b-card-text class="answer">I start opened because</b-card-text>
+                </b-card-body>
+            </b-collapse>
+          </b-card>
+
+          <b-card no-body class="mb-1">
+            <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block href="#" v-b-toggle.accordion-8 variant="link">Q. What is Jiggle about?</b-button>
+            </b-card-header>
+            <b-collapse id="accordion-8" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                <b-card-text>I start opened because</b-card-text>
+                </b-card-body>
+            </b-collapse>
+            </b-card>
+
+            <b-card no-body class="mb-1">
+            <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block href="#" v-b-toggle.accordion-9 variant="link">Q. What is Jiggle about?</b-button>
+            </b-card-header>
+            <b-collapse id="accordion-9" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                <b-card-text>I start opened because</b-card-text>
+                </b-card-body>
+            </b-collapse>
+            </b-card>
+        </div>
+        
+        <div class="col-md-6">
+        <h5>Vendors </h5>
+            <b-card no-body class="mb-1">
+            <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block href="#" v-b-toggle.accordion-10 variant="link">Q. What is Jiggle about?</b-button>
+            </b-card-header>
+            <b-collapse id="accordion-10" accordion="my-accordion" role="tabpanel">
+            <b-card-body>
+                <b-card-text>I start opened because</b-card-text>
+            </b-card-body>
+            </b-collapse>
+            </b-card>
+
+            <b-card no-body class="mb-1">
+            <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block href="#" v-b-toggle.accordion-11 variant="link">Q. What is Jiggle about?</b-button>
+            </b-card-header>
+            <b-collapse id="accordion-11" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                <b-card-text>I start opened because</b-card-text>
+                </b-card-body>
+            </b-collapse>
+            </b-card>
+
+            <b-card no-body class="mb-1">
+            <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block href="#" v-b-toggle.accordion-12 variant="link">Q. What is Jiggle about?</b-button>
+            </b-card-header>
+            <b-collapse id="accordion-12" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                <b-card-text>I start opened because</b-card-text>
+                </b-card-body>
+            </b-collapse>
+            </b-card>
+        </div>
+      </div>
+
+        
+
+        
   </div>
-    </div>
+  </div>
 </template>
 
 <script>
@@ -88,10 +172,19 @@ export default {
 </script>
 
 <style scoped>
+@font-face {
+  font-family: 'Circularbook';
+  src: url('../../assets/fonts/circularbook.ttf');
+}
+@font-face {
+  font-family: 'Circularmedium';
+  src: url('../../assets/fonts/circularmedium.ttf');
+}
 .btn-info {
-    color: #fff;
-    background-color: #2d3448;
-    border-color: #2d3448;
+    color: #2f6deb;
+    background-color: #f5f3f3;
+    border-color: #f5f3f3;
+    font-family: 'Circularbook';
 }
 .btn {
     text-align: left !important;
@@ -111,5 +204,8 @@ export default {
 }
 .card-body {
     background: #f5f3f3;
+}
+h4 {
+    color: #2d3448;
 }
 </style>
