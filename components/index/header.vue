@@ -48,7 +48,7 @@
           </div>
           <div class="col-md-6 d-none d-md-block pb-3">
             <div class="d-flex justify-content-center align-items-center">
-              <img src="/top-phone.svg" height="450vh" class="top-phones">
+              <img src="/top-phone.svg" height="450vh" class="top-phone">
             </div>
           </div>
         </div>
@@ -58,7 +58,8 @@
 </template>
 
 <script>
-export default {}
+export default {
+}
 </script>
 
 <style scoped>
@@ -137,6 +138,7 @@ export default {}
     transform: translate3d(0, 0, 0);
   }
 }
+
 .bounceInRight {
   -webkit-animation-name: bounceInRight;
   animation-name: bounceInRight;
@@ -158,7 +160,7 @@ export default {}
   font-size: 1rem !important;
   font-family: 'Circularbook' !important;
 }
-.top-phones {
+.top-phone {
   animation-name: bounceInRight;
   animation-duration: 6s;
 }
