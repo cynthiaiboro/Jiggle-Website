@@ -45,7 +45,7 @@ export default {}
 }
 .call-to-action {
   height: 45px;
-  width: 20%;
+  width: 22%;
   border-radius: 3px;
   background-color: #2f6deb;
   border: none;
@@ -90,6 +90,9 @@ p {
   }
   h3 {
     font-size: 1.2rem !important;
+  }
+  .call-to-action {
+    width: 160px;
   }
 }
 </style>
