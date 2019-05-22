@@ -114,11 +114,11 @@ export default {}
 <style scoped>
 @font-face {
   font-family: 'Circularbook';
-  src: url('../../assets/fonts/circularbook.ttf');
+  src: url('../../assets/fonts/Regular.ttf');
 }
 @font-face {
   font-family: 'Circularmedium';
-  src: url('../../assets/fonts/circularmedium.ttf');
+  src: url('../../assets/fonts/Medium.ttf');
 }
 #why-us {
   background: #3e4353;

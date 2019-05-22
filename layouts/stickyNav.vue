@@ -5,7 +5,7 @@
         <b-navbar toggleable class="navbar-expand-lg px-0">
           <b-navbar-brand>
             <router-link to="/">
-              <img src="/jiggle logo blue.svg" height="38px" width="127px">
+              <img src="/jiggle logo blue.svg" height="35px" width="127px">
             </router-link>
           </b-navbar-brand>
           <b-navbar-toggle target="nav_item_collapse"/>
@@ -16,6 +16,7 @@
               <b-nav-item to="/about" class="nav-link">About</b-nav-item>
               <b-nav-item to="/vendor" class="nav-link">Vendors</b-nav-item>
               <b-nav-item to="/" class="nav-link">Blog</b-nav-item>
+              <img src="/googleplay dark.svg" height="40px" class="google-play d-md-inline-block pr-2">
               <!-- <b-button class="get-started-button" href="#get-started-quickly">GET STARTED</b-button> -->
             </b-navbar-nav>
           </b-collapse>
@@ -36,7 +37,7 @@ export default {
 <style scoped>
 @font-face {
   font-family: 'Circularbook';
-  src: url('..//assets/fonts/circularbook.ttf');
+  src: url('..//assets/fonts/Regular.ttf');
 }
 #stickyheader {
   position: fixed;

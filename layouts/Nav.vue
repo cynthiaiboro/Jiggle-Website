@@ -32,11 +32,11 @@ export default {
 <style scoped>
 @font-face {
   font-family: 'Circularbook';
-  src: url('../assets/fonts/circularbook.ttf');
+  src: url('../assets/fonts/Regular.ttf');
 }
 @font-face {
   font-family: 'Circularbold';
-  src: url('../assets/fonts/circularbold.ttf');
+  src: url('../assets/fonts/Bold.ttf');
 }
 #nav {
   background-color: #ffffff;

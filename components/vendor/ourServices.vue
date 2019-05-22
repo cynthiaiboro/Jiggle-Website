@@ -69,7 +69,7 @@
 <style scoped>
 @font-face {
   font-family: 'Circularmedium';
-  src: url('../../assets/fonts/circularmedium.ttf');
+  src: url('../../assets/fonts/Medium.ttf');
 }
 .get-started {
   font-family: 'Circularmedium' !important;

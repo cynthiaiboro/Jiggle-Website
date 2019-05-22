@@ -4,7 +4,7 @@
       <div class="container">
         <div class="d-flex justify-content-center align-items-center">
           <div>
-            <h3 class="text-center get-started" style="font-weight: 500; color:#2D3448;">
+            <h3 class="text-center get-started" style="font-weight: 500; color:#00255E;">
               Our Services
             </h3>
             <hr class="blue-hr">
@@ -16,7 +16,7 @@
             <div class="row d-flex justify-content-center">
               <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
-                  <img src="/budget.svg" style="height: 75px" class="animated infinite bounce delay-2s"/>
+                  <img src="/budget.svg" style="height: 75px" class="wow animated bounce delay-2s"/>
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
@@ -29,7 +29,7 @@
               </div>
               <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
-                  <img src="/payment.svg" style="height: 75px" class="animated infinite bounce delay-2s"/>
+                  <img src="/payment.svg" style="height: 75px" class="wow animated bounce delay-2s"/>
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
@@ -42,7 +42,7 @@
               </div>
               <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
-                  <img src="/wallet.svg" style="height: 75px" class="animated infinite slower bounce delay-2s" />
+                  <img src="/wallet.svg" style="height: 75px" class="wow animated slower bounce delay-2s" />
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
@@ -68,7 +68,7 @@ export default {}
 <style scoped>
 @font-face {
   font-family: 'Circularmedium';
-  src: url('../../assets/fonts/circularmedium.ttf');
+  src: url('../../assets/fonts/Medium.ttf');
 }
 .get-started {
   font-family: 'Circularmedium' !important;

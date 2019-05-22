@@ -4,7 +4,7 @@
       <div class="container">
         <div class="d-flex justify-content-center align-items-center">
           <div>
-            <h3 class="text-center get-started" style="font-weight: 500; color:#2D3448;">
+            <h3 class="text-center get-started" style="font-weight: 500; color:#00255E;">
               Get Started Quickly
             </h3>
             <hr class="blue-hr">
@@ -151,15 +151,15 @@ export default {}
 <style scoped>
 @font-face {
   font-family: 'Circularbook';
-  src: url('../../assets/fonts/circularbook.ttf');
+  src: url('../../assets/fonts/Regular.ttf');
 }
 @font-face {
   font-family: 'Circularmedium';
-  src: url('../../assets/fonts/circularmedium.ttf');
+  src: url('../../assets/fonts/Medium.ttf');
 }
 @font-face {
   font-family: 'Circularlight';
-  src: url('../../assets/fonts/circularlight.ttf');
+  src: url('../../assets/fonts/Light.ttf');
 }
 #get-started-quickly {
   padding: 5% 0;
