@@ -107,11 +107,11 @@ export default {}
 <style scoped>
 @font-face {
   font-family: 'Circularbook';
-  src: url('../../assets/fonts/circularbook.ttf');
+  src: url('../../assets/fonts/Regular.ttf');
 }
 @font-face {
   font-family: 'Circularmedium';
-  src: url('../../assets/fonts/circularmedium.ttf');
+  src: url('../../assets/fonts/Medium.ttf');
 }
 #get-started-quickly {
   background-color: #e5e5e5;

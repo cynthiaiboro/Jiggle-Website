@@ -30,7 +30,7 @@
             <div class="after-nav-col-one">
               <div>
                 <h1 class="great-app">
-                  <br>Meal budgeting & payments.
+                  <br>Meal budgeting & payment
                 </h1>
                 <p class="great-app-text pb-4" style="font-size:1.1rem; color:#2d3448">
                   
@@ -148,11 +148,11 @@ export default {
 }
 @font-face {
   font-family: 'Circularbook';
-  src: url('../../assets/fonts/circularbook.ttf');
+  src: url('../../assets/fonts/Regular.ttf');
 }
 @font-face {
   font-family: 'Circularbold';
-  src: url('../../assets/fonts/circularbold.ttf');
+  src: url('../../assets/fonts/Bold.ttf');
 }
 #nav {
   background-color: #ffffff;

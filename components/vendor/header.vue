@@ -69,17 +69,20 @@ export default {
 <style scoped>
 @font-face {
   font-family: 'Circularbook';
-  src: url('../../assets/fonts/circularbook.ttf');
+  src: url('../../assets/fonts/Regular.ttf');
 }
 @font-face {
   font-family: 'Circularbold';
-  src: url('../../assets/fonts/circularbold.ttf');
+  src: url('../../assets/fonts/Bold.ttf');
 }
 .nav-link {
   color: #ffffff !important;
   padding: 4px 10px !important;
   font-size: 1rem !important;
   font-family: 'Circularbook' !important;
+}
+.nav-link:active {
+  color: #2f6deb !important;
 }
 .nav-link:hover {
   color: #2f6deb !important;

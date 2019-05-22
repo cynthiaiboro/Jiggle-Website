@@ -2,8 +2,8 @@
   <div>
     <section id="become-a-vendor">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4 vendor-text">
+        <div class="row text-center">
+          <div class="col-sm-12 vendor-text">
             <h3 class="get-started pb-2 text-white" style="font-weight: 400">
               Receive payment with Jiggle
             </h3>
@@ -15,8 +15,8 @@
               BECOME A VENDOR
             </b-button>
           </div>
-          <div class="col-md-3" />
-          <!-- <div class="col-md-5">
+          <!-- <div class="col-md-3" />
+          <div class="col-md-5">
             <img src="/vendor-phone.svg" class="top-phone">
           </div> -->
         </div>
@@ -32,11 +32,11 @@ export default {}
 <style scoped>
 @font-face {
   font-family: 'Circularbook';
-  src: url('../../assets/fonts/circularbook.ttf');
+  src: url('../../assets/fonts/Regular.ttf');
 }
 @font-face {
   font-family: 'Circularbold';
-  src: url('../../assets/fonts/circularbold.ttf');
+  src: url('../../assets/fonts/Bold.ttf');
 }
 #become-a-vendor {
   background: url(/vendor-background.svg);
@@ -45,7 +45,7 @@ export default {}
 }
 .call-to-action {
   height: 45px;
-  width: 60%;
+  width: 20%;
   border-radius: 3px;
   background-color: #2f6deb;
   border: none;
@@ -62,7 +62,6 @@ export default {}
 }
 .get-started {
   font-family: 'Circularbold' !important;
-  margin-top: 4%;
 }
 p {
   font-family: 'Circularbook' !important;
