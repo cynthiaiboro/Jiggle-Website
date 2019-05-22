@@ -1,7 +1,7 @@
 <template>
-  <div id="stickyheader">
-    <div class="shadow bg-white roundedtransbox navHeader">
-      <div class="container">
+    <div>
+    <section id="nav">
+      <div class="container py-3">
         <b-navbar toggleable class="navbar-expand-lg px-0">
           <b-navbar-brand>
             <router-link to="/">
@@ -11,43 +11,38 @@
           <b-navbar-toggle target="nav_item_collapse"/>
           <b-collapse id="nav_item_collapse" is-nav>
             <b-navbar-nav class="ml-auto">
-              <b-nav-item href="#our-services" class="nav-link">Budget</b-nav-item>
-              <b-nav-item href="#become-a-vendor" class="nav-link">Payment</b-nav-item>
               <b-nav-item to="/about" class="nav-link">About</b-nav-item>
               <b-nav-item to="/vendor" class="nav-link">Vendors</b-nav-item>
-              <b-nav-item to="/" class="nav-link">Blog</b-nav-item>
-              <!-- <b-button class="get-started-button" href="#get-started-quickly">GET STARTED</b-button> -->
+              <!-- <b-nav-item to="/" class="nav-link">Blog</b-nav-item> -->
+              <b-button class="get-started-button" href="#get-started-quickly">GET STARTED</b-button>
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>
       </div>
+    </section>
     </div>
-  </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {}
-  }
+
 }
 </script>
 
 <style scoped>
 @font-face {
   font-family: 'Circularbook';
-  src: url('..//assets/fonts/circularbook.ttf');
+  src: url('../assets/fonts/circularbook.ttf');
 }
-#stickyheader {
-  position: fixed;
-  top: 0px;
-  /* margin-top: 200px; */
-  width: 100%;
-  z-index: 999;
-  display: block;
+@font-face {
+  font-family: 'Circularbold';
+  src: url('../assets/fonts/circularbold.ttf');
+}
+#nav {
+  background-color: #ffffff;
 }
 .nav-link {
-  color: #32507e !important;
+  color: #2d3448 !important;
   padding: 4px 10px !important;
   font-size: 1rem !important;
   font-family: 'Circularbook' !important;
@@ -64,23 +59,16 @@ export default {
 .get-started-button {
   border-radius: 3px !important;
   font-family: 'Circularbook' !important;
-  border: 2px solid #3c3d41;
-  width: 140px;
+  border: 2px solid #3e4353;
+  width: 150px;
   height: 40px;
   background-color: #ffffff;
-  color: #3c3d41 !important;
-  font-size: 1rem;
+  color: #3e4353;
 }
 .get-started-button:hover {
   cursor: pointer;
-  background: #ffffff;
-  color: #3c3d41 !important;
-  border: 2px solid #ffffff;
-  transition: ease-in 1s;
-}
-.navHeader {
-  background: #ffffff !important;
-  box-shadow: #262627;
+  background: #3e4353;
   color: #ffffff;
+  transition: ease-in 1s;
 }
 </style>

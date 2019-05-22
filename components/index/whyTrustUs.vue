@@ -24,7 +24,7 @@
                 <h5 class="text-white get-started">
                   Great Budget Tool
                 </h5>
-                <p class="text-white">
+                <p>
                   Get your meals budgeted automatically when you fund your wallet.
                   Keep track of your spending and get a well-rounded picture of your meal expenses.
                 </p>
@@ -46,7 +46,7 @@
                     <h5 class="text-white get-started">
                       Quick pay
                     </h5>
-                    <p class="text-white">
+                    <p>
                       Our payment process is quick, simple and stress-free. 
                       Order when you are ready and pay with a click. Avail yourself this seamless  experience.
                     </p>
@@ -70,7 +70,7 @@
                 <h5 class="text-white get-started">
                   Accessible
                 </h5>
-                <p class="text-white">
+                <p>
                   Fund your wallet whenever you choose. Make payment for your meals whenever at any jiggle
                   enabled restaurant.
                 </p>
@@ -92,7 +92,7 @@
                     <h5 class="text-white get-started">
                       Secure purchase
                     </h5>
-                    <p class="text-white">
+                    <p>
                       Safety is our top priority and so we are committed to providing safe
                       and reliable transaction. We use the latest innovative technologies in IT security.
                     </p>
@@ -120,6 +120,10 @@ export default {}
   font-family: 'Circularmedium';
   src: url('../../assets/fonts/circularmedium.ttf');
 }
+@font-face {
+  font-family: 'Circularlight';
+  src: url('../../assets/fonts/circularlight.ttf');
+}
 #why-us {
   background-color: #2f6deb;
   padding: 5% 0;
@@ -129,7 +133,7 @@ export default {}
 }
 .white-hr {
   width: 100px;
-  height: 3px;
+  height: 1px;
   background-color: rgb(255, 255, 255);
 }
 .our-services-position-column-two {
@@ -145,7 +149,9 @@ h5 {
   font-family: 'Circularmedium';
 }
 p {
-  font-family: 'Circularbook';
+  font-family: 'Circularlight';
+  font-size: 1.1rem !important;
+  color: #e7F0Fe;
 }
 .get-started-main-number {
   margin-bottom: 0px;
@@ -175,5 +181,8 @@ p {
   p {
     font-size: 0.9rem !important;
   }
+  #why-us {
+  padding: 40px 0 0 0;
+}
 }
 </style>

@@ -46,7 +46,7 @@ export default {}
 }
 .blue-hr {
   width: 100px;
-  height: 3px;
+  height: 1px;
   background-color: #2f6deb;
 }
 #trusted-brands {
@@ -69,5 +69,8 @@ p {
   h3 {
     font-size: 1.2rem !important;
   }
+  #trusted-brands {
+  padding: 40px 0 0 0;
+}
 }
 </style>

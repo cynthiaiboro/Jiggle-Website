@@ -7,7 +7,7 @@
             <h3 class="text-center get-started" style="font-weight:400">
               Getting Payments Made Easy - Get Started Today.
             </h3>
-            <hr class="black-hr">
+            <hr class="blue-hr">
             <p class="heading-text text-center mb-5">
               Power your business with our simple payment processing and watch your business grow.
             </p>
@@ -128,10 +128,10 @@ p {
 .get-started {
   font-family: 'Circularmedium' !important;
 }
-.black-hr {
+.blue-hr {
   width: 100px;
   height: 3px;
-  background-color: #3e4353;
+  background-color: #2f6deb;;
 }
 .number-grey {
   height: 40px;
@@ -170,6 +170,9 @@ p {
   .get-started-normal-background {
     text-align: center;
   }
+  #get-started-quickly {
+  padding: 40px 0 0 0 !important;
+}
   .get-started-black-background {
     text-align: center !important;
   }

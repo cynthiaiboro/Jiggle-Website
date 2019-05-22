@@ -136,9 +136,6 @@
             <div class="d-flex justify-content-center align-items-center" style="height:90%">
               <img src="/screenshot_top.svg" alt="" class="top-phones">
             </div>
-            <div class="d-flex justify-content-center align-items-center mt-3">
-              <img src="/googleplay dark.svg" alt="" class="top-phones">
-            </div>
           </div>
         </div>
       </div>
@@ -160,15 +157,23 @@ export default {}
   font-family: 'Circularmedium';
   src: url('../../assets/fonts/circularmedium.ttf');
 }
+@font-face {
+  font-family: 'Circularlight';
+  src: url('../../assets/fonts/circularlight.ttf');
+}
 #get-started-quickly {
   padding: 5% 0;
   background: #f2f2f2;
   color: #ffffff;
 }
+h5 {
+  font-size: 21px !important;
+}
 p {
-  font-size: 1rem !important;
+  font-size: 1.1rem !important;
   line-height: 1.5rem;
   font-family: 'Circularbook';
+  color: #35527F;
 }
 .heading-text {
   color: #aeb2bc;
@@ -179,7 +184,7 @@ p {
 }
 .blue-hr {
   width: 100px;
-  height: 3px;
+  height: 1px;
   background-color: #2f6deb;
 }
 .number-blue {
@@ -224,6 +229,9 @@ p {
   }
   p {
     font-size: 0.9rem !important;
+  }
+  #get-started-quickly {
+  padding: 40px 0 0 0;
   }
 }
 @media only screen and (max-width: 400px) {

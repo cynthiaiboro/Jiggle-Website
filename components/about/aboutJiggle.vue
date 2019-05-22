@@ -52,8 +52,17 @@ export default {}
   background-color: #2f6deb;
 }
 @media only screen and (max-width: 700px) {
+  #about-jiggle {
+    padding: 40px 0px 0px 0px;
+  }
   .about-jiggle-hidden-text {
     display: none;
+  }
+  .get-started {
+    font-size: 1.2rem !important;
+  }
+  .about-jiggle-text {
+    font-size: 1rem !important;
   }
 }
 </style>

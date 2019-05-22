@@ -18,15 +18,13 @@
             <div class="row d-flex justify-content-center">
               <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
-                  <div class="our-services-blue-background">
-                    <i class="fa fa-money" style="color:#ffffff; font-size:25px;" />
-                  </div>
+                  <img src="/location.svg" style="height: 75px"/>
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
                     Track Payment     
                   </h5>
-                  <p>
+                  <p class="px-3">
                     Get quick access to all your transactions. 
                     Check all payments received, see bank transfers and watch your business grow all within one app.
                   </p>
@@ -34,30 +32,26 @@
               </div>
               <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
-                  <div class="our-services-blue-background">
-                    <i class="fa fa-clock-o" style="color:#ffffff; font-size:30px;" />                            
-                  </div>
+                  <img src="/cashless.svg" style="height: 75px"/>
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
                     Cashless Experience
                   </h5>
-                  <p>
+                  <p class="px-3">
                     Receive payment without having to handle cash. Get paid the cashless way and ensure maximum security.
                   </p>
                 </div>
               </div>
               <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
-                  <div class="our-services-blue-background">
-                    <i class="fa fa-mobile" style="color:#ffffff; font-size:35px;" />                                    
-                  </div>
+                  <img src="/daily.svg" style="height: 75px"/>
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
                     Get Daily Payout
                   </h5>
-                  <p>
+                  <p class="px-3">
                     You will love our next day payout feature.
                     Your money is automatically deposited into your bank account the next business day.
                   </p>
@@ -79,6 +73,7 @@
 }
 .get-started {
   font-family: 'Circularmedium' !important;
+  color: #2f6deb;
 }
 .position-our-services-blue-background {
   display: flex;
@@ -120,5 +115,8 @@ p {
   p {
     font-size: 0.9rem !important;
   }
+  #our-services {
+  padding: 40px 0 0 0;
+}
 }
 </style>

@@ -16,7 +16,7 @@
             <div class="row d-flex justify-content-center">
               <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
-                  <img src="/budget.svg" style="height: 75px"/>
+                  <img src="/budget.svg" style="height: 75px" class="animated infinite bounce delay-2s"/>
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
@@ -29,7 +29,7 @@
               </div>
               <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
-                  <img src="/payment.svg" style="height: 75px"/>
+                  <img src="/payment.svg" style="height: 75px" class="animated infinite bounce delay-2s"/>
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
@@ -42,7 +42,7 @@
               </div>
               <div class="col-md-4 col-12">
                 <div class="position-our-services-blue-background">
-                  <img src="/wallet.svg" style="height: 75px"/>
+                  <img src="/wallet.svg" style="height: 75px" class="animated infinite slower bounce delay-2s" />
                 </div>
                 <div class="text-center mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
@@ -89,11 +89,11 @@ export default {}
 }
 .blue-hr {
   width: 100px;
-  height: 3px;
+  height: 1px;
   background-color: #2f6deb;
 }
 p {
-  color: #aeb2bc;
+  color: #35527f;
 }
 @media only screen and (max-width: 700px) {
 h3 {
@@ -104,6 +104,9 @@ h5 {
   }
 p {
   font-size: 0.9rem !important;
+}
+#our-services {
+  padding: 40px 0 0 0;
 }
 }
 </style>
