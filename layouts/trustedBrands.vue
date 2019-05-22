@@ -46,7 +46,7 @@ export default {}
 }
 .blue-hr {
   width: 100px;
-  height: 3px;
+  height: 1px;
   background-color: #2f6deb;
 }
 #trusted-brands {

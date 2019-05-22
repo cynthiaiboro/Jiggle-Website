@@ -1,28 +1,27 @@
 <template>
   <div id="stickyheader">
-    <section class="transbox navHeader py-2">
+    <div class="shadow bg-white roundedtransbox navHeader">
       <div class="container">
-        <b-navbar toggleable class="navbar-expand-lg px-0 py-0">
+        <b-navbar toggleable class="navbar-expand-lg px-0">
           <b-navbar-brand>
             <router-link to="/">
-              <img src="/logo.svg" height="38px" width="127px">
+              <img src="/jiggle logo blue.svg" height="38px" width="127px">
             </router-link>
           </b-navbar-brand>
-          <b-navbar-toggle target="nav_item_collapse" class="bg-light" />
+          <b-navbar-toggle target="nav_item_collapse"/>
           <b-collapse id="nav_item_collapse" is-nav>
             <b-navbar-nav class="ml-auto">
-              <b-nav-item to="/about" class="nav-link">
-                About
-              </b-nav-item>
-              <b-nav-item to="/vendor" class="nav-link">
-                Vendors
-              </b-nav-item>
-              <b-button class="get-started-button" href="#get-started-quickly">GET STARTED</b-button>
+              <b-nav-item href="#our-services" class="nav-link">Budget</b-nav-item>
+              <b-nav-item href="#become-a-vendor" class="nav-link">Payment</b-nav-item>
+              <b-nav-item to="/about" class="nav-link">About</b-nav-item>
+              <b-nav-item to="/vendor" class="nav-link">Vendors</b-nav-item>
+              <b-nav-item to="/" class="nav-link">Blog</b-nav-item>
+              <!-- <b-button class="get-started-button" href="#get-started-quickly">GET STARTED</b-button> -->
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>
       </div>
-    </section>
+    </div>
   </div>
 </template>
 
@@ -48,13 +47,13 @@ export default {
   display: block;
 }
 .nav-link {
-  color: #ffffff !important;
+  color: #32507e !important;
   padding: 4px 10px !important;
   font-size: 1rem !important;
   font-family: 'Circularbook' !important;
 }
 .nav-link:hover {
-  color: #e3e3e4 !important;
+  color: #2f6deb !important;
   padding: 4px 10px !important;
   transition: 1s;
   text-decoration: none !important;
@@ -80,7 +79,8 @@ export default {
   transition: ease-in 1s;
 }
 .navHeader {
-  background: rgba(0, 0, 0, 0.8) !important;
+  background: #ffffff !important;
+  box-shadow: #262627;
   color: #ffffff;
 }
 </style>

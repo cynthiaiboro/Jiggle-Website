@@ -16,9 +16,9 @@
             </b-button>
           </div>
           <div class="col-md-3" />
-          <div class="col-md-5">
+          <!-- <div class="col-md-5">
             <img src="/vendor-phone.svg" class="top-phone">
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -62,7 +62,7 @@ export default {}
 }
 .get-started {
   font-family: 'Circularbold' !important;
-  margin-top: 40%;
+  margin-top: 4%;
 }
 p {
   font-family: 'Circularbook' !important;

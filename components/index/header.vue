@@ -11,10 +11,12 @@
           <b-navbar-toggle target="nav_item_collapse"/>
           <b-collapse id="nav_item_collapse" is-nav>
             <b-navbar-nav class="ml-auto">
+              <b-nav-item href="#our-services" class="nav-link">Budget</b-nav-item>
+              <b-nav-item href="#become-a-vendor" class="nav-link">Payment</b-nav-item>
               <b-nav-item to="/about" class="nav-link">About</b-nav-item>
               <b-nav-item to="/vendor" class="nav-link">Vendors</b-nav-item>
-              <!-- <b-nav-item to="/" class="nav-link">Blog</b-nav-item> -->
-              <b-button class="get-started-button" href="#get-started-quickly">GET STARTED</b-button>
+              <b-nav-item to="/" class="nav-link">Blog</b-nav-item>
+              <!-- <b-button class="get-started-button" href="#get-started-quickly">GET STARTED</b-button> -->
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>
@@ -28,12 +30,13 @@
             <div class="after-nav-col-one">
               <div>
                 <h1 class="great-app">
-                  <br>Great app for your food budgeting and payment.
+                  <br>Meal budgeting & payments.
                 </h1>
                 <p class="great-app-text pb-4" style="font-size:1.1rem; color:#2d3448">
+                  
+                  Budget for your meals with ease and convenience.
                   Pay once to eat wherever and whenever.
-                  Budget for your meals with ease and convenience. 
-                  Stay on top of your budget effortlessly with Jiggle.
+                  <!-- Stay on top of your budget effortlessly with Jiggle. -->
                 </p>
                 <div class="d-sm-inline bounce">
                   <img src="/googleplay dark.svg" height="45px" class="google-play d-md-inline-block pr-2">
@@ -46,7 +49,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 d-none d-md-block pb-3">
+          <div class="col-md-6 d-none d-md-block py-3">
             <div class="d-flex justify-content-center align-items-center">
               <img src="/top-phone.svg" height="450vh" class="top-phone">
             </div>
@@ -154,8 +157,11 @@ export default {
 #nav {
   background-color: #ffffff;
 }
+#after-nav {
+  padding: 20px 0 20px 0;
+}
 .nav-link {
-  color: #2d3448 !important;
+  color: #32507e !important;
   padding: 4px 10px !important;
   font-size: 1rem !important;
   font-family: 'Circularbook' !important;
@@ -196,6 +202,7 @@ export default {
 }
 .great-app-text {
   color: #2d3448;
+  font-size: 1.2rem !important;
 }
 .call-to-action {
   height: 45px;
@@ -217,12 +224,13 @@ export default {
 .after-nav-col-one {
   display: flex;
   align-items: center;
-  padding-top: 2rem !important;
+  padding-top: 4rem !important;
+  padding-bottom: 2rem !important;
 }
 .after-nav-col-one p {
   width: 70%;
   margin-top: 20px;
-  font-size: 1rem !important;
+  font-size: 1.1rem !important;
   font-family: 'Circularbook' !important;
 }
 

@@ -89,11 +89,11 @@ export default {}
 }
 .blue-hr {
   width: 100px;
-  height: 3px;
+  height: 1px;
   background-color: #2f6deb;
 }
 p {
-  color: #aeb2bc;
+  color: #35527f;
 }
 @media only screen and (max-width: 700px) {
 h3 {
