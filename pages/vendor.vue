@@ -2,8 +2,8 @@
   <div>
     <Header />
     <stickyNav v-if="enableStickyNav" />
-    <gettingPaid />
     <ourServices />
+    <gettingPaid />
     <whyTrustUs />
     <trustedBrands />
     <Footer />

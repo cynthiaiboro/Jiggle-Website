@@ -172,14 +172,6 @@ export default {
 </script>
 
 <style scoped>
-@font-face {
-  font-family: 'Circularbook';
-  src: url('../../assets/fonts/Regular.ttf');
-}
-@font-face {
-  font-family: 'Circularmedium';
-  src: url('../../assets/fonts/Medium.ttf');
-}
 .btn-info {
     color: #2f6deb;
     background-color: #f5f3f3;

@@ -144,6 +144,10 @@ export default {
   font-size: 1rem !important;
   font-family: 'Circularbook' !important;
 }
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+}
 @media only screen and (max-width: 800px) {
   .great-app {
     width: 100%;

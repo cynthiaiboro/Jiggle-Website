@@ -30,14 +30,6 @@ export default {}
 </script>
 
 <style scoped>
-@font-face {
-  font-family: 'Circularbook';
-  src: url('../../assets/fonts/Regular.ttf');
-}
-@font-face {
-  font-family: 'Circularbold';
-  src: url('../../assets/fonts/Bold.ttf');
-}
 #become-a-vendor {
   background: url(/vendor-background.svg);
   background-attachment: fixed;

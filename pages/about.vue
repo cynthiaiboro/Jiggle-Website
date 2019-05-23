@@ -1,25 +1,31 @@
 <template>
   <div>
+    <Nav />
     <Header />
     <stickyNav v-if="enableStickyNav" />
-    <aboutJiggle />
+    <ourTeam />
+    <whyTrustUs />
     <trustedBrands />
     <Footer />
   </div>
 </template>
 
 <script>
+import Nav from '../layouts/Nav'
 import Header from '../components/about/header'
+import ourTeam from '../components/about/ourTeam'
 import stickyNav from '../layouts/stickyNav'
-import aboutJiggle from '../components/about/aboutJiggle'
+import whyTrustUs from '../components/index/whyTrustUs'
 import trustedBrands from '../layouts/trustedBrands'
 import Footer from '../layouts/footer'
 
 export default {
   components: {
+    Nav,
     Header,
+    ourTeam,
     stickyNav,
-    aboutJiggle,
+    whyTrustUs,
     trustedBrands,
     Footer
   },

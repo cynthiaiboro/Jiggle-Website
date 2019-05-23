@@ -146,14 +146,6 @@ export default {
   -webkit-animation-name: bounceInRight;
   animation-name: bounceInRight;
 }
-@font-face {
-  font-family: 'Circularbook';
-  src: url('../../assets/fonts/Regular.ttf');
-}
-@font-face {
-  font-family: 'Circularbold';
-  src: url('../../assets/fonts/Bold.ttf');
-}
 #nav {
   background-color: #ffffff;
 }
@@ -233,7 +225,10 @@ export default {
   font-size: 1.1rem !important;
   font-family: 'Circularbook' !important;
 }
-
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+}
 @media only screen and (max-width: 800px) {
   .great-app {
     width: 100%;
