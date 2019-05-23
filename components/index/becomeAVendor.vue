@@ -57,7 +57,7 @@ export default {}
 }
 p {
   font-family: 'Circularbook' !important;
-  color: #aeb2bc;
+  color: #ffffff;
 }
 @media only screen and (max-width: 800px) {
   .top-phone {

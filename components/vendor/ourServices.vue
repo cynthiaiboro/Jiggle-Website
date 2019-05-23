@@ -14,9 +14,9 @@
         <div>
           <div class="mt-5 our-services-four-section ">
             <div class="row d-flex justify-content-center">
-              <div class="col-md-3 col-12 services-card">
+              <div class="col-md-3 col-12 services-card shadow">
                 <div class="pb-3">
-                  <img src="/location.svg" style="height: 75px" class="wow animated bounce delay-2s"/>
+                  <img src="/location.svg" style="height: 65px" class="wow animated bounce delay-2s"/>
                 </div>
                 <div class="mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
@@ -27,9 +27,9 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-3 col-12 services-card">
+              <div class="col-md-3 col-12 services-card shadow">
                 <div class="pb-3">
-                  <img src="/cashless.svg" style="height: 75px" class="wow animated bounce delay-2s"/>
+                  <img src="/cashless.svg" style="height: 65px" class="wow animated bounce delay-2s"/>
                 </div>
                 <div class="mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
@@ -40,9 +40,9 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-3 col-12 services-card">
+              <div class="col-md-3 col-12 services-card shadow">
                 <div class="pb-3">
-                  <img src="/daily.svg" style="height: 75px" class="wow animated slower bounce delay-2s" />
+                  <img src="/daily.svg" style="height: 65px" class="wow animated slower bounce delay-2s" />
                 </div>
                 <div class="mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
@@ -67,7 +67,7 @@ export default {}
 
 <style scoped>
 .get-started {
-  font-family: 'Circularmedium' !important;
+  font-family: 'Circularheavy' !important;
   color: #00255E;
 }
 .h6-bold {
@@ -79,9 +79,9 @@ export default {}
 }
 .services-card {
   background-color: #ffffff;
-  box-shadow: 0px 0px 24px rgba(6, 24, 51, 0.05);
+  /* box-shadow: 0px 0px 24px rgba(6, 24, 51, 0.05); */
   border-radius: 10px;
-  padding: 70px 30px 30px 30px;
+  padding: 50px 30px 20px 30px;
   margin: 20px;
 }
 .blue-hr {
