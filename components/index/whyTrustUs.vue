@@ -5,7 +5,7 @@
         <div class="d-flex justify-content-center align-items-center">
           <div>
             <h3 class="text-center get-started" style="font-weight: 500;">
-              Why Trust Us
+              Why use Jiggle?
             </h3>
             <hr class="white-hr">
           </div>
@@ -112,18 +112,6 @@ export default {}
 </script>
 
 <style scoped>
-@font-face {
-  font-family: 'Circularbook';
-  src: url('../../assets/fonts/Bold.ttf');
-}
-@font-face {
-  font-family: 'Circularmedium';
-  src: url('../../assets/fonts/Medium.ttf');
-}
-@font-face {
-  font-family: 'Circularlight';
-  src: url('../../assets/fonts/Light.ttf');
-}
 #why-us {
   background-color: #2f6deb;
   padding: 5% 0;

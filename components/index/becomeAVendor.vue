@@ -30,14 +30,6 @@ export default {}
 </script>
 
 <style scoped>
-@font-face {
-  font-family: 'Circularbook';
-  src: url('../../assets/fonts/Regular.ttf');
-}
-@font-face {
-  font-family: 'Circularbold';
-  src: url('../../assets/fonts/Bold.ttf');
-}
 #become-a-vendor {
   background: url(/vendor-background.svg);
   background-attachment: fixed;
@@ -45,7 +37,7 @@ export default {}
 }
 .call-to-action {
   height: 45px;
-  width: 20%;
+  width: 22%;
   border-radius: 3px;
   background-color: #2f6deb;
   border: none;
@@ -65,7 +57,7 @@ export default {}
 }
 p {
   font-family: 'Circularbook' !important;
-  color: #aeb2bc;
+  color: #ffffff;
 }
 @media only screen and (max-width: 800px) {
   .top-phone {
@@ -90,6 +82,9 @@ p {
   }
   h3 {
     font-size: 1.2rem !important;
+  }
+  .call-to-action {
+    width: 160px;
   }
 }
 </style>

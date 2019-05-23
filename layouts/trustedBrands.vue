@@ -36,14 +36,6 @@ export default {}
 </script>
 
 <style scoped>
-@font-face {
-  font-family: 'Circularbook';
-  src: url('..//assets/fonts/Regular.ttf');
-}
-@font-face {
-  font-family: 'Circularmedium';
-  src: url('..//assets/fonts/Medium.ttf');
-}
 .blue-hr {
   width: 100px;
   height: 1px;

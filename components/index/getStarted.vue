@@ -149,22 +149,10 @@ export default {}
 </script>
 
 <style scoped>
-@font-face {
-  font-family: 'Circularbook';
-  src: url('../../assets/fonts/Regular.ttf');
-}
-@font-face {
-  font-family: 'Circularmedium';
-  src: url('../../assets/fonts/Medium.ttf');
-}
-@font-face {
-  font-family: 'Circularlight';
-  src: url('../../assets/fonts/Light.ttf');
-}
 #get-started-quickly {
   padding: 5% 0;
-  background: #f2f2f2;
-  color: #ffffff;
+  background: #F9FBFF;
+  color: #F9FBFF;
 }
 h5 {
   font-size: 21px !important;

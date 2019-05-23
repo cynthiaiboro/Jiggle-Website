@@ -2,9 +2,9 @@
   <div>
     <indexHeader />
     <stickyNav v-if="enableStickyNav" />
+    <ourServices />
     <getStarted />
     <becomeAVendor />
-    <ourServices />
     <whyTrustUs />
     <trustedBrands />
     <Footer />

@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Circularbook';
+    src: url('../fonts/Regular.ttf');
+}
+@font-face {
+    font-family: 'Circularmedium';
+    src: url('../fonts/Medium.ttf');
+}
+@font-face {
+    font-family: 'Circularlight';
+    src: url('../fonts/Light.ttf');
+}
+@font-face {
+    font-family: 'Circularbold';
+    src: url('../fonts/Bold.ttf');
+}
+@font-face {
+    font-family: 'Circularheavy';
+    src: url('../fonts/Heavy.ttf');
+}
+.blue-hr {
+    width: 100px;
+    height: 2px;
+    background-color: #2f6deb;
+  }
+  .navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+  }
+  body {
+      overflow-x: hidden !important;
+  }

@@ -14,41 +14,41 @@
         <div>
           <div class="mt-5 our-services-four-section ">
             <div class="row d-flex justify-content-center">
-              <div class="col-md-4 col-12">
-                <div class="position-our-services-blue-background">
-                  <img src="/budget.svg" style="height: 75px" class="wow animated bounce delay-2s"/>
+              <div class="col-md-3 col-12 services-card shadow">
+                <div class="pb-3">
+                  <img src="/budget.svg" style="height: 65px" class="wow animated bounce delay-2s"/>
                 </div>
-                <div class="text-center mt-4">
+                <div class="mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
                     Meal Budgeting
                   </h5>
-                  <p class="px-3">
+                  <p class="py-3">
                     Budget for your meal conveniently, utilize your money effectively and gain control over your spending.
                   </p>
                 </div>
               </div>
-              <div class="col-md-4 col-12">
-                <div class="position-our-services-blue-background">
-                  <img src="/payment.svg" style="height: 75px" class="wow animated bounce delay-2s"/>
+              <div class="col-md-3 col-12 services-card shadow">
+                <div class="pb-3">
+                  <img src="/payment.svg" style="height: 65px" class="wow animated bounce delay-2s"/>
                 </div>
-                <div class="text-center mt-4">
+                <div class="mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
                     Easy Payment
                   </h5>
-                  <p class="px-3">
+                  <p class="py-3">
                     Pay with a single click. Simply scan a QR code using your smartphone and voila you are good to go.
                   </p>
                 </div>
               </div>
-              <div class="col-md-4 col-12">
-                <div class="position-our-services-blue-background">
-                  <img src="/wallet.svg" style="height: 75px" class="wow animated slower bounce delay-2s" />
+              <div class="col-md-3 col-12 services-card shadow">
+                <div class="pb-3">
+                  <img src="/wallet.svg" style="height: 65px" class="wow animated slower bounce delay-2s" />
                 </div>
-                <div class="text-center mt-4">
+                <div class="mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
                     Accessible Wallet
                   </h5>
-                  <p class="px-3">
+                  <p class="py-3">
                     Make payment for your meals from any device. Pay seamlessly for meals anytime and at any jiggle-enabled food outlet.
                   </p>
                 </div>
@@ -66,26 +66,23 @@ export default {}
 </script>
 
 <style scoped>
-@font-face {
-  font-family: 'Circularmedium';
-  src: url('../../assets/fonts/Medium.ttf');
-}
 .get-started {
-  font-family: 'Circularmedium' !important;
-  color: #2f6deb;
-}
-.position-our-services-blue-background {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  font-family: 'Circularheavy' !important;
+  color: #00255E;
 }
 .h6-bold {
   font-weight: 650;
 }
 #our-services {
   padding: 5% 0;
+  background-color: #FDFEFF;
+}
+.services-card {
   background-color: #ffffff;
+  /* box-shadow: 0px 0px 24px rgba(6, 24, 51, 0.5); */
+  border-radius: 10px;
+  padding: 50px 30px 20px 30px;
+  margin: 20px;
 }
 .blue-hr {
   width: 100px;
@@ -93,7 +90,7 @@ export default {}
   background-color: #2f6deb;
 }
 p {
-  color: #35527f;
+  color: #35527F;
 }
 @media only screen and (max-width: 700px) {
 h3 {
@@ -106,7 +103,11 @@ p {
   font-size: 0.9rem !important;
 }
 #our-services {
-  padding: 40px 0 0 0;
+  padding: 40px 0 40px 0;
+}
+.services-card {
+  margin: 20px 50px;
+  max-width: 15em;
 }
 }
 </style>
