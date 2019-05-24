@@ -6,12 +6,12 @@
           Simplyfing Meal <br> Budgeting and Payment
         </h4>
         <hr class="blue-hr">
-        <p class="text-center ml-5 mr-5">
+        <p class="text-center ml-5 mr-5 pb-4">
           Jiggle is a meal budgeting platform where users pay once to eat whenever and wherever.
           It simplifies your budgeting for meals and makes you gain control over your spending.
           <span class='hidden-text'>
-         Our mission is to boost your productivity and efficiency through the excellent services provided via our platform.</span>
-         
+         Our mission is to boost your productivity and efficiency through the excellent services
+        provided via our platform.</span>
           </p>
       </div>
     </section>
@@ -30,7 +30,6 @@ export default {}
 }
 #about-us-nav {
   background-color: #FCFCFC;
-  height: 70vh;
 }
 .about-us {
   padding-top: 100px;
@@ -55,5 +54,8 @@ p {
   .hidden-text {
     display: none !important;
   }
+  .about-us {
+  padding-top: 60px;
+}
 }
 </style>
