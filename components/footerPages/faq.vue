@@ -92,6 +92,8 @@
             </b-collapse>
           </b-card>  
         </div>
+         <b-dropdown size="md" text="Large" class="m-2">
+    </b-dropdown>
       </div>
   </div>
   </div>
