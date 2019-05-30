@@ -103,7 +103,7 @@ p {
   font-size: 0.9rem !important;
 }
 #our-services {
-  padding: 40px 0 40px 0;
+  padding: 30px 0px;
 }
 .services-card {
   margin: 20px 50px;

@@ -11,9 +11,9 @@
           <b-navbar-toggle target="nav_item_collapse" class="bg-light"/>
           <b-collapse id="nav_item_collapse" is-nav>
             <b-navbar-nav class="ml-auto">
-              <b-nav-item href="#our-services" class="nav-link">Budget</b-nav-item>
-              <b-nav-item href="#become-a-vendor" class="nav-link">Payment</b-nav-item>
               <b-nav-item to="/about" class="nav-link">About</b-nav-item>
+              <b-nav-item to="/#our-services" class="nav-link">Budget</b-nav-item>
+              <b-nav-item to="/#become-a-vendor" class="nav-link">Payment</b-nav-item>
               <b-nav-item to="/vendor" class="nav-link">Vendors</b-nav-item>
               <b-nav-item to="/" class="nav-link">Blog</b-nav-item>
             </b-navbar-nav>
@@ -141,7 +141,7 @@ export default {
 .after-nav-col-one p {
   width: 70%;
   margin-top: 20px;
-  font-size: 1rem !important;
+  font-size: 1.1rem !important;
   font-family: 'Circularbook' !important;
 }
 .navbar-light .navbar-toggler {

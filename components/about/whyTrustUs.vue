@@ -5,7 +5,7 @@
         <div class="d-flex justify-content-center align-items-center">
           <div>
             <h3 class="text-center get-started" style="font-weight: 500;">
-              Why Use Jiggle
+              Why Trust Us?
             </h3>
             <hr class="white-hr">
           </div>
@@ -16,17 +16,16 @@
               <div class="col-md-2">
                 <div class="d-none d-md-flex justify-content-center align-items-center number-white">
                   <p class="get-started-main-number">
-                    <i class="fa fa-check" aria-hidden="true" /> 
+                    <i class="fa fa-check" aria-hidden="true" />
                   </p>
                 </div>
               </div>
               <div class="col-sm-12 col-md-10">
                 <h5 class="text-white get-started">
-                  Improved Customer Experience
+                  Privacy
                 </h5>
-                <p class="text-white">
-                  Give your customers a simple, secure and convenient way to pay.
-                  Paying with Jiggle means easy transactions and happy customers.
+                <p>
+                  Every data provided while using our platform is kept private and will be used solely for the purpose for which it is being provided.
                 </p>
               </div>
             </div>
@@ -38,17 +37,16 @@
                   <div class="col-md-2">
                     <div class="d-none d-md-flex justify-content-center align-items-center number-white">
                       <p class="get-started-main-number">
-                        <i class="fa fa-check" aria-hidden="true" /> 
+                        <i class="fa fa-check" aria-hidden="true" />
                       </p>
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-10">
                     <h5 class="text-white get-started">
-                      Great Tracking Tool
+                      Transparency
                     </h5>
-                    <p class="text-white">
-                      Use one platform to track sales volume, payments and customers.
-                      Gain a better understanding of your business and make more informed decisions.
+                    <p>
+                      Be assured of maximum transparency in communicating the details of every single transaction you make.
                     </p>
                   </div>
                 </div>
@@ -62,17 +60,17 @@
               <div class="col-md-2">
                 <div class="d-none d-md-flex justify-content-center align-items-center number-white">
                   <p class="get-started-main-number">
-                    <i class="fa fa-check" aria-hidden="true" /> 
+                    <i class="fa fa-check" aria-hidden="true" />
                   </p>
                 </div>
               </div>
               <div class="col-sm-12 col-md-10">
                 <h5 class="text-white get-started">
-                  Safe Payment
+                  Security
                 </h5>
-                <p class="text-white">
-                  Reduce the risk associated with accepting cash.
-                  Our cashless payment platform ensures maximum safety for your money.
+                <p>
+                  To ensure out-most security, we use our safe and reliable financial platform that
+                  tracks and keeps accurate records of your transactions.
                 </p>
               </div>
             </div>
@@ -90,11 +88,10 @@
                   </div>
                   <div class="col-sm-12 col-md-10">
                     <h5 class="text-white get-started">
-                      Maximum Security
+                      Accessibility
                     </h5>
-                    <p class="text-white">
-                      Safety is our top priority.
-                      Your account details are protected and stored in servers in a secure location
+                    <p>
+                      Manage your account from any android device. Do ensure to keep all your credentials safe and never disclose your password or pin to anyone.
                     </p>
                   </div>
                 </div>
@@ -104,7 +101,7 @@
         </div>
       </div>
     </section>
-  </div>  
+  </div>
 </template>
 
 <script>
@@ -112,16 +109,8 @@ export default {}
 </script>
 
 <style scoped>
-@font-face {
-  font-family: 'Circularbook';
-  src: url('../../assets/fonts/Regular.ttf');
-}
-@font-face {
-  font-family: 'Circularmedium';
-  src: url('../../assets/fonts/Medium.ttf');
-}
 #why-us {
-  background: #3e4353;
+  background-color: #2d3448;
   padding: 5% 0;
 }
 .get-started {
@@ -129,7 +118,7 @@ export default {}
 }
 .white-hr {
   width: 100px;
-  height: 3px;
+  height: 1px;
   background-color: rgb(255, 255, 255);
 }
 .our-services-position-column-two {
@@ -139,13 +128,18 @@ export default {}
 .get-started-normal-background {
   padding: 30px 30px;
   margin-left: auto;
+  color: #2d3448;
 }
 h5 {
   font-family: 'Circularmedium';
 }
 p {
-  font-family: 'Circularbook';
-  font-size: 1.1rem;
+  font-family: 'Circularlight';
+  font-size: 1.1rem !important;
+  color: #e7F0Fe;
+}
+.get-started-main-number {
+  margin-bottom: 0px;
 }
 .number-white {
   height: 40px;
@@ -156,9 +150,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.get-started-main-number {
-  margin-bottom: 0px;
 }
 
 @media only screen and (max-width: 700px) {

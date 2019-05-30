@@ -12,8 +12,8 @@
           <b-collapse id="nav_item_collapse" is-nav>
             <b-navbar-nav class="ml-auto">
               <b-nav-item to="/about" class="nav-link">About</b-nav-item>
-              <b-nav-item to="/#our-services" class="nav-link">Budget</b-nav-item>
-              <b-nav-item to="/#become-a-vendor" class="nav-link">Payment</b-nav-item>
+              <b-nav-item href="#our-services" class="nav-link">Budget</b-nav-item>
+              <b-nav-item href="#become-a-vendor" class="nav-link">Payment</b-nav-item>
               <b-nav-item to="/vendor" class="nav-link">Vendors</b-nav-item>
               <b-nav-item to="/" class="nav-link">Blog</b-nav-item>
               <img src="/googleplay dark.svg" height="40px" class="google-play d-md-inline-block pr-2">

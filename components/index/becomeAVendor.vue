@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <section id="become-a-vendor">
+  <div id="become-a-vendor">
+    <section>
       <div class="container">
         <div class="row text-center">
           <div class="col-sm-12 vendor-text">
@@ -33,7 +33,7 @@ export default {}
 #become-a-vendor {
   background: url(/vendor-background.svg);
   background-attachment: fixed;
-  padding: 3% 0;
+  padding: 5% 0;
 }
 .call-to-action {
   height: 45px;

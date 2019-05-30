@@ -4,7 +4,7 @@
     <div class="container py-5">
     <h3 class="text-center"> Our Team </h3>
     <hr class="blue-hr">
-    <p class="text-center">We are a team of experienced business proffessionals and engineers</p>
+    <p class="text-center">We are a team of experienced business professionals and engineers</p>
         <div class="row py-4 cards">
           <div class="col-md-3">
           <b-card
@@ -55,7 +55,7 @@
           </div>
         </div>
 
-        <div class="row py-4 cards">
+        <div class="row py-md-4 cards">
           <div class="col-md-3">
           <b-card
             no-body
@@ -68,7 +68,7 @@
           </b-card>
           <b-card class="my-3 footer">
             <b-card-footer class="card-footer text-center">Sam Esidem<br>
-            <span  style="color: #8994A5;"> Programmer </span></b-card-footer>
+            <span  style="color: #8994A5;"> Member </span></b-card-footer>
           </b-card>
           </div>
 
@@ -116,9 +116,6 @@ export default {}
 <style scoped>
 #our-team {
   background-color: #f4f5f8;
-}
-.team-member {
-
 }
 .card-body {
   padding: 0;

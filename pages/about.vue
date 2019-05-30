@@ -15,7 +15,7 @@ import Nav from '../layouts/Nav'
 import Header from '../components/about/header'
 import ourTeam from '../components/about/ourTeam'
 import stickyNav from '../layouts/stickyNav'
-import whyTrustUs from '../components/index/whyTrustUs'
+import whyTrustUs from '../components/about/whyTrustUs'
 import trustedBrands from '../layouts/trustedBrands'
 import Footer from '../layouts/footer'
 

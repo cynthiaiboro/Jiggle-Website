@@ -11,9 +11,9 @@
           <b-navbar-toggle target="nav_item_collapse"/>
           <b-collapse id="nav_item_collapse" is-nav>
             <b-navbar-nav class="ml-auto">
+              <b-nav-item to="/about" class="nav-link">About</b-nav-item>
               <b-nav-item href="#our-services" class="nav-link">Budget</b-nav-item>
               <b-nav-item href="#become-a-vendor" class="nav-link">Payment</b-nav-item>
-              <b-nav-item to="/about" class="nav-link">About</b-nav-item>
               <b-nav-item to="/vendor" class="nav-link">Vendors</b-nav-item>
               <b-nav-item to="/" class="nav-link">Blog</b-nav-item>
               <!-- <b-button class="get-started-button" href="#get-started-quickly">GET STARTED</b-button> -->
@@ -27,7 +27,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="after-nav-col-one">
+            <div class="after-nav-col-one py-md-5 py-sm-1">
               <div>
                 <h1 class="great-app">
                   <br>Meal budgeting & payment
@@ -188,9 +188,10 @@ export default {
 }
 .great-app {
   width: 80%;
-  font-family: 'Circularbold' !important;
+  font-family: 'Circularheavy' !important;
   text-transform: capitalize;
   color : #1068F0 !important;
+  font-size: 45px;
 }
 .great-app-text {
   color: #2d3448;
@@ -216,7 +217,6 @@ export default {
 .after-nav-col-one {
   display: flex;
   align-items: center;
-  padding-top: 4rem !important;
   padding-bottom: 2rem !important;
 }
 .after-nav-col-one p {
@@ -233,7 +233,7 @@ export default {
   .great-app {
     width: 100%;
     text-align: center;
-    font-size: 20px;
+    font-size: 40px;
     padding-top: 50px !important;
   }
   .after-nav-col-one {

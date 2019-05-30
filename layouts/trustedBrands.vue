@@ -62,7 +62,7 @@ p {
     font-size: 1.2rem !important;
   }
   #trusted-brands {
-  padding: 40px 0 0 0;
+  padding: 40px 0px 20px 0px;
 }
 }
 </style>
