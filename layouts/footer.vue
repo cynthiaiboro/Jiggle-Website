@@ -8,9 +8,9 @@
             <p class="py-2 pr-4 footer-note">Jiggle is a meal budgeting platform where users pay once to eat whenever and wherever</p>
             <img src="/googleplay dark.svg" class="mb-3" alt="" height="40px;">
           </div>
-          <div class="col-md-9 col-sm-12">
+          <div class="col-md-4">
             <div class="row">
-              <div class="col-sm-3 footer-jiggle">
+              <div class="col-md-6 col-sm-6 footer-jiggle">
                 <h6 class="mb-1 last-footer-header-color" style="font-weight:550">
                   <span>Company</span>
                 </h6>
@@ -24,7 +24,7 @@
                   <router-link to ="/footer/faqs" class="footer-text-link">FAQ's</router-link>
                 </p>
               </div>
-              <div class="col-sm-3 footer-jiggle">
+              <div class="col-md-6 footer-jiggle">
                 <h6 class="mb-2 last-footer-header-color" style="font-weight:550">
                   <span>Products</span>
                 </h6>
@@ -38,36 +38,42 @@
                   Wallet
                 </p>
               </div>
-              <div class="col-sm-3 footer-jiggle">
-                <h6 class="mb-2 last-footer-header-color" style="font-weight:550">
-                  <span>Legal</span>
-                </h6>
-                <p class="mb-3 mt-2 footer-text">
-                  Terms and conditions
-                </p>
-                <p class="mb-3 footer-text">
-                  Privacy Policy
-                </p>
-              </div>
-              <div class="col-sm-3 footer-jiggle">
-                <h6 class="mb-2 last-footer-header-color" style="font-weight:550">
-                  <span>Connect with us</span>
-                </h6>                    
-                <p class="mb-3 footer-text">
-                  support@jiggle.ng
-                </p>                    
-                <p class="mb-3 footer-text">
-                  +234 000 0000 000
-                </p>   
-                <i class="fa fa-twitter footer-icons" />                 
-                <i class="fa fa-instagram footer-fa-icon footer-icons" />                 
-                <i class="fa fa-facebook footer-fa-icon footer-icons" />                
-              </div>
             </div>
           </div>
-      </div>
+            <div class="col-md-5">
+              <div class="row">
+                <div class="col-md-6 footer-jiggle">
+                  <h6 class="mb-2 last-footer-header-color" style="font-weight:550">
+                    <span>Legal</span>
+                  </h6>
+                  <p class="mb-3 mt-2 footer-text">
+                    Terms and conditions
+                  </p>
+                  <p class="mb-3 footer-text">
+                    Privacy Policy
+                  </p>
+                </div>
+                <div class="col-md-6 footer-jiggle">
+                  <h6 class="mb-2 last-footer-header-color" style="font-weight:550">
+                    <span>Connect with us</span>
+                  </h6>                    
+                  <p class="mb-3 footer-text">
+                    support@jiggle.ng
+                  </p>                    
+                  <p class="mb-3 footer-text">
+                    +234 000 0000 000
+                  </p>   
+                  <i class="fa fa-twitter footer-icons" />                 
+                  <i class="fa fa-instagram footer-fa-icon footer-icons" />                 
+                  <i class="fa fa-facebook footer-fa-icon footer-icons" />                
+                </div>
+              </div>
+            </div>
+        </div>
+        <div>
         <hr class="mt-3 footer-hr">
         <footer class="footer text-center">{{currentYear}} &copy; {{siteName}}. All rights reserved.</footer>
+        </div>
       </div>
     </section> 
   </div>

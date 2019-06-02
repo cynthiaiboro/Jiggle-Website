@@ -6,7 +6,7 @@
     <hr class="blue-hr">
     <p class="text-center">We are a team of experienced business professionals and engineers</p>
         <div class="row py-4 cards">
-          <div class="col-md-3">
+          <div class="col-md-3 image-card">
           <b-card
             no-body
             style="max-width: 20rem; border-radius:8px"
@@ -22,7 +22,7 @@
           </b-card>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3 image-card">
           <b-card
             no-body
             style="max-width: 20rem; border-radius:8px"
@@ -38,7 +38,7 @@
           </b-card>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3 image-card">
           <b-card
             no-body
             style="max-width: 20rem; border-radius:8px"
@@ -56,7 +56,7 @@
         </div>
 
         <div class="row py-md-4 cards">
-          <div class="col-md-3">
+          <div class="col-md-3 image-card">
           <b-card
             no-body
             style="max-width: 20rem; border-radius:8px"
@@ -72,7 +72,7 @@
           </b-card>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3 image-card">
           <b-card
             no-body
             style="max-width: 20rem; border-radius:8px"
@@ -88,7 +88,7 @@
           </b-card>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3 image-card">
           <b-card
             no-body
             style="max-width: 20rem; border-radius:8px"
@@ -148,6 +148,8 @@ p {
   align-items: center;
 }
 @media only screen and (max-width: 700px) {
-
+.image-card {
+  padding-left: 45px;
+}
 }
 </style>

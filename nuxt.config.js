@@ -31,13 +31,16 @@ module.exports = {
           'sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN',
         crossorigin: 'anonymous'
       },
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ],
     script: [
       {
         src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js',
         type: 'text/javascript'
       }
+      // {
+      //   src: '@/assets/css/main.js'
+      // }
       // {
       //   src:
       //     "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",
@@ -64,7 +67,11 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-
+  plugins: [
+    {
+      src: 'plugins/aos'
+    }
+  ],
   /*
   ** Nuxt.js modules
   */
