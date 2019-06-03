@@ -1,10 +1,10 @@
 <template>
-  <div class="container mb-3">
+  <div class="container mt-md-5 mb-3">
     <h3 class="text-center get-started" style="font-weight: 500; color:#2D3448;">
         Frequently Asked Questions
     </h3>
     <hr class="blue-hr" />
-      <p class="text-center"> Need some help with some questions you need answered? Check below <br>
+      <p class="text-center pb-4"> Need some help with some questions you need answered? Check below <br>
        If you still can't find an answer to your question, please give us a call on +234-000-0000-000
        or send an email to support@jiggle.ng.</p>
     <div role="tablist">
@@ -245,5 +245,10 @@ h4 {
 }
 .question:hover, :active {
     text-decoration: none;
+}
+@media only screen and (max-width: 700px) {
+  h3 {
+    padding-top: 28px !important;
+  }
 }
 </style>
