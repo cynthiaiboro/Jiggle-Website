@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="nav">
-      <div class="container py-3">
+      <div class="container">
         <b-navbar toggleable class="navbar-expand-lg px-0">
           <b-navbar-brand>
             <router-link to="/">
@@ -27,10 +27,10 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="after-nav-col-one py-md-5 py-sm-1">
+            <div class="after-nav-col-one py-md-5 mt-md-5">
               <div>
-                <h1 class="great-app">
-                  <br>Meal budgeting & payment
+                <h1 class="great-app" >
+                  Meal <br class="hide desktop-show"> budgeting & payment
                 </h1>
                 <p class="great-app-text pb-4" style="font-size:1.1rem; color:#2d3448">
                   
@@ -38,7 +38,7 @@
                   Pay once to eat wherever and whenever.
                   <!-- Stay on top of your budget effortlessly with Jiggle. -->
                 </p>
-                <div class="d-sm-inline">
+                <div class="d-md-inline d-flex justify-content-center">
                   <img src="/googleplay dark.svg" height="45px" class="google-play d-sm-inline pr-2">
                   <b-button
                     href="#get-started-quickly"
@@ -49,9 +49,9 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 d-none d-md-block py-3">
+          <div class="col-md-6 d-md-block py-3">
             <div class="d-flex justify-content-center align-items-center">
-              <img src="/top-phone.svg" height="450vh" class="top-phone">
+              <img src="/top-phone.svg" height="450vh" class="phone">
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default {
   font-size: 1rem !important;
   font-family: 'Circularbook' !important;
 }
-.top-phone {
+.phone {
   animation-name: slideInUp;
   animation-duration: 2s;
 }
@@ -90,6 +90,9 @@ export default {
 }
 .nav-item:last-of-type .nav-link {
   padding: 4px 30px 4px 10px !important;
+}
+.hide {
+    display: none;
 }
 .get-started-button {
   border-radius: 3px !important;
@@ -148,7 +151,7 @@ export default {
   font-family: 'Circularbook' !important;
 }
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(20, 18, 18, 0.5);
   border: none;
 }
 @media only screen and (max-width: 800px) {
@@ -167,23 +170,31 @@ export default {
     width: 100%;
     border: none;
     color: #ffffff;
-    margin-top: 5px;
+    margin: 0px 5px !important
+    /* margin-top: 5px; */
   }
 }
 
 @media only screen and (max-width: 700px) {
   .great-app {
     width: 100%;
-    font-size: 30px;
-    padding-top: 0px !important;
+    font-size: 35px;
+    padding-top: 20px !important;
+    padding-right: 30px;
+  }
+  .after-nav-col-one p {
+    padding-right: 30px !important;
   }
   .call-to-action {
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     width: 140px;
     height: 46px;
   }
+  .desktop-show {
+        display: initial;
+    }
   #after-nav {
-  padding: 20px 0px !important;
+  padding: 0px 0px !important;
 }
 }
 </style>

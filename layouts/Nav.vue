@@ -1,7 +1,7 @@
 <template>
     <div>
     <section id="nav">
-      <div class="container py-3">
+      <div class="container">
         <b-navbar toggleable class="navbar-expand-lg px-0">
           <b-navbar-brand>
             <router-link to="/">

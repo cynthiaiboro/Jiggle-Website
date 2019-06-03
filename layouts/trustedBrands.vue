@@ -5,25 +5,25 @@
         <div class="d-flex justify-content-center align-items-center">
           <div>
             <h3 class="text-center get-started" style="font-weight: 500; color:#00255E;">
-              We work with Trusted Brands
+              We work with a Trusted Brand
             </h3>
             <hr class="blue-hr">
             <p class="text-center">
-              We work with a number of global partners
+              Our global partner
             </p>
           </div>
         </div>
-        <div class="brand-logo mt-5">
+        <div class="brand-logo my-2">
           <div class="row">
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-12 d-flex justify-content-center">
               <img src="/paystack.svg" alt="Paystack Logo" class="main-brand-logo">
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <!-- <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <img src="/flutterwave.svg" alt="Paystack Logo" class="main-brand-logo">
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <img src="/mastercard.svg" alt="Paystack Logo" class="main-brand-logo">
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@ export default {}
 }
 #trusted-brands {
   background-color: #ffffff;
-  padding: 5% 0;
+  padding: 4% 0;
 }
 .main-brand-logo {
   width: 100%;

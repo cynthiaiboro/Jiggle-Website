@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="about-us-nav">
-      <div class="container about-us py-md-5">
+      <div class="container about-us py-md-5 mt-md-5">
         <h4 class="text-center best-solution pt-md-5">
           Simplifying Meal <br> Budgeting and Payment
         </h4>
@@ -29,7 +29,7 @@ export default {}
   background-color: #2f6deb;
 }
 #about-us-nav {
-  background-color: #FCFCFC;
+  background-color:  #ffffff;
 }
 .about-us {
   padding-top: 100px;

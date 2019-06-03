@@ -5,7 +5,7 @@
         <b-navbar toggleable class="navbar-expand-lg px-0">
           <b-navbar-brand>
             <router-link to="/">
-              <img src="/jiggle logo blue.svg" height="35px" width="127px">
+              <img src="/jiggle logo blue.svg" height="38px" width="127px">
             </router-link>
           </b-navbar-brand>
           <b-navbar-toggle target="nav_item_collapse"/>

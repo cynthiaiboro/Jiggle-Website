@@ -147,3 +147,6 @@
   body {
       overflow-x: hidden !important;
   }
+  .navbar-toggler {
+      padding: 0px !important;
+  }

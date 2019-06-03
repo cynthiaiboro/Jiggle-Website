@@ -14,7 +14,7 @@
         <div>
           <div class="mt-5 our-services-four-section ">
             <div class="row d-flex justify-content-center">
-              <div class="col-md-3 col-12 services-card shadow">
+              <div class="col-md-3 col-12 services-card shadow-sm">
                 <div class="pb-3">
                   <img src="/budget.svg" style="height: 65px" class="animated pulse infinite delay-2s"/>
                 </div>
@@ -27,7 +27,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-3 col-12 services-card shadow">
+              <div class="col-md-3 col-12 services-card shadow-sm">
                 <div class="pb-3">
                   <img src="/payment.svg" style="height: 65px" class="animated pulse infinite delay-2s"/>
                 </div>
@@ -40,7 +40,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-3 col-12 services-card shadow">
+              <div class="col-md-3 col-12 services-card shadow-sm">
                 <div class="pb-3">
                   <img src="/wallet.svg" style="height: 65px" class="animated pulse infinite delay-2s" />
                 </div>
