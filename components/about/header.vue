@@ -55,10 +55,14 @@ p {
     display: none !important;
   }
   .about-us {
-  padding-top: 40px;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
   .best-solution {
-    font-size: 20px !important;
+    font-size: 25px !important;
   }
+  #about-us-nav {
+ padding: 0px 13px !important;
+}
 }
 </style>

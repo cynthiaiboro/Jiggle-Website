@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="nav">
-      <div class="container">
+      <div class="container py-1">
         <b-navbar toggleable class="navbar-expand-lg px-0">
           <b-navbar-brand>
             <router-link to="/">
@@ -194,7 +194,10 @@ export default {
         display: initial;
     }
   #after-nav {
-  padding: 0px 0px !important;
+  padding: 0px 20px !important;
+}
+#nav {
+  padding: 0px 20px !important;
 }
 }
 </style>

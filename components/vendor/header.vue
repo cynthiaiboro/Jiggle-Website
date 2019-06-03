@@ -4,7 +4,7 @@
       ref="vendorModal"
     />
   <section class="navHeader">
-      <div class="container">
+      <div class="container py-1">
         <b-navbar toggleable class="navbar-expand-lg px-0">
           <b-navbar-brand>
             <router-link to="/">
@@ -167,7 +167,7 @@ export default {
   border: none;
 }
   .navbar-light .navbar-toggler-icon {
-    background-image: url(/toggler-icon.svg);
+    background-image: url(/toggler-icon.svg) !important;
 }
 @media only screen and (max-width: 800px) {
   .great-app {
@@ -199,6 +199,10 @@ export default {
     margin-bottom: 5px;
     width: 160px;
     height: 46px;
+  }
+  .navHeader {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 }
 </style>
