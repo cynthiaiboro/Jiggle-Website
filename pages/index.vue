@@ -5,7 +5,7 @@
     <ourServices />
     <getStarted />
     <becomeAVendor />
-    <whyTrustUs />
+    <whyUseJiggle />
     <trustedBrands />
     <Footer />
   </div>
@@ -13,11 +13,11 @@
 
 <script>
 import indexHeader from '../components/index/header'
-import stickyNav from '../layouts/stickyNav'
+import stickyNav from '../components/index/stickyNav'
 import getStarted from '../components/index/getStarted'
 import becomeAVendor from '../components/index/becomeAVendor'
 import ourServices from '../components/index/ourServices'
-import whyTrustUs from '../components/index/whyTrustUs'
+import whyUseJiggle from '../components/index/whyUseJiggle'
 import trustedBrands from '../layouts/trustedBrands'
 import Footer from '../layouts/footer'
 export default {
@@ -27,7 +27,7 @@ export default {
     getStarted,
     becomeAVendor,
     ourServices,
-    whyTrustUs,
+    whyUseJiggle,
     trustedBrands,
     Footer
   },

@@ -118,10 +118,13 @@ export default {}
   padding: 5% 0 !important;
 }
 p {
-  font-size: 1rem !important;
+  font-size: 1.1rem !important;
   line-height: 1.5rem;
   font-family: 'Circularbook';
 }
+ h5 {
+    font-size: 21px !important;
+  }
 .heading-text {
   color: #aeb2bc;
 }

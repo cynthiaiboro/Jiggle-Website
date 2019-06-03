@@ -1,6 +1,9 @@
 <template>
   <div>
-    <section class="navHeader">
+      <vendorModal
+      ref="vendorModal"
+    />
+  <section class="navHeader">
       <div class="container py-3">
         <b-navbar toggleable class="navbar-expand-lg px-0">
           <b-navbar-brand>
@@ -8,12 +11,12 @@
               <img src="/logo.svg" height="38px" width="127px">
             </router-link>
           </b-navbar-brand>
-          <b-navbar-toggle target="nav_item_collapse" class="bg-light"/>
+          <b-navbar-toggle target="nav_item_collapse"/>
           <b-collapse id="nav_item_collapse" is-nav>
             <b-navbar-nav class="ml-auto">
-              <b-nav-item href="#our-services" class="nav-link">Budget</b-nav-item>
-              <b-nav-item href="#become-a-vendor" class="nav-link">Payment</b-nav-item>
               <b-nav-item to="/about" class="nav-link">About</b-nav-item>
+              <b-nav-item to="/#our-services" class="nav-link">Budget</b-nav-item>
+              <b-nav-item to="/#become-a-vendor" class="nav-link">Payment</b-nav-item>
               <b-nav-item to="/vendor" class="nav-link">Vendors</b-nav-item>
               <b-nav-item to="/" class="nav-link">Blog</b-nav-item>
             </b-navbar-nav>
@@ -44,6 +47,7 @@
                     to="/vendor"
                     class="call-to-action btnStarted"
                     style="font-weight:400; font-size: 0.9rem;"
+                    @click="inviteVendor"
                   >BECOME A VENDOR</button>
                 </div>
               </div>
@@ -61,8 +65,17 @@
 </template>
 
 <script>
+// Display modal to update vendor details
+import vendorModal from './/vendorModal'
 export default {
-  components: {}
+  components: {
+    vendorModal
+  },
+  methods: {
+     inviteVendor() {
+      this.$refs.vendorModal.inviteVendorModal()
+    }
+  }
 }
 </script>
 
@@ -131,7 +144,9 @@ export default {
 }
 .great-app {
   width: 80%;
-  font-family: 'Circularbold' !important;
+  font-family: 'Circularheavy' !important;
+  animation-name: bounceInLeft;
+  animation-duration: 2s;
 }
 .after-nav-col-one {
   display: flex;
@@ -141,7 +156,7 @@ export default {
 .after-nav-col-one p {
   width: 70%;
   margin-top: 20px;
-  font-size: 1rem !important;
+  font-size: 1.1rem !important;
   font-family: 'Circularbook' !important;
 }
 .navbar-light .navbar-toggler {
@@ -151,40 +166,27 @@ export default {
 @media only screen and (max-width: 800px) {
   .great-app {
     width: 100%;
-    text-align: center;
-    font-size: 20px;
-    padding-top: 60px !important;
-  }
-  .after-nav-col-one {
-    text-align: center;
+    font-size: 30px;
+    padding-top: 0px !important
   }
   .after-nav-col-one p {
     font-size: 13px;
     width: 100%;
     margin-top: 20px;
-    text-align: center;
   }
   .call-to-action {
-    height: 50px;
-    width: 100%;
+    height: 45px;
+    width: 160px;
     border: none;
     color: #ffffff;
-    margin-top: 5px;
   }
 }
 
 @media only screen and (max-width: 700px) {
-  #after-nav {
-    text-align: center !important;
-  }
-  .great-app {
-    width: 100%;
-    text-align: center;
-    font-size: 20px;
-    padding-top: 5px !important;
-  }
   .call-to-action {
     margin-bottom: 5px;
+    width: 160px;
+    height: 46px;
   }
 }
 </style>

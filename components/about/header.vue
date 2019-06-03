@@ -1,17 +1,17 @@
 <template>
   <div>
     <section id="about-us-nav">
-      <div class="container about-us">
-        <h4 class="text-center best-solution">
-          Simplyfing Meal <br> Budgeting and Payment
+      <div class="container about-us py-md-5">
+        <h4 class="text-center best-solution pt-md-5">
+          Simplifying Meal <br> Budgeting and Payment
         </h4>
         <hr class="blue-hr">
-        <p class="text-center ml-5 mr-5">
+        <p class="text-center ml-md-5 mr-md-5 pb-md-5 pb-sm-2">
           Jiggle is a meal budgeting platform where users pay once to eat whenever and wherever.
           It simplifies your budgeting for meals and makes you gain control over your spending.
           <span class='hidden-text'>
-         Our mission is to boost your productivity and efficiency through the excellent services provided via our platform.</span>
-         
+         Our mission is to boost your productivity and efficiency through the excellent services
+        provided via our platform.</span>
           </p>
       </div>
     </section>
@@ -30,7 +30,6 @@ export default {}
 }
 #about-us-nav {
   background-color: #FCFCFC;
-  height: 70vh;
 }
 .about-us {
   padding-top: 100px;
@@ -46,7 +45,7 @@ p {
   align-items: center;
   font-family: 'Circularheavy';
   color: #00255E;
-  font-size: 37px;
+  font-size: 45px;
 }
 @media only screen and (max-width: 700px) {
   .get-started {
@@ -54,6 +53,12 @@ p {
   }
   .hidden-text {
     display: none !important;
+  }
+  .about-us {
+  padding-top: 40px;
+}
+  .best-solution {
+    font-size: 20px !important;
   }
 }
 </style>

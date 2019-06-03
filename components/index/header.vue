@@ -11,9 +11,9 @@
           <b-navbar-toggle target="nav_item_collapse"/>
           <b-collapse id="nav_item_collapse" is-nav>
             <b-navbar-nav class="ml-auto">
+              <b-nav-item to="/about" class="nav-link">About</b-nav-item>
               <b-nav-item href="#our-services" class="nav-link">Budget</b-nav-item>
               <b-nav-item href="#become-a-vendor" class="nav-link">Payment</b-nav-item>
-              <b-nav-item to="/about" class="nav-link">About</b-nav-item>
               <b-nav-item to="/vendor" class="nav-link">Vendors</b-nav-item>
               <b-nav-item to="/" class="nav-link">Blog</b-nav-item>
               <!-- <b-button class="get-started-button" href="#get-started-quickly">GET STARTED</b-button> -->
@@ -27,7 +27,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="after-nav-col-one">
+            <div class="after-nav-col-one py-md-5 py-sm-1">
               <div>
                 <h1 class="great-app">
                   <br>Meal budgeting & payment
@@ -38,8 +38,8 @@
                   Pay once to eat wherever and whenever.
                   <!-- Stay on top of your budget effortlessly with Jiggle. -->
                 </p>
-                <div class="d-sm-inline bounce">
-                  <img src="/googleplay dark.svg" height="45px" class="google-play d-md-inline-block pr-2">
+                <div class="d-sm-inline">
+                  <img src="/googleplay dark.svg" height="45px" class="google-play d-sm-inline pr-2">
                   <b-button
                     href="#get-started-quickly"
                     class="call-to-action"
@@ -66,86 +66,6 @@ export default {
 </script>
 
 <style scoped>
-@-webkit-keyframes bounceInRight {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(3000px, 0, 0);
-    transform: translate3d(3000px, 0, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(-25px, 0, 0);
-    transform: translate3d(-25px, 0, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(-5px, 0, 0);
-    transform: translate3d(-5px, 0, 0);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes bounceInRight {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(3000px, 0, 0);
-    transform: translate3d(3000px, 0, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(-25px, 0, 0);
-    transform: translate3d(-25px, 0, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(-5px, 0, 0);
-    transform: translate3d(-5px, 0, 0);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.bounceInRight {
-  -webkit-animation-name: bounceInRight;
-  animation-name: bounceInRight;
-}
 #nav {
   background-color: #ffffff;
 }
@@ -159,8 +79,8 @@ export default {
   font-family: 'Circularbook' !important;
 }
 .top-phone {
-  animation-name: bounceInRight;
-  animation-duration: 6s;
+  animation-name: slideInUp;
+  animation-duration: 2s;
 }
 .nav-link:hover {
   color: #2f6deb !important;
@@ -188,9 +108,12 @@ export default {
 }
 .great-app {
   width: 80%;
-  font-family: 'Circularbold' !important;
+  font-family: 'Circularheavy' !important;
   text-transform: capitalize;
   color : #1068F0 !important;
+  font-size: 45px;
+  animation-name: bounceInLeft;
+  animation-duration: 2s;
 }
 .great-app-text {
   color: #2d3448;
@@ -216,7 +139,6 @@ export default {
 .after-nav-col-one {
   display: flex;
   align-items: center;
-  padding-top: 4rem !important;
   padding-bottom: 2rem !important;
 }
 .after-nav-col-one p {
@@ -232,18 +154,13 @@ export default {
 @media only screen and (max-width: 800px) {
   .great-app {
     width: 100%;
-    text-align: center;
-    font-size: 20px;
-    padding-top: 50px !important;
-  }
-  .after-nav-col-one {
-    text-align: center;
+    font-size: 30px;
+    padding-top: 30px !important;
   }
   .after-nav-col-one p {
     font-size: 13px;
     width: 100%;
     margin-top: 20px;
-    text-align: center;
   }
   .call-to-action {
     height: 50px;
@@ -252,23 +169,21 @@ export default {
     color: #ffffff;
     margin-top: 5px;
   }
-  .google-play {
-    width: 100%;
-  }
 }
 
 @media only screen and (max-width: 700px) {
-  #after-nav {
-    text-align: center !important;
-  }
   .great-app {
     width: 100%;
-    text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     padding-top: 0px !important;
   }
   .call-to-action {
     margin-bottom: 5px;
+    width: 140px;
+    height: 46px;
   }
+  #after-nav {
+  padding: 20px 0px !important;
+}
 }
 </style>

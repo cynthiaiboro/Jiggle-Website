@@ -1,6 +1,7 @@
 /* eslint-disable no-dupe-keys */
+// eslint-disable-next-line nuxt/no-cjs-in-config
 const pkg = require('./package')
-
+// eslint-disable-next-line nuxt/no-cjs-in-config
 module.exports = {
   mode: 'universal',
 
@@ -8,7 +9,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'Jiggle',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -30,13 +31,16 @@ module.exports = {
           'sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN',
         crossorigin: 'anonymous'
       },
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ],
     script: [
       {
-        src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
-        type: "text/javascript"
-      },
+        src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js',
+        type: 'text/javascript'
+      }
+      // {
+      //   src: '@/assets/css/main.js'
+      // }
       // {
       //   src:
       //     "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",
@@ -48,7 +52,6 @@ module.exports = {
       //   type: "text/javascript"
       // }
     ]
-
   },
 
   /*
@@ -59,14 +62,16 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [
-    '@/assets/css/main.css'
-  ],
+  css: ['@/assets/css/main.css'],
 
   /*
   ** Plugins to load before mounting the App
   */
-
+  plugins: [
+    {
+      src: 'plugins/aos'
+    }
+  ],
   /*
   ** Nuxt.js modules
   */
@@ -105,6 +110,6 @@ module.exports = {
   },
   server: {
     port: 8000, // default: 3000
-    host: '0.0.0.0', // default: localhost
+    host: '0.0.0.0' // default: localhost
   }
 }

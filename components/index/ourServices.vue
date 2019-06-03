@@ -16,7 +16,7 @@
             <div class="row d-flex justify-content-center">
               <div class="col-md-3 col-12 services-card shadow">
                 <div class="pb-3">
-                  <img src="/budget.svg" style="height: 65px" class="wow animated bounce delay-2s"/>
+                  <img src="/budget.svg" style="height: 65px" class="animated pulse infinite delay-2s"/>
                 </div>
                 <div class="mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
@@ -29,7 +29,7 @@
               </div>
               <div class="col-md-3 col-12 services-card shadow">
                 <div class="pb-3">
-                  <img src="/payment.svg" style="height: 65px" class="wow animated bounce delay-2s"/>
+                  <img src="/payment.svg" style="height: 65px" class="animated pulse infinite delay-2s"/>
                 </div>
                 <div class="mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
@@ -42,7 +42,7 @@
               </div>
               <div class="col-md-3 col-12 services-card shadow">
                 <div class="pb-3">
-                  <img src="/wallet.svg" style="height: 65px" class="wow animated slower bounce delay-2s" />
+                  <img src="/wallet.svg" style="height: 65px" class="animated pulse infinite delay-2s" />
                 </div>
                 <div class="mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
@@ -103,7 +103,7 @@ p {
   font-size: 0.9rem !important;
 }
 #our-services {
-  padding: 40px 0 40px 0;
+  padding: 30px 0px;
 }
 .services-card {
   margin: 20px 50px;
