@@ -166,6 +166,9 @@ export default {
   color: rgba(0, 0, 0, 0.5);
   border: none;
 }
+  .navbar-light .navbar-toggler-icon {
+    background-image: url(/toggler-icon.svg);
+}
 @media only screen and (max-width: 800px) {
   .great-app {
     width: 100%;
@@ -186,9 +189,9 @@ export default {
   .desktop-show {
     display: initial;
 }
-.navbar-light .navbar-toggler-icon {
+/* .navbar-light .navbar-toggler-icon {
     background-image: url(/toggler-icon.svg) !important;
-}
+} */
 }
 
 @media only screen and (max-width: 700px) {
@@ -197,8 +200,5 @@ export default {
     width: 160px;
     height: 46px;
   }
-  .navbar-light .navbar-toggler-icon {
-    background-image: url(/toggler-icon.svg);
-}
 }
 </style>
