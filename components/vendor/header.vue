@@ -4,7 +4,7 @@
       ref="vendorModal"
     />
   <section class="navHeader">
-      <div class="container py-3">
+      <div class="container py-1">
         <b-navbar toggleable class="navbar-expand-lg px-0">
           <b-navbar-brand>
             <router-link to="/">
@@ -29,14 +29,14 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="after-nav-col-one">
+            <div class="after-nav-col-one mt-md-4">
               <div>
-                <h1 class="great-app pt-5" style="font-weight:500">Best Way to Receive Payments</h1>
+                <h1 class="great-app pt-5" style="font-weight:500">Best Way to <br class="hide desktop-show"> Receive Payments</h1>
                 <p class="pb-2">
                   Receive payment the fast and easy way, see transactions directly from your phone and keep
                   track of your business on the go with Jiggle vendor app.
                 </p>
-                <div class="d-sm-inline">
+                <div class="d-md-inline d-flex justify-content-center">
                   <img
                     src="/google play white.svg"
                     alt
@@ -54,7 +54,7 @@
             </div>
           </div>
           <div class="col-md-6 d-none d-md-block pb-3">
-            <div class="d-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center mt-md-5">
               <img src="/jiggle phone.svg" height="420vh" class="top-phones">
             </div>
           </div>
@@ -132,6 +132,9 @@ export default {
   color: #3e4353 !important;
   font-size: 1rem;
 }
+.hide {
+    display: none;
+}
 .get-started-button:hover {
   cursor: pointer;
   background: #3e4353;
@@ -163,6 +166,9 @@ export default {
   color: rgba(0, 0, 0, 0.5);
   border: none;
 }
+  .navbar-light .navbar-toggler-icon {
+    background-image: url(/toggler-icon.svg) !important;
+}
 @media only screen and (max-width: 800px) {
   .great-app {
     width: 100%;
@@ -180,6 +186,12 @@ export default {
     border: none;
     color: #ffffff;
   }
+  .desktop-show {
+    display: initial;
+}
+/* .navbar-light .navbar-toggler-icon {
+    background-image: url(/toggler-icon.svg) !important;
+} */
 }
 
 @media only screen and (max-width: 700px) {
@@ -187,6 +199,10 @@ export default {
     margin-bottom: 5px;
     width: 160px;
     height: 46px;
+  }
+  .navHeader {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 }
 </style>

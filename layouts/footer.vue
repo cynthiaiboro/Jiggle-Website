@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-md-3 col-sm-12 footer-jiggle-head">
             <router-link to="/"><img src="/jiggle logo blue.svg" height="25px"></router-link>
-            <p class="py-2 pr-4 footer-note">Jiggle is a meal budgeting platform where users pay once to eat whenever and wherever</p>
+            <p class="py-2 pr-md-4 footer-note">Jiggle is a meal budgeting platform where users pay once to eat whenever and wherever</p>
             <img src="/googleplay dark.svg" class="mb-3" alt="" height="40px;">
           </div>
           <div class="col-md-4">
@@ -164,6 +164,7 @@ span {
   }
   .footer-jiggle-head {
     text-align: center !important;
+    padding: 0px 25px !important;
 }
 }
 </style>

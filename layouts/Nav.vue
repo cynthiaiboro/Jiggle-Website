@@ -1,7 +1,7 @@
 <template>
     <div>
     <section id="nav">
-      <div class="container py-3">
+      <div class="container py-1">
         <b-navbar toggleable class="navbar-expand-lg px-0">
           <b-navbar-brand>
             <router-link to="/">
@@ -64,5 +64,10 @@ export default {
   background: #3e4353;
   color: #ffffff;
   transition: ease-in 1s;
+}
+@media only screen and (max-width: 700px) {
+  #nav {
+    padding: 0px 20px !important;
+  }
 }
 </style>

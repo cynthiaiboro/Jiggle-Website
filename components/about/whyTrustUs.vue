@@ -110,7 +110,7 @@ export default {}
 
 <style scoped>
 #why-us {
-  background-color: #2d3448;
+  background-color: #2f6deb;
   padding: 5% 0;
 }
 .get-started {

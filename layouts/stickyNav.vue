@@ -1,11 +1,11 @@
 <template>
   <div id="stickyheader">
-    <div class="shadow bg-white roundedtransbox navHeader">
-      <div class="container">
+    <div class="shadow bg-white roundedtransbox navHeader nav">
+      <div class="container py-1">
         <b-navbar toggleable class="navbar-expand-lg px-0">
           <b-navbar-brand>
             <router-link to="/">
-              <img src="/jiggle logo blue.svg" height="35px" width="127px">
+              <img src="/jiggle logo blue.svg" height="38px" width="127px">
             </router-link>
           </b-navbar-brand>
           <b-navbar-toggle target="nav_item_collapse"/>
@@ -79,5 +79,10 @@ export default {
   background: #ffffff !important;
   box-shadow: #262627;
   color: #ffffff;
+}
+@media only screen and (max-width: 700px) {
+.nav {
+  padding: 0px 20px !important;
+}
 }
 </style>
