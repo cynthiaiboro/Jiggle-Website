@@ -13,7 +13,9 @@
         <h5>General </h5>
           <b-card v-for="(gen, key) in general" :key="key" no-body class="mb-1">
             <b-card-header header-tag="header" class="p-1" role="tab">
-              <b-button block href="#" v-b-toggle="gen.accordion" variant="link" class="question">Q. {{ gen.question }}</b-button>
+              <b-button block href="#" v-b-toggle="gen.accordion" variant="link" class="question">Q. {{ gen.question }}
+                <i class="fa fa-chevron-down" aria-hidden="true" style="float: right; font-size:12px;"></i>
+              </b-button>
             </b-card-header>
             <b-collapse :id="gen.accordion" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -27,7 +29,9 @@
         <h5>Sign Up / Login </h5>
           <b-card v-for="(log, key) in login" :key="key" no-body class="mb-1">
             <b-card-header header-tag="header" class="p-1" role="tab">
-              <b-button block href="#" v-b-toggle="log.accordion" variant="link" class="question">Q. {{ log.question }}</b-button>
+              <b-button block href="#" v-b-toggle="log.accordion" variant="link" class="question">Q. {{ log.question }}
+                <i class="fa fa-chevron-down" aria-hidden="true" style="float: right; font-size:12px;"></i>
+              </b-button>
             </b-card-header>
             <b-collapse :id="log.accordion" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -41,7 +45,9 @@
         <h5>Security </h5>
           <b-card v-for="(sec, key) in security" :key="key" no-body class="mb-1">
             <b-card-header header-tag="header" class="p-1" role="tab">
-              <b-button block href="#" v-b-toggle="sec.accordion" variant="link" class="question">Q. {{ sec.question }}</b-button>
+              <b-button block href="#" v-b-toggle="sec.accordion" variant="link" class="question">Q. {{ sec.question }}
+                <i class="fa fa-chevron-down" aria-hidden="true" style="float: right; font-size:12px;"></i>
+              </b-button>
             </b-card-header>
             <b-collapse :id="sec.accordion" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -55,7 +61,9 @@
         <h5>Funding / Payments </h5>
           <b-card v-for="(fund, key) in funding" :key="key" no-body class="mb-1">
             <b-card-header header-tag="header" class="p-1" role="tab">
-              <b-button block href="#" v-b-toggle="fund.accordion" variant="link" class="question">Q. {{ fund.question }}</b-button>
+              <b-button block href="#" v-b-toggle="fund.accordion" variant="link" class="question">Q. {{ fund.question }}
+                <i class="fa fa-chevron-down" aria-hidden="true" style="float: right; font-size:12px;"></i>
+              </b-button>
             </b-card-header>
             <b-collapse :id="fund.accordion" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -69,7 +77,9 @@
         <h5>Meal Plan </h5>
           <b-card v-for="(plan, key) in plans" :key="key" no-body class="mb-1">
             <b-card-header header-tag="header" class="p-1" role="tab">
-              <b-button block href="#" v-b-toggle="plan.accordion" variant="link" class="question">Q. {{ plan.question }}</b-button>
+              <b-button block href="#" v-b-toggle="plan.accordion" variant="link" class="question">Q. {{ plan.question }}
+                <i class="fa fa-chevron-down" aria-hidden="true" style="float: right; font-size:12px;"></i>
+              </b-button>
             </b-card-header>
             <b-collapse :id="plan.accordion" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -83,7 +93,9 @@
         <h5>Vendors </h5>
           <b-card v-for="(ven, key) in vendors" :key="key" no-body class="mb-1">
             <b-card-header header-tag="header" class="p-1" role="tab">
-              <b-button block href="#" v-b-toggle="ven.accordion" variant="link" class="question">Q. {{ ven.question }}</b-button>
+              <b-button block href="#" v-b-toggle="ven.accordion" variant="link" class="question">Q. {{ ven.question }}
+                <i class="fa fa-chevron-down" aria-hidden="true" style="float: right; font-size:12px;"></i>
+              </b-button>
             </b-card-header>
             <b-collapse :id="ven.accordion" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -215,6 +227,18 @@ export default {
 </script>
 
 <style scoped>
+.rotate{
+    -moz-transition: all 2s linear;
+    -webkit-transition: all 2s linear;
+    transition: all 2s linear;
+}
+
+.rotate.down{
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
 .btn-info {
     color: #2f6deb;
     background-color: #f5f3f3;

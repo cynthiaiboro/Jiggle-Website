@@ -11,7 +11,7 @@
               <img src="/logo.svg" height="38px" width="127px">
             </router-link>
           </b-navbar-brand>
-          <b-navbar-toggle target="nav_item_collapse"/>
+          <b-navbar-toggle target="nav_item_collapse" class="toggle"/>
           <b-collapse id="nav_item_collapse" is-nav>
             <b-navbar-nav class="ml-auto">
               <b-nav-item to="/about" class="nav-link">About</b-nav-item>
@@ -80,14 +80,6 @@ export default {
 </script>
 
 <style scoped>
-@font-face {
-  font-family: 'Circularbook';
-  src: url('../../assets/fonts/Regular.ttf');
-}
-@font-face {
-  font-family: 'Circularbold';
-  src: url('../../assets/fonts/Bold.ttf');
-}
 .nav-link {
   color: #ffffff !important;
   padding: 4px 10px !important;
@@ -166,9 +158,6 @@ export default {
   color: rgba(0, 0, 0, 0.5);
   border: none;
 }
-  .navbar-light .navbar-toggler-icon {
-    background-image: url(/toggler-icon.svg) !important;
-}
 @media only screen and (max-width: 800px) {
   .great-app {
     width: 100%;
@@ -189,9 +178,6 @@ export default {
   .desktop-show {
     display: initial;
 }
-/* .navbar-light .navbar-toggler-icon {
-    background-image: url(/toggler-icon.svg) !important;
-} */
 }
 
 @media only screen and (max-width: 700px) {
