@@ -69,7 +69,8 @@ module.exports = {
   */
   plugins: [
     {
-      src: 'plugins/aos'
+      src: 'plugins/aos',
+      ssr: false
     }
   ],
   /*

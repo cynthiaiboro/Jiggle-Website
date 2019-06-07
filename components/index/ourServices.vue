@@ -16,7 +16,9 @@
             <div class="row d-flex justify-content-center">
               <div class="col-md-3 col-12 services-card shadow-sm">
                 <div class="pb-3">
-                  <img src="/budget.svg" style="height: 65px" class="animated pulse infinite delay-2s"/>
+                  <img src="/budget.svg" style="height: 65px" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000"/>
                 </div>
                 <div class="mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
@@ -29,7 +31,9 @@
               </div>
               <div class="col-md-3 col-12 services-card shadow-sm">
                 <div class="pb-3">
-                  <img src="/payment.svg" style="height: 65px" class="animated pulse infinite delay-2s"/>
+                  <img src="/payment.svg" style="height: 65px" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000"/>
                 </div>
                 <div class="mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
@@ -42,7 +46,9 @@
               </div>
               <div class="col-md-3 col-12 services-card shadow-sm">
                 <div class="pb-3">
-                  <img src="/wallet.svg" style="height: 65px" class="animated pulse infinite delay-2s" />
+                  <img src="/wallet.svg" style="height: 65px" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" />
                 </div>
                 <div class="mt-4">
                   <h5 class="h6-bold get-started" style="font-weight: 400">
