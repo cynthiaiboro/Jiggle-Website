@@ -17,7 +17,7 @@
               <b-nav-item to="/about" class="nav-link">About</b-nav-item>
               <b-nav-item to="/#our-services" class="nav-link">Budget</b-nav-item>
               <b-nav-item to="/#become-a-vendor" class="nav-link">Payment</b-nav-item>
-              <b-nav-item to="/vendor" class="nav-link">Vendors</b-nav-item>
+              <b-nav-item to="/vendor active" class="nav-link">Vendors</b-nav-item>
               <b-nav-item to="/" class="nav-link">Blog</b-nav-item>
             </b-navbar-nav>
           </b-collapse>
@@ -189,6 +189,20 @@ export default {
   .navHeader {
     padding-left: 20px !important;
     padding-right: 20px !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .call-to-action {
+    margin-bottom: 5px;
+    width: 160px;
+    height: 46px;
+  }
+  .navHeader {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .navbar-light .navbar-toggler-icon {
+    background-image: none !important; 
   }
 }
 </style>
