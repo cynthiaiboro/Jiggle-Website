@@ -17,7 +17,7 @@
               <b-nav-item to="/about" class="nav-link">About</b-nav-item>
               <b-nav-item to="/#our-services" class="nav-link">Budget</b-nav-item>
               <b-nav-item to="/#become-a-vendor" class="nav-link">Payment</b-nav-item>
-              <b-nav-item to="/vendor active" class="nav-link">Vendors</b-nav-item>
+              <b-nav-item to="/vendor" class="nav-link" active>Vendors</b-nav-item>
               <b-nav-item to="/" class="nav-link">Blog</b-nav-item>
             </b-navbar-nav>
           </b-collapse>
@@ -86,10 +86,10 @@ export default {
   font-size: 1rem !important;
   font-family: 'Circularbook' !important;
 }
-.nav-link:active {
+.active {
   color: #2f6deb !important;
 }
-.nav-link:hover {
+.nav-link:hover , :active{
   color: #2f6deb !important;
   padding: 4px 10px !important;
   transition: 1s;
@@ -155,8 +155,7 @@ export default {
   font-family: 'Circularbook' !important;
 }
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.5);
-  border: none;
+  color: #ffffff;
 }
 @media only screen and (max-width: 800px) {
   .great-app {
@@ -201,8 +200,9 @@ export default {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
-  .navbar-light .navbar-toggler-icon {
-    background-image: none !important; 
+   .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+    color: white; 
   }
 }
 </style>
