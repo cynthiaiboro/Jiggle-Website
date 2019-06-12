@@ -32,7 +32,7 @@ export default {}
 <style scoped>
 #become-a-vendor {
   background: url(/vendor-background.svg);
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   padding: 5% 0;
 }
 .call-to-action {
