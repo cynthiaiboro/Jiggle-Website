@@ -105,14 +105,6 @@ export default {}
 </script>
 
 <style scoped>
-@font-face {
-  font-family: 'Circularbook';
-  src: url('../../assets/fonts/Regular.ttf');
-}
-@font-face {
-  font-family: 'Circularmedium';
-  src: url('../../assets/fonts/Medium.ttf');
-}
 #get-started-quickly {
   background-color: #e5e5e5;
   padding: 5% 0 !important;

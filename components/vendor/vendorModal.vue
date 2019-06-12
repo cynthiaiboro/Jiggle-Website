@@ -99,8 +99,8 @@ button.close {
     justify-content: center;
 }
 button.close:hover {
-  background-color: #1068ed !important;
-  border: 2px solid #1068ed;
+  background-color: #0000ff !important;
+  border: 2px solid #ffffff;
   color: #ffffff;
 }
 
