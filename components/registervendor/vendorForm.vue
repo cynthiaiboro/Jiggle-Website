@@ -16,6 +16,7 @@
                 id="formGroupExampleInput"
                 name="business_name"
                 type="text"
+                v-model="firstname"
                 class="form-control form-control2 mb-2"
                 placeholder="Enter First Name"
                 required
@@ -30,6 +31,7 @@
                 id="formGroupExampleInput"
                 type="text"
                 name="lastname"
+                v-model="lastname"
                 class="form-control form-control2 mb-2"
                 placeholder="Enter Last Name"
                 required
@@ -44,6 +46,7 @@
                 id="formGroupExampleInput"
                 type="email"
                 name="email"
+                v-model="email"
                 class="form-control form-control2 mb-2"
                 placeholder="email@gmail.com"
                 required
@@ -58,6 +61,7 @@
                 id="formGroupExampleInput"
                 type="text"
                 name="location"
+                v-model="phone"
                 class="form-control form-control2"
                 placeholder="234 | "
                 required
@@ -72,6 +76,7 @@
                 id="formGroupExampleInput"
                 type="password"
                 name="city"
+                v-model="password"
                 class="form-control form-control2"
                 placeholder="**********"
                 required
@@ -86,6 +91,7 @@
                 id="formGroupExampleInput"
                 type="password"
                 name="city"
+                v-model="confirmpassword"
                 class="form-control form-control2"
                 placeholder="**********"
                 required
@@ -97,6 +103,7 @@
                 type="submit"
                 class="btn buttonS btn-primary text-center submit-button"
                 value="Next"
+                @click="nextForm"
               />
             </div>
             <p class="text-center">By registrating you have chosen to accept the <span class="terms"> Terms of Service and Privacy policy </span></p>
@@ -106,8 +113,28 @@
 <script>
 import bankForm from './bankForm'
 export default {
+    data() {
+        return {
+            firstname: '',
+            lastname: '',
+            email: '',
+            phone: '',
+            password: '',
+            confirmpassword: '',
+        }
+    },
     components: {
         bankForm
+    },
+    methods: {
+        nextForm(){
+            if ( this.firstname === '' || this.lastname === '' || this.email === '' || this.phone === ''
+             || this.password === '' || this.confirmpassword === '' ) {
+        alert('Please enter all fields!')
+      } else {
+          this.$router.push('/')
+        }
+    }
     }
 }
 </script>
