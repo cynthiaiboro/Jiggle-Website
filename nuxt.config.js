@@ -1,6 +1,7 @@
 /* eslint-disable no-dupe-keys */
 // eslint-disable-next-line nuxt/no-cjs-in-config
-const pkg = require('./package')
+const pkg = require('./package');
+require('dotenv').config();
 // eslint-disable-next-line nuxt/no-cjs-in-config
 module.exports = {
   mode: 'universal',
@@ -111,6 +112,6 @@ module.exports = {
   },
   server: {
     port: 8000, // default: 3000
-    host: '0.0.0.0' // default: localhost
+    host: process.env.HOST // default: localhost
   }
 }
