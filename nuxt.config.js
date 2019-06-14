@@ -1,7 +1,7 @@
 /* eslint-disable no-dupe-keys */
 // eslint-disable-next-line nuxt/no-cjs-in-config
-const pkg = require('./package');
-require('dotenv').config();
+const pkg = require('./package')
+require('dotenv').config()
 // eslint-disable-next-line nuxt/no-cjs-in-config
 module.exports = {
   mode: 'universal',
@@ -71,6 +71,10 @@ module.exports = {
   plugins: [
     {
       src: 'plugins/aos',
+      ssr: false
+    },
+    {
+      src: 'plugins/plugins',
       ssr: false
     }
   ],

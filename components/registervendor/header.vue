@@ -1,54 +1,16 @@
 <template>
   <div id="header">
-  <section class="navHeader">
-      <div class="container py-1">
-        <b-navbar toggleable class="navbar-expand-lg px-0">
-          <b-navbar-brand>
-            <router-link to="/">
-              <img src="/logo.svg" height="38px" width="127px">
-            </router-link>
-          </b-navbar-brand>
-          <b-navbar-toggle target="nav_item_collapse" class="toggle"/>
-          <b-collapse id="nav_item_collapse" is-nav>
-            <b-navbar-nav class="ml-auto">
-              <b-nav-item to="/about" class="nav-link">About</b-nav-item>
-              <b-nav-item to="/#our-services" class="nav-link">Budget</b-nav-item>
-              <b-nav-item to="/#become-a-vendor" class="nav-link">Payment</b-nav-item>
-              <b-nav-item to="/vendor" class="nav-link">Vendors</b-nav-item>
-              <b-nav-item to="/" class="nav-link">Blog</b-nav-item>
-            </b-navbar-nav>
-          </b-collapse>
-        </b-navbar>
-      </div>
-    </section>
-
+    <navbar />
     <section class="navHeader pt-2 pb-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <div class="after-nav-col-one mt-md-5">
-              <div class="mt-md-4">
-                <h1 class="great-app pt-5" style="font-weight:500">Best way to <br class="hide desktop-show"> receive payments</h1>
-                <p class="pb-2">
-                  Receive payment the fast and easy way, see transactions directly from your phone and keep
-                  track of your business on the go with Jiggle vendor app.
-                </p>
-                <div class="d-md-inline">
-                  <img
-                    src="/google play white.svg"
-                    alt
-                    height="45px"
-                    class="d-md-inline-block pr-2"
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="col-lg-3 col-md-3 col-sm-none col-none" />
           <div class="col-md-6 col-12 d-md-block pb-3 form">
             <div class="d-flex justify-content-center align-items-center mt-md-5">
-              <vendorform :is="selectedComponent" :click-handler="changeComponent"></vendorform>
+              <vendorform :is="selectedComponent" :click-handler="changeComponent" />
             </div>
           </div>
+          <div class="col-lg-3 col-md-3 col-sm-none col-none" />
         </div>
       </div>
     </section>
@@ -56,23 +18,25 @@
 </template>
 
 <script>
+import navbar from '../../components/registervendor/navbar'
 import personalForm from './vendorForm'
 import bankForm from './bankForm'
 export default {
-    data() {
-        return {
-            selectedComponent: 'personalForm'
-        }
-    },
-    components: {
-        personalForm,
-        bankForm
-    },
-    methods: {
-            changeComponent: function () {
-               this.selectedComponent= 'bankForm'
-            }
-        }
+  components: {
+    personalForm,
+    bankForm,
+    navbar
+  },
+  data() {
+    return {
+      selectedComponent: 'personalForm'
+    }
+  },
+  methods: {
+    changeComponent: function() {
+      this.selectedComponent = 'bankForm'
+    }
+  }
 }
 </script>
 
@@ -90,7 +54,8 @@ export default {
 .active {
   color: #2f6deb !important;
 }
-.nav-link:hover , :active{
+.nav-link:hover,
+:active {
   color: #2f6deb !important;
   padding: 4px 10px !important;
   transition: 1s;
@@ -126,7 +91,7 @@ export default {
   font-size: 1rem;
 }
 .hide {
-    display: none;
+  display: none;
 }
 .get-started-button:hover {
   cursor: pointer;
@@ -162,7 +127,7 @@ export default {
   .great-app {
     width: 100%;
     font-size: 30px;
-    padding-top: 0px !important
+    padding-top: 0px !important;
   }
   .after-nav-col-one p {
     font-size: 13px;
@@ -177,7 +142,7 @@ export default {
   }
   .desktop-show {
     display: initial;
-}
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -191,7 +156,7 @@ export default {
     padding-right: 20px !important;
   }
   .form {
-      padding-top: 20px;
+    padding-top: 20px;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -204,9 +169,9 @@ export default {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
-   .navbar-light .navbar-toggler-icon {
+  .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
-    color: white; 
+    color: white;
   }
 }
 </style>
