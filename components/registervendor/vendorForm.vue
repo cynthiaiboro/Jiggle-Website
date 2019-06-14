@@ -113,6 +113,7 @@
 <script>
 import bankForm from './bankForm'
 export default {
+  name: 'vendorform',
     data() {
         return {
             firstname: '',
@@ -123,6 +124,14 @@ export default {
             confirmpassword: '',
         }
     },
+    props: {
+        clickHandler: {
+            type: Function,
+            default() {
+                return function () {};
+            }
+        }
+    },
     components: {
         bankForm
     },
@@ -130,9 +139,8 @@ export default {
         nextForm(){
             if ( this.firstname === '' || this.lastname === '' || this.email === '' || this.phone === ''
              || this.password === '' || this.confirmpassword === '' ) {
-        alert('Please enter all fields!')
       } else {
-          this.$router.push('/')
+          this.clickHandler(); // invoke func passed via prop
         }
     }
     }

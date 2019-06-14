@@ -39,7 +39,6 @@
                     alt
                     height="45px"
                     class="d-md-inline-block pr-2"
-                    @click="selectedComponent= 'bankForm'"
                   >
                 </div>
               </div>
@@ -47,7 +46,7 @@
           </div>
           <div class="col-md-6 col-12 d-md-block pb-3 form">
             <div class="d-flex justify-content-center align-items-center mt-md-5">
-              <component :is="selectedComponent"></component>
+              <vendorform :is="selectedComponent" :click-handler="changeComponent"></vendorform>
             </div>
           </div>
         </div>
@@ -68,7 +67,12 @@ export default {
     components: {
         personalForm,
         bankForm
-    }
+    },
+    methods: {
+            changeComponent: function () {
+               this.selectedComponent= 'bankForm'
+            }
+        }
 }
 </script>
 

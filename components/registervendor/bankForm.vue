@@ -84,10 +84,10 @@ data() {
   },
   methods: {
   getBanks() {
-      const BASE_URL = 'https://api.jiggle.ng/'
-      axios.get(BASE_URL + 'setting/banks/list')
+      axios.get( BASE_URL + 'setting/banks/list')
       .then(response => {
         this.banks = response.data.data
+         console.log('Could not get banks');
       })
     }
   }
