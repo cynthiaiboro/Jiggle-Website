@@ -1,5 +1,5 @@
 <template>
-  <div class="form-area">
+  <div class="form-area w-100 shadow">
     <form
       @submit.prevent="submitForm"
       method="post"
@@ -15,13 +15,14 @@
         </label>
         <select
           id="formGroupExampleInput"
+          v-model="vendor.bank_id"
           name="bank_id"
           value="Select Bank"
           class="form-control form-control2 mb-2"
           required
         >
           <option
-            v-for="(bank, key) in vendor.banks"
+            v-for="(bank, key) in banks"
             :key="key"
             :value="bank.id"
           >
@@ -37,9 +38,9 @@
         </label>
         <input
           id="formGroupExampleInput"
-          v-model="vendor.account_number"
-          type="email"
-          name="email"
+          v-model="vendor.account_no"
+          type="number"
+          name="account-number"
           class="form-control form-control2 mb-2"
           placeholder="0000000000"
           required
@@ -54,8 +55,8 @@
         <input
           id="formGroupExampleInput"
           v-model="vendor.bvn"
-          type="email"
-          name="email"
+          type="number"
+          name="bvn"
           class="form-control form-control2 mb-2"
           placeholder="0000000000"
           required
@@ -71,7 +72,7 @@
         >
       </div>
       <p class="text-center">
-        By registrating you have chosen to accept the <span class="terms"> Terms of Service and Privacy policy </span>
+        By registering you have chosen to accept the <span class="terms"> Terms of Service and Privacy policy </span>
       </p>
     </form>
   </div>
@@ -81,31 +82,35 @@
 import axios from 'axios'
 const BASE_URL = 'https://api.jiggle.ng/'
 export default {
+  props: ['referenceType'],
   data() {
     return {
-      banks: '',
+      banks: [],
       vendor: {
         first_name: '',
         last_name: '',
         email: '',
+        account_name: 'Eyimenarolu Freedom',
         phone: '',
         password: '',
-        confirm_password: '',
-        banks: [{ id: 'jfldksfjl', name: 'First' }],
-        account_number: '',
-        bvn: ''
+        password_confirmation: '',
+        bank_id: '',
+        account_no: '',
+        bvn: '',
+        reference: '',
+        type: ''
       }
     }
   },
   mounted() {
-    // this.getBanks()
+    this.getBanks()
   },
   methods: {
     getBanks() {
       this.$axios
         .get('setting/banks/list')
         .then(response => {
-          this.vendor.banks = response.data.data
+          this.banks = response.data.data
           console.log('Getting bank details')
           console.log(response.data)
         })
@@ -122,8 +127,19 @@ export default {
       this.vendor.email = vendorPersonalDetails.email
       this.vendor.phone = vendorPersonalDetails.phone
       this.vendor.password = vendorPersonalDetails.password
-      this.vendor.confirm_password = vendorPersonalDetails.confirm_password
+      this.vendor.password_confirmation =
+        vendorPersonalDetails.password_confirmation
+      this.vendor.reference = this.$route.params.ref
+      this.vendor.type = this.referenceType
       console.log(this.vendor)
+      this.$axios
+        .post('vendor/complete-registration', this.vendor)
+        .then(response => {
+          console.log('Registration form completed')
+        })
+        .catch(error => {
+          console.log('There is an error')
+        })
     }
   }
 }

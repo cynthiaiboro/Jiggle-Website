@@ -1,13 +1,18 @@
 <template>
   <div id="header">
     <navbar />
-    <section class="navHeader pt-2 pb-5">
-      <div class="container">
+    <section class="mt-5 pt-2 pb-5">
+      <div class="container mt-4">
         <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-none col-none" />
           <div class="col-md-6 col-12 d-md-block pb-3 form">
             <div class="d-flex justify-content-center align-items-center mt-md-5">
-              <vendorform :is="selectedComponent" :click-handler="changeComponent" />
+              <div v-if="requestType === 'bank_details'">
+                <bank-form @submitForm="submitForm" :reference-type="requestType" />
+              </div>
+              <div v-else>
+                <personal-form @changeRequestType="changeRequestType" />
+              </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-none col-none" />
@@ -19,8 +24,8 @@
 
 <script>
 import navbar from '../../components/registervendor/navbar'
-import personalForm from './vendorForm'
-import bankForm from './bankForm'
+import personalForm from '../../components/registervendor/vendorForm'
+import bankForm from '../../components/registervendor/bankForm'
 export default {
   components: {
     personalForm,
@@ -29,20 +34,41 @@ export default {
   },
   data() {
     return {
-      selectedComponent: 'personalForm'
+      requestType: 'personal_details'
     }
   },
+  created() {
+    const reference = this.$route.params.ref
+    this.checkReference(reference)
+  },
   methods: {
-    changeComponent: function() {
-      this.selectedComponent = 'bankForm'
+    // changeComponent: function() {
+    //   this.selectedComponent = 'bankForm'
+    // },
+    checkReference(reference) {
+      this.$axios
+        .get('vendor/complete-registration/' + reference)
+        .then(response => {
+          this.requestType = response.data.data.type
+          console.log(this.requestType)
+        })
+    },
+    changeRequestType() {
+        console.log('Am called');
+      return (this.requestType = 'bank_details')
     }
   }
 }
 </script>
 
 <style scoped>
+.form-area {
+  background-color: #ffffff;
+  padding: 30px 30px 10px 30px !important;
+  border-radius: 5px;
+}
 #header {
-  background: #3e4353 !important;
+  background: #e5e5e5 !important;
   height: 100vh;
 }
 .nav-link {

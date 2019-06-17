@@ -1,5 +1,5 @@
 <template>
-  <div class="form-area shadow">
+  <div class="form-area shadow w-100">
     <form
       @click="selectedComponent= 'bankForm'"
       method="post"
@@ -110,7 +110,7 @@
         </label>
         <input
           id="formGroupExampleInput"
-          v-model="vendor.confirm_password"
+          v-model="vendor.password_confirmation"
           type="password"
           name="city"
           class="form-control form-control2"
@@ -124,7 +124,7 @@
           @click="nextForm"
           type="button"
           class="btn buttonS btn-primary text-center submit-button"
-          value="Next"
+          value="continue"
         >
       </div>
       <p class="text-center">
@@ -134,12 +134,9 @@
   </div>
 </template>
 <script>
-import bankForm from './bankForm'
 export default {
   name: 'Vendorform',
-  components: {
-    bankForm
-  },
+  components: {},
   props: {
     clickHandler: {
       type: Function,
@@ -156,27 +153,16 @@ export default {
         email: '',
         phone: '',
         password: '',
-        confirm_password: ''
+        password_confirmation: ''
       }
     }
   },
   methods: {
     nextForm() {
-      if (
-        this.vendor.first_name === '' ||
-        this.vendor.lastname === '' ||
-        this.vendor.email === '' ||
-        this.vendor.phone === '' ||
-        this.vendor.password === '' ||
-        this.vendor.confirm_password === ''
-      ) {
-      } else {
-        localStorage.setItem(
-          'vendorPersonalDetails',
-          JSON.stringify(this.vendor)
-        )
-        this.clickHandler() // invoke func passed via prop
-      }
+      console.log('I am called')
+
+      localStorage.setItem('vendorPersonalDetails', JSON.stringify(this.vendor))
+      this.$emit('changeRequestType')
     }
   }
 }
@@ -185,7 +171,6 @@ export default {
 <style scoped>
 .form-area {
   background-color: #ffffff;
-  width: 80%;
   padding: 30px 30px 10px 30px !important;
   border-radius: 5px;
 }

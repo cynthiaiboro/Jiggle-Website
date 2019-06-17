@@ -1,18 +1,18 @@
-<template>
-  <div>
-    <Header />
-  </div>
-</template>
+<!--<template>-->
+  <!--<div>-->
+    <!--<Header />-->
+  <!--</div>-->
+<!--</template>-->
 
-<script>
-import Header from '../components/registervendor/header'
+<!--<script>-->
+<!--import Header from '../components/registervendor/header'-->
 
-export default {
-  components: {
-    Header
-  }
-}
-</script>
+<!--export default {-->
+  <!--components: {-->
+    <!--Header-->
+  <!--}-->
+<!--}-->
+<!--</script>-->
 
-<style scoped>
-</style>
+<!--<style scoped>-->
+<!--</style>-->

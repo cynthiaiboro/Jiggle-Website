@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import vendorRegistrationForm from '../../../../components/registervendor/header'
+import vendorRegistrationForm from '../../../../components/registervendor/index'
 export default {
   name: 'Index',
   components: {
