@@ -1,5 +1,6 @@
 import axios from 'axios'
 import Vue from 'vue'
+import toast from 'toastr'
 
 const BASE_URL = 'https://api.jiggle.ng/'
 
@@ -16,3 +17,4 @@ if (process.browser) {
 }
 
 Vue.prototype.$axios = http
+Vue.prototype.$toast = toast;
