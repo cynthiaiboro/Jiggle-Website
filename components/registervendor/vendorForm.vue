@@ -1,162 +1,183 @@
 <template>
-    <div class="form-area">
-        <form
-            method="post"
-            class="needs-validation"
-            @click="selectedComponent= 'bankForm'"
+  <div class="form-area shadow w-100">
+    <form
+      @click="selectedComponent= 'bankForm'"
+      method="post"
+      class="needs-validation"
+    >
+      <!-- @submit.prevent="submitForm" -->
+      <h4 style="color: #2D3448;" class="mb-3">
+        Complete your Registration
+      </h4>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-2 pr-md-2 pr-sm-3 pr-3">
+          <label class="col-form-label" for="formGroupExampleInput">
+            First Name
+          </label>
+          <input
+            id="formGroupExampleInput"
+            v-model="vendor.first_name"
+            name="first_name"
+            type="text"
+            class="form-control form-control2 mb-2"
+            placeholder="Enter First Name"
+            required
           >
-          <!-- @submit.prevent="submitForm" -->
-            <h4 style="color: #2D3448;">Complete your Registration</h4>
-            <div class>
-              <label class="col-form-label" for="formGroupExampleInput">
-                <i class="fa fa-user" />
-                First Name
-              </label>
-              <input
-                id="formGroupExampleInput"
-                name="business_name"
-                type="text"
-                v-model="firstname"
-                class="form-control form-control2 mb-2"
-                placeholder="Enter First Name"
-                required
-              />
-            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 pl-lg-2 pl-md-2 pl-sm-3 pl-3">
+          <label class="col-form-label" for="formGroupExampleInput">
+            Last Name
+          </label>
+          <input
+            id="formGroupExampleInput"
+            v-model="vendor.last_name"
+            type="text"
+            name="last_name"
+            class="form-control form-control2 mb-2"
+            placeholder="Enter Last Name"
+            required
+          >
+        </div>
+      </div>
 
-            <div class>
-              <label class="col-form-label" for="formGroupExampleInput">
-                <i class="fa fa-user" /> Last Name
-              </label>
-              <input
-                id="formGroupExampleInput"
-                type="text"
-                name="lastname"
-                v-model="lastname"
-                class="form-control form-control2 mb-2"
-                placeholder="Enter Last Name"
-                required
-              />
-            </div>
+      <div class>
+        <label class="col-form-label" for="formGroupExampleInput">
+          Email Address
+        </label>
+        <input
+          id="formGroupExampleInput"
+          v-model="vendor.email"
+          type="email"
+          name="email"
+          class="form-control form-control2 mb-2"
+          placeholder="email@gmail.com"
+          required
+        >
+      </div>
 
-            <div class>
-              <label class="col-form-label" for="formGroupExampleInput">
-                <i class="fa fa-envelope" /> Email Address
-              </label>
-              <input
-                id="formGroupExampleInput"
-                type="email"
-                name="email"
-                v-model="email"
-                class="form-control form-control2 mb-2"
-                placeholder="email@gmail.com"
-                required
-              />
-            </div>
+      <!--<div class>-->
+      <!--<label class="col-form-label" for="formGroupExampleInput">-->
+      <!--Phone Number-->
+      <!--</label>-->
+      <!--<input-->
+      <!--id="formGroupExampleInput"-->
+      <!--v-model="vendor.phone"-->
+      <!--type="text"-->
+      <!--name="location"-->
+      <!--class="form-control form-control2"-->
+      <!--placeholder="234 | "-->
+      <!--required-->
+      <!--&gt;-->
+      <!--</div>-->
 
-            <div class>
-              <label class="col-form-label" for="formGroupExampleInput">
-                <i class="fa fa-phone" /> Phone Number
-              </label>
-              <input
-                id="formGroupExampleInput"
-                type="text"
-                name="location"
-                v-model="phone"
-                class="form-control form-control2"
-                placeholder="234 | "
-                required
-              />
-            </div>
+      <label class="col-form-label" for="formGroupExampleInput">
+        Phone Number
+      </label>
+      <div class="input-group input-group-default">
+        <div class="input-group-prepend">
+          <span id="inputGroup-sizing-default" class="input-group-text">+234</span>
+        </div>
+        <input
+          id="formGroupExampleInput"
+          v-model="vendor.phone"
+          type="text"
+          name="phone"
+          class="form-control form-control2"
+          aria-label="default"
+          aria-describedby="inputGroup-sizing-default"
+          required
+        >
+      </div>
 
-            <div class>
-              <label class="col-form-label" for="formGroupExampleInput">
-                <i class="fa fa-key" /> Password
-              </label>
-              <input
-                id="formGroupExampleInput"
-                type="password"
-                name="city"
-                v-model="password"
-                class="form-control form-control2"
-                placeholder="**********"
-                required
-              />
-            </div>
+      <div class>
+        <label class="col-form-label" for="formGroupExampleInput">
+          Password
+        </label>
+        <input
+          id="formGroupExampleInput"
+          v-model="vendor.password"
+          type="password"
+          name="city"
+          class="form-control form-control2"
+          placeholder="**********"
+          required
+        >
+      </div>
 
-            <div class>
-              <label class="col-form-label" for="formGroupExampleInput">
-                <i class="fa fa-lock" /> Confirm Password
-              </label>
-              <input
-                id="formGroupExampleInput"
-                type="password"
-                name="city"
-                v-model="confirmpassword"
-                class="form-control form-control2"
-                placeholder="**********"
-                required
-              />
-            </div>
+      <div class>
+        <label class="col-form-label" for="formGroupExampleInput">
+          Confirm Password
+        </label>
+        <input
+          id="formGroupExampleInput"
+          v-model="vendor.password_confirmation"
+          type="password"
+          name="city"
+          class="form-control form-control2"
+          placeholder="**********"
+          required
+        >
+      </div>
 
-            <div class="pt-4 pb-1 d-flex justify-content-center">
-              <input
-                type="submit"
-                class="btn buttonS btn-primary text-center submit-button"
-                value="Next"
-                @click="nextForm"
-              />
-            </div>
-            <p class="text-center">By registrating you have chosen to accept the <span class="terms"> Terms of Service and Privacy policy </span></p>
-          </form>
-    </div>
+      <div class="pt-4 pb-1 d-flex justify-content-center">
+        <input
+          @click="nextForm"
+          type="button"
+          class="btn buttonS btn-primary text-center submit-button"
+          value="continue"
+        >
+      </div>
+      <p class="text-center">
+        By registrating you have chosen to accept the <span class="terms"> Terms of Service and Privacy policy </span>
+      </p>
+    </form>
+  </div>
 </template>
 <script>
-import bankForm from './bankForm'
 export default {
-  name: 'vendorform',
-    data() {
-        return {
-            firstname: '',
-            lastname: '',
-            email: '',
-            phone: '',
-            password: '',
-            confirmpassword: '',
-        }
-    },
-    props: {
-        clickHandler: {
-            type: Function,
-            default() {
-                return function () {};
-            }
-        }
-    },
-    components: {
-        bankForm
-    },
-    methods: {
-        nextForm(){
-            if ( this.firstname === '' || this.lastname === '' || this.email === '' || this.phone === ''
-             || this.password === '' || this.confirmpassword === '' ) {
-      } else {
-          this.clickHandler(); // invoke func passed via prop
-        }
+  name: 'Vendorform',
+  components: {},
+  props: {
+    clickHandler: {
+      type: Function,
+      default() {
+        return function() {}
+      }
     }
+  },
+  data() {
+    return {
+      vendor: {
+        first_name: '',
+        last_name: '',
+        email: '',
+        phone: '',
+        password: '',
+        password_confirmation: ''
+      }
     }
+  },
+  methods: {
+    nextForm() {
+      console.log('I am called')
+
+      localStorage.setItem('vendorPersonalDetails', JSON.stringify(this.vendor))
+      this.$emit('changeRequestType')
+    }
+  }
 }
 </script>
 
 <style scoped>
 .form-area {
-    background-color: #ffffff;
-    width: 80%;
-    padding: 30px !important;
+  background-color: #ffffff;
+  padding: 30px 30px 10px 30px !important;
+  border-radius: 5px;
 }
 label {
-    color: #4F5259 !important;
-    font-size: 12px !important;
-    font-family: 'Circularbold' !important;
+  color: #4f5259 !important;
+  font-size: 12px !important;
+  font-family: 'Circularbold' !important;
 }
 button.close {
   padding: 0 16px 16px 11px !important;
@@ -166,12 +187,12 @@ button.close:hover {
   background-color: blue !important;
 }
 h4 {
-    font-family: 'Circularmedium' !important;
+  font-family: 'Circularmedium' !important;
 }
 
 .submit-button {
   width: 100% !important;
-  background-color:#2F6DEB !important;
+  background-color: #2f6deb !important;
   border: none !important;
   box-shadow: none !important;
   font-size: 15px !important;
@@ -184,24 +205,24 @@ h4 {
   border-color: #1068ed !important;
 }
 .form-control2 {
-height: 40px;
-border: 1px solid #ABB4BD;
+  height: 40px;
+  border: 1px solid #abb4bd;
 }
 input {
-color: #ABB4BD !important;
-font-family: 'Circularbook' !important;
+  color: #abb4bd !important;
+  font-family: 'Circularbook' !important;
 }
 p {
-color: #828282 !important;
-font-size: 12px;
-font-family: 'Circularbook' !important;
+  color: #828282 !important;
+  font-size: 12px;
+  font-family: 'Circularbook' !important;
 }
 .terms {
-    color: #2F6DEB !important;
+  color: #2f6deb !important;
 }
 @media only screen and (max-width: 800px) {
-.form-area {
+  .form-area {
     width: 100%;
-}
+  }
 }
 </style>
