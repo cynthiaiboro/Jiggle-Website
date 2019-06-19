@@ -36,7 +36,7 @@
                 <div class="row">
                   <div class="col-12">
                     <div class="alert alert-warning">
-                      <h6>Kindly Complete the Jiggle Vendor Registration Form Bellow</h6>
+                      <h6 class="warning-message text-center">Kindly Complete the Jiggle Vendor Registration Form Bellow</h6>
                     </div>
                   </div>
                 </div>
@@ -97,10 +97,10 @@ export default {
           this.vendorDetails = response.data.data
         })
         .catch(error => {
-          this.error(
-            'Invalid Reference',
-            'Please check that you were sent a valid reference and try again'
-          )
+          // this.error(
+          //   'Invalid Reference',
+          //   'Please check that you were sent a valid reference and try again'
+          // )
         })
     },
     changeRequestType() {
@@ -210,6 +210,9 @@ export default {
 }
 .vendor-email {
   color: #a6a6a6;
+}
+.warning-message {
+  font-size: 15px;
 }
 @media only screen and (max-width: 800px) {
   .great-app {

@@ -1,106 +1,111 @@
 <template>
-    <form
-      @click="selectedComponent= 'bankForm'"
-      method="post"
-      class="needs-validation"
-    >
-      <!-- @submit.prevent="submitForm" -->
-      <p style="color: #2D3448;" class="mb-2 admin-contact">
-        Admin Contact
-      </p>
-      <hr>
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-2 pr-md-2 pr-sm-3 pr-3">
-          <label class="col-form-label" for="formGroupExampleInput">
-            First Name
-          </label>
-          <input
-            id="formGroupExampleInput"
-            v-model="vendor.first_name"
-            name="first_name"
-            type="text"
-            class="form-control form-control2 mb-2"
-            placeholder="Enter First Name"
-            required
-          >
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12 pl-lg-2 pl-md-2 pl-sm-3 pl-3">
-          <label class="col-form-label" for="formGroupExampleInput">
-            Last Name
-          </label>
-          <input
-            id="formGroupExampleInput"
-            v-model="vendor.last_name"
-            type="text"
-            name="last_name"
-            class="form-control form-control2 mb-2"
-            placeholder="Enter Last Name"
-            required
-          >
-        </div>
-      </div>
-
-      <label class="col-form-label" for="formGroupExampleInput">
-        Phone Number
-      </label>
-      <div class="input-group input-group-default">
-        <div class="input-group-prepend">
-          <span id="inputGroup-sizing-default" class="input-group-text">+234</span>
-        </div>
+  <form
+    @click="selectedComponent= 'bankForm'"
+    method="post"
+    class="needs-validation"
+  >
+    <!-- @submit.prevent="submitForm" -->
+    <p style="color: #2D3448;" class="mb-2 admin-contact">
+      Admin Contact
+    </p>
+    <hr>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-2 pr-md-2 pr-sm-3 pr-3">
+        <label class="col-form-label" for="formGroupExampleInput">
+          First Name
+        </label>
         <input
           id="formGroupExampleInput"
-          v-model="vendor.phone"
+          v-model="vendor.first_name"
+          v-validate="'required'"
+          name="first_name"
           type="text"
-          name="phone"
-          class="form-control form-control2"
-          aria-label="default"
-          aria-describedby="inputGroup-sizing-default"
+          class="form-control form-control2 mb-2"
+          placeholder="Enter First Name"
+        >
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 pl-lg-2 pl-md-2 pl-sm-3 pl-3">
+        <label class="col-form-label" for="formGroupExampleInput">
+          Last Name
+        </label>
+        <input
+          id="formGroupExampleInput"
+          v-model="vendor.last_name"
+          v-validate="'required'"
+          type="text"
+          name="last_name"
+          class="form-control form-control2 mb-2"
+          placeholder="Enter Last Name"
           required
         >
       </div>
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-2 pr-md-2 pr-sm-3 pr-3">
-          <label class="col-form-label" for="formGroupExampleInput">
-            Password
-          </label>
-          <input
-            id="formGroupExampleInput"
-            v-model="vendor.password"
-            name="password"
-            type="password"
-            class="form-control form-control2 mb-2"
-            placeholder="******"
-            required
-          >
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12 pl-lg-2 pl-md-2 pl-sm-3 pl-3">
-          <label class="col-form-label" for="formGroupExampleInput">
-            Confirm Password
-          </label>
-          <input
-            id="formGroupExampleInput"
-            v-model="vendor.password_confirmation"
-            type="password"
-            name="last_name"
-            class="form-control form-control2 mb-2"
-            placeholder="******"
-            required
-          >
-        </div>
-      </div>
+    </div>
 
-      <div class="pt-4 pb-1 d-flex justify-content-center">
+    <label class="col-form-label" for="formGroupExampleInput">
+      Phone Number
+    </label>
+    <div class="input-group input-group-default">
+      <div class="input-group-prepend">
+        <span id="inputGroup-sizing-default" class="input-group-text">+234</span>
+      </div>
+      <input
+        id="formGroupExampleInput"
+        v-model="vendor.phone"
+        v-validate="'required'"
+        type="text"
+        name="phone"
+        class="form-control form-control2"
+        aria-label="default"
+        aria-describedby="inputGroup-sizing-default"
+        required
+      >
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-2 pr-md-2 pr-sm-3 pr-3">
+        <label class="col-form-label" for="formGroupExampleInput">
+          Password
+        </label>
         <input
-          @click="nextForm"
-          type="button"
-          class="btn buttonS btn-primary text-center submit-button"
-          value="Continue"
+          id="formGroupExampleInput"
+          v-model="vendor.password"
+          v-validate="'required'"
+          name="password"
+          type="password"
+          class="form-control form-control2 mb-2"
+          placeholder="******"
+          required
         >
       </div>
-      <p class="text-center">
-        By registrating you have chosen to accept the <span class="terms"> Terms of Service and Privacy policy </span>
-      </p>
-    </form>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 pl-lg-2 pl-md-2 pl-sm-3 pl-3">
+        <label class="col-form-label" for="formGroupExampleInput">
+          Confirm Password
+        </label>
+        <input
+          id="formGroupExampleInput"
+          v-model="vendor.password_confirmation"
+          v-validate="'required'"
+          type="password"
+          name="password_confirmation"
+          class="form-control form-control2 mb-2"
+          placeholder="******"
+          required
+        >
+      </div>
+    </div>
+
+    <div class="pt-4 pb-1 d-flex justify-content-center">
+      <input
+        @click.prevent.default="nextForm"
+        :disabled="hasErrors"
+        type="submit"
+        class="btn buttonS btn-primary text-center submit-button"
+        value="Continue"
+      >
+    </div>
+    <p class="text-center">
+      By registrating you have chosen to accept the <span class="terms"> Terms of Service and Privacy policy </span>
+    </p>
+  </form>
 </template>
 <script>
 export default {
@@ -116,7 +121,13 @@ export default {
         phone: '',
         password: '',
         password_confirmation: ''
-      }
+      },
+      disableButton: true
+    }
+  },
+  computed: {
+    hasErrors() {
+      return this.errors.items.length !== 0
     }
   },
   methods: {
@@ -125,6 +136,21 @@ export default {
 
       localStorage.setItem('vendorPersonalDetails', JSON.stringify(this.vendor))
       this.$emit('changeRequestType')
+    },
+    checkErrors() {
+      if (this.errors.items.length > 0) {
+      }
+    },
+    checkButton() {
+      if (
+        this.vendor.first_name &&
+        this.vendor.last_name &&
+        this.vendor.password &&
+        this.vendor.password_confirmation &&
+        this.vendor.phone === ''
+      ) {
+        this.disableButton = false
+      }
     }
   }
 }
@@ -184,6 +210,9 @@ p {
 }
 .admin-contact {
   font-size: 18px;
+}
+.form-control2 {
+  color: black !important;
 }
 @media only screen and (max-width: 800px) {
   .form-area {
