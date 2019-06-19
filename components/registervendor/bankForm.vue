@@ -1,100 +1,100 @@
 <template>
   <div>
     <!--<div v-if="loading">-->
-      <!--<loading />-->
+    <!--<loading />-->
     <!--</div>-->
-  <form
-    @submit.prevent="submitForm"
-    method="post"
-    class="needs-validation"
-  >
-    <p style="color: #2D3448;" class="mb-2 bank-detail">
-      Bank Details
-    </p>
-    <hr>
-    <div class>
-      <label class="col-form-label" for="formGroupExampleInput">
-        <!-- <i class="fa fa-university" /> -->
-        Bank
-      </label>
-      <select
-        id="formGroupExampleInput"
-        v-model="vendor.bank_id"
-        name="bank_id"
-        class="form-control form-control2 mb-2"
-        required
-      >
-        <option value="" class="text-dark" disabled>
-          <span v-if="loading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-          Select Bank
-        </option>
-        <option
-          v-for="(bank, key) in banks"
-          :key="key"
-          :value="bank.id"
+    <form
+      @submit.prevent="submitForm"
+      method="post"
+      class="needs-validation"
+    >
+      <p style="color: #2D3448;" class="mb-2 bank-detail">
+        Bank Details
+      </p>
+      <hr>
+      <div class>
+        <label class="col-form-label" for="formGroupExampleInput">
+          <!-- <i class="fa fa-university" /> -->
+          Bank
+        </label>
+        <select
+          id="formGroupExampleInput"
+          v-model="vendor.bank_id"
+          name="bank_id"
+          class="form-control form-control2 mb-2"
+          required
         >
-          {{ bank.name }}
-        </option>
-      </select>
-    </div>
+          <option value="" class="text-dark" disabled>
+            <span v-if="loading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" />
+            Select Bank
+          </option>
+          <option
+            v-for="(bank, key) in banks"
+            :key="key"
+            :value="bank.id"
+          >
+            {{ bank.name }}
+          </option>
+        </select>
+      </div>
 
-    <div class>
-      <label class="col-form-label" for="formGroupExampleInput">
-        <!-- <i class="fa fa-user" /> -->
-        Account Number
-      </label>
-      <input
-        id="formGroupExampleInput"
-        v-model="vendor.account_no"
-        type="number"
-        name="account-number"
-        class="form-control form-control2 mb-2"
-        placeholder="0000000000"
-        required
-      >
-    </div>
+      <div class>
+        <label class="col-form-label" for="formGroupExampleInput">
+          <!-- <i class="fa fa-user" /> -->
+          Account Number
+        </label>
+        <input
+          id="formGroupExampleInput"
+          v-model="vendor.account_no"
+          type="number"
+          name="account-number"
+          class="form-control form-control2 mb-2"
+          placeholder="0000000000"
+          required
+        >
+      </div>
 
-    <div class>
-      <label class="col-form-label" for="formGroupExampleInput">
-        <!-- <i class="fa fa-envelope" />  -->
-        BVN
-      </label>
-      <input
-        id="formGroupExampleInput"
-        v-model="vendor.bvn"
-        type="number"
-        name="bvn"
-        class="form-control form-control2 mb-2"
-        placeholder="0000000000"
-        required
-      >
-    </div>
+      <div class>
+        <label class="col-form-label" for="formGroupExampleInput">
+          <!-- <i class="fa fa-envelope" />  -->
+          BVN
+        </label>
+        <input
+          id="formGroupExampleInput"
+          v-model="vendor.bvn"
+          type="number"
+          name="bvn"
+          class="form-control form-control2 mb-2"
+          placeholder="0000000000"
+          required
+        >
+      </div>
 
 
-    <div class="pt-4 pb-1 d-flex justify-content-center">
-      <button
-        type="submit"
-        class="btn buttonS btn-primary text-center submit-button"
-        value="Submit"
-      >
-        <span v-if="loading" class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true"></span>
-        Submit
-      </button>
-    </div>
-    <p class="text-center">
-      By registering you have chosen to accept the <span class="terms"> Terms of Service and Privacy policy </span>
-    </p>
-  </form>
+      <div class="pt-4 pb-1 d-flex justify-content-center">
+        <button
+          type="submit"
+          class="btn buttonS btn-primary text-center submit-button"
+          value="Submit"
+        >
+          <span v-if="loading" class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true" />
+          Submit
+        </button>
+      </div>
+      <p class="text-center">
+        By registering you have chosen to accept the <span class="terms"> Terms of Service and Privacy policy </span>
+      </p>
+    </form>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
-import Loading from "../shared/Loading";
+import Loading from '../shared/Loading'
 const BASE_URL = 'https://api.jiggle.ng/'
 export default {
-    components: {Loading},
-    props: ['currentRequestType', 'initialRequestType'],
+  components: { Loading },
+  props: ['currentRequestType', 'initialRequestType'],
   data() {
     return {
       banks: [],
@@ -112,7 +112,7 @@ export default {
         reference: '',
         type: ''
       },
-        loading: false
+      loading: false
     }
   },
   mounted() {
@@ -132,7 +132,7 @@ export default {
         })
     },
     submitForm() {
-        this.loading = true
+      this.loading = true
       const vendorPersonalDetails = JSON.parse(
         localStorage.getItem('vendorPersonalDetails')
       )
@@ -150,7 +150,7 @@ export default {
         .post('vendor/complete-registration', this.vendor)
         .then(response => {
           console.log('Registration form completed')
-            this.loading = false
+          this.loading = false
           this.$toast.success('Your registration is complete', 'Success')
         })
         .catch(error => {

@@ -3,7 +3,13 @@
     <navbar />
     <section class="mt-5 pt-2 pb-5">
       <div class="container mt-4">
-        <div class="row">
+        <div v-if="showError" class="text-danger text-center d-flex align-items-center justify-content-center" style="height: 80vh">
+          <div>
+            <h4>{{ errorMessage.title }}</h4>
+            <p>{{ errorMessage.body }}</p>
+          </div>
+        </div>
+        <div v-else class="row">
           <div class="col-lg-3 col-md-3 col-sm-none col-none" />
           <div class="col-md-6 col-12 d-md-block pb-3 form">
             <div class="d-flex justify-content-center align-items-center mt-md-5">
@@ -64,7 +70,12 @@ export default {
     return {
       currentRequestType: '',
       initialRequestType: '',
-      vendorDetails: ''
+      vendorDetails: '',
+      errorMessage: {
+        title: '',
+        body: ''
+      },
+      showError: false
     }
   },
   created() {
@@ -85,10 +96,21 @@ export default {
           console.log(this.currentRequestType)
           this.vendorDetails = response.data.data
         })
+        .catch(error => {
+          this.error(
+            'Invalid Reference',
+            'Please check that you were sent a valid reference and try again'
+          )
+        })
     },
     changeRequestType() {
       console.log('Am called')
       return (this.currentRequestType = 'bank_details')
+    },
+    error(title, body) {
+      this.errorMessage.title = title
+      this.errorMessage.body = body
+      this.showError = true
     }
   }
 }
