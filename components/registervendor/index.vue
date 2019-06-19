@@ -3,7 +3,13 @@
     <navbar />
     <section class="mt-5 pt-2 pb-5">
       <div class="container mt-4">
-        <div v-if="showError" class="text-danger text-center d-flex align-items-center justify-content-center" style="height: 80vh">
+        <div v-if="loading" class="text-center d-flex align-items-center justify-content-center" style="height: 80vh">
+          <div>
+          <loading />
+          <p class="loading">Loading...</p>
+          </div>
+        </div>
+        <div v-else-if="showError" class="text-danger text-center d-flex align-items-center justify-content-center" style="height: 80vh">
           <div>
             <h4>{{ errorMessage.title }}</h4>
             <p>{{ errorMessage.body }}</p>
@@ -36,7 +42,9 @@
                 <div class="row">
                   <div class="col-12">
                     <div class="alert alert-warning">
-                      <h6 class="warning-message text-center">Kindly Complete the Jiggle Vendor Registration Form Bellow</h6>
+                      <h6 class="warning-message text-center">
+                        Kindly Complete the Jiggle Vendor Registration Form Bellow
+                      </h6>
                     </div>
                   </div>
                 </div>
@@ -60,8 +68,10 @@
 import navbar from '../../components/registervendor/navbar'
 import personalForm from '../../components/registervendor/vendorForm'
 import bankForm from '../../components/registervendor/bankForm'
+import Loading from '../shared/Loading'
 export default {
   components: {
+    Loading,
     personalForm,
     bankForm,
     navbar
@@ -75,7 +85,8 @@ export default {
         title: '',
         body: ''
       },
-      showError: false
+      showError: false,
+      loading: false
     }
   },
   created() {
@@ -83,10 +94,8 @@ export default {
     this.checkReference(reference)
   },
   methods: {
-    // changeComponent: function() {
-    //   this.selectedComponent = 'bankForm'
-    // },
     checkReference(reference) {
+        this.loading = true
       this.$axios
         .get('vendor/invitation-details/' + reference)
         .then(response => {
@@ -95,12 +104,13 @@ export default {
           console.log(response.data)
           console.log(this.currentRequestType)
           this.vendorDetails = response.data.data
+            this.loading = false
         })
         .catch(error => {
-          // this.error(
-          //   'Invalid Reference',
-          //   'Please check that you were sent a valid reference and try again'
-          // )
+          this.error(
+            'Invalid Reference',
+            'Please check that you were sent a valid reference and try again'
+          )
         })
     },
     changeRequestType() {
@@ -111,6 +121,7 @@ export default {
       this.errorMessage.title = title
       this.errorMessage.body = body
       this.showError = true
+        this.loading = false
     }
   }
 }
@@ -213,6 +224,9 @@ export default {
 }
 .warning-message {
   font-size: 15px;
+}
+.loading {
+  color: #404447;
 }
 @media only screen and (max-width: 800px) {
   .great-app {

@@ -75,7 +75,7 @@
 
       <div class="pt-4 pb-1 d-flex justify-content-center">
         <button
-                :disabled="hasErrors"
+          :disabled="hasErrors"
           type="submit"
           class="btn buttonS btn-primary text-center submit-button"
           value="Submit"
@@ -137,7 +137,7 @@ export default {
         })
         .catch(error => {
           console.log('Error getting banks')
-            console.log(error.response.data)
+          console.log(error.response.data)
         })
     },
     submitForm() {
@@ -160,11 +160,17 @@ export default {
         .then(response => {
           console.log('Registration form completed')
           this.loading = false
+          swal('Success', 'Registration Form Completed Successfully', 'success')
           this.$toast.success('Your registration is complete', 'Success')
         })
-        .catch((error) => {
+        .catch(error => {
           console.log('There is an error')
-            console.log(error.response.data)
+          console.log(error.response.data)
+          swal(
+            'Error',
+            'An error occured while trying to complete your registration',
+            'error'
+          )
         })
     }
   }
