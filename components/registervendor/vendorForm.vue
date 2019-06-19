@@ -1,14 +1,14 @@
 <template>
-  <div class="form-area shadow w-100">
     <form
       @click="selectedComponent= 'bankForm'"
       method="post"
       class="needs-validation"
     >
       <!-- @submit.prevent="submitForm" -->
-      <h4 style="color: #2D3448;" class="mb-3">
-        Complete your Registration
-      </h4>
+      <p style="color: #2D3448;" class="mb-2 admin-contact">
+        Admin Contact
+      </p>
+      <hr>
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-2 pr-md-2 pr-sm-3 pr-3">
           <label class="col-form-label" for="formGroupExampleInput">
@@ -40,36 +40,6 @@
         </div>
       </div>
 
-      <div class>
-        <label class="col-form-label" for="formGroupExampleInput">
-          Email Address
-        </label>
-        <input
-          id="formGroupExampleInput"
-          v-model="vendor.email"
-          type="email"
-          name="email"
-          class="form-control form-control2 mb-2"
-          placeholder="email@gmail.com"
-          required
-        >
-      </div>
-
-      <!--<div class>-->
-      <!--<label class="col-form-label" for="formGroupExampleInput">-->
-      <!--Phone Number-->
-      <!--</label>-->
-      <!--<input-->
-      <!--id="formGroupExampleInput"-->
-      <!--v-model="vendor.phone"-->
-      <!--type="text"-->
-      <!--name="location"-->
-      <!--class="form-control form-control2"-->
-      <!--placeholder="234 | "-->
-      <!--required-->
-      <!--&gt;-->
-      <!--</div>-->
-
       <label class="col-form-label" for="formGroupExampleInput">
         Phone Number
       </label>
@@ -88,35 +58,35 @@
           required
         >
       </div>
-
-      <div class>
-        <label class="col-form-label" for="formGroupExampleInput">
-          Password
-        </label>
-        <input
-          id="formGroupExampleInput"
-          v-model="vendor.password"
-          type="password"
-          name="city"
-          class="form-control form-control2"
-          placeholder="**********"
-          required
-        >
-      </div>
-
-      <div class>
-        <label class="col-form-label" for="formGroupExampleInput">
-          Confirm Password
-        </label>
-        <input
-          id="formGroupExampleInput"
-          v-model="vendor.password_confirmation"
-          type="password"
-          name="city"
-          class="form-control form-control2"
-          placeholder="**********"
-          required
-        >
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-2 pr-md-2 pr-sm-3 pr-3">
+          <label class="col-form-label" for="formGroupExampleInput">
+            Password
+          </label>
+          <input
+            id="formGroupExampleInput"
+            v-model="vendor.password"
+            name="password"
+            type="password"
+            class="form-control form-control2 mb-2"
+            placeholder="******"
+            required
+          >
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 pl-lg-2 pl-md-2 pl-sm-3 pl-3">
+          <label class="col-form-label" for="formGroupExampleInput">
+            Confirm Password
+          </label>
+          <input
+            id="formGroupExampleInput"
+            v-model="vendor.password_confirmation"
+            type="password"
+            name="last_name"
+            class="form-control form-control2 mb-2"
+            placeholder="******"
+            required
+          >
+        </div>
       </div>
 
       <div class="pt-4 pb-1 d-flex justify-content-center">
@@ -124,27 +94,19 @@
           @click="nextForm"
           type="button"
           class="btn buttonS btn-primary text-center submit-button"
-          value="continue"
+          value="Continue"
         >
       </div>
       <p class="text-center">
         By registrating you have chosen to accept the <span class="terms"> Terms of Service and Privacy policy </span>
       </p>
     </form>
-  </div>
 </template>
 <script>
 export default {
   name: 'Vendorform',
   components: {},
-  props: {
-    clickHandler: {
-      type: Function,
-      default() {
-        return function() {}
-      }
-    }
-  },
+  props: ['vendorDetails'],
   data() {
     return {
       vendor: {
@@ -219,6 +181,9 @@ p {
 }
 .terms {
   color: #2f6deb !important;
+}
+.admin-contact {
+  font-size: 18px;
 }
 @media only screen and (max-width: 800px) {
   .form-area {

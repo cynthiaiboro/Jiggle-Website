@@ -3,15 +3,49 @@
     <navbar />
     <section class="mt-5 pt-2 pb-5">
       <div class="container mt-4">
-        <div class="row">
+        <div v-if="showError" class="text-danger text-center d-flex align-items-center justify-content-center" style="height: 80vh">
+          <div>
+            <h4>{{ errorMessage.title }}</h4>
+            <p>{{ errorMessage.body }}</p>
+          </div>
+        </div>
+        <div v-else class="row">
           <div class="col-lg-3 col-md-3 col-sm-none col-none" />
           <div class="col-md-6 col-12 d-md-block pb-3 form">
             <div class="d-flex justify-content-center align-items-center mt-md-5">
-              <div v-if="requestType === 'bank_details'">
-                <bank-form @submitForm="submitForm" :reference-type="requestType" />
-              </div>
-              <div v-else>
-                <personal-form @changeRequestType="changeRequestType" />
+              <div class="form-area shadow w-100">
+                <p class="welcome mb-3">
+                  Welcome!
+                </p>
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-12">
+                    <img src="../../static/budgetier.png" alt="Vendor Logo" style="height: 90%; width: 90%">
+                  </div>
+                  <div class="col-lg-9 col-md-9 col-sm-9 col-9">
+                    <h5 class="mb-1">
+                      {{ vendorDetails.vendor }}
+                    </h5>
+                    <p class="mb-1 vendor-email">
+                      {{ vendorDetails.email }}
+                    </p>
+                    <p class="text-danger">
+                      Unverified
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="alert alert-warning">
+                      <h6>Kindly Complete the Jiggle Vendor Registration Form Bellow</h6>
+                    </div>
+                  </div>
+                </div>
+                <div v-if="currentRequestType === 'bank_details'">
+                  <bank-form @submitForm="submitForm" :initial-request-type="initialRequestType" :reference-type="currentRequestType" />
+                </div>
+                <div v-else>
+                  <personal-form :vendor-details="vendorDetails" @changeRequestType="changeRequestType" />
+                </div>
               </div>
             </div>
           </div>
@@ -34,7 +68,14 @@ export default {
   },
   data() {
     return {
-      requestType: 'personal_details'
+      currentRequestType: '',
+      initialRequestType: '',
+      vendorDetails: '',
+      errorMessage: {
+        title: '',
+        body: ''
+      },
+      showError: false
     }
   },
   created() {
@@ -47,15 +88,29 @@ export default {
     // },
     checkReference(reference) {
       this.$axios
-        .get('vendor/complete-registration/' + reference)
+        .get('vendor/invitation-details/' + reference)
         .then(response => {
-          this.requestType = response.data.data.type
-          console.log(this.requestType)
+          this.currentRequestType = response.data.data.type
+          this.initialRequestType = response.data.data.type
+          console.log(response.data)
+          console.log(this.currentRequestType)
+          this.vendorDetails = response.data.data
+        })
+        .catch(error => {
+          this.error(
+            'Invalid Reference',
+            'Please check that you were sent a valid reference and try again'
+          )
         })
     },
     changeRequestType() {
-        console.log('Am called');
-      return (this.requestType = 'bank_details')
+      console.log('Am called')
+      return (this.currentRequestType = 'bank_details')
+    },
+    error(title, body) {
+      this.errorMessage.title = title
+      this.errorMessage.body = body
+      this.showError = true
     }
   }
 }
@@ -69,7 +124,6 @@ export default {
 }
 #header {
   background: #e5e5e5 !important;
-  height: 100vh;
 }
 .nav-link {
   color: #ffffff !important;
@@ -148,6 +202,14 @@ export default {
 }
 .navbar-light .navbar-toggler {
   color: #ffffff;
+}
+.welcome {
+  color: #343647;
+  /*font-style: italic;*/
+  font-size: 28px;
+}
+.vendor-email {
+  color: #a6a6a6;
 }
 @media only screen and (max-width: 800px) {
   .great-app {

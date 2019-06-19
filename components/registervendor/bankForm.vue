@@ -1,13 +1,17 @@
 <template>
-  <div class="form-area w-100 shadow">
+  <div>
+    <!--<div v-if="loading">-->
+    <!--<loading />-->
+    <!--</div>-->
     <form
       @submit.prevent="submitForm"
       method="post"
       class="needs-validation"
     >
-      <h4 style="color: #2D3448;">
-        Complete your Registration
-      </h4>
+      <p style="color: #2D3448;" class="mb-2 bank-detail">
+        Bank Details
+      </p>
+      <hr>
       <div class>
         <label class="col-form-label" for="formGroupExampleInput">
           <!-- <i class="fa fa-university" /> -->
@@ -17,10 +21,13 @@
           id="formGroupExampleInput"
           v-model="vendor.bank_id"
           name="bank_id"
-          value="Select Bank"
           class="form-control form-control2 mb-2"
           required
         >
+          <option value="" class="text-dark" disabled>
+            <span v-if="loading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" />
+            Select Bank
+          </option>
           <option
             v-for="(bank, key) in banks"
             :key="key"
@@ -65,11 +72,14 @@
 
 
       <div class="pt-4 pb-1 d-flex justify-content-center">
-        <input
+        <button
           type="submit"
           class="btn buttonS btn-primary text-center submit-button"
           value="Submit"
         >
+          <span v-if="loading" class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true" />
+          Submit
+        </button>
       </div>
       <p class="text-center">
         By registering you have chosen to accept the <span class="terms"> Terms of Service and Privacy policy </span>
@@ -80,9 +90,11 @@
 
 <script>
 import axios from 'axios'
+import Loading from '../shared/Loading'
 const BASE_URL = 'https://api.jiggle.ng/'
 export default {
-  props: ['referenceType'],
+  components: { Loading },
+  props: ['currentRequestType', 'initialRequestType'],
   data() {
     return {
       banks: [],
@@ -99,7 +111,8 @@ export default {
         bvn: '',
         reference: '',
         type: ''
-      }
+      },
+      loading: false
     }
   },
   mounted() {
@@ -119,6 +132,7 @@ export default {
         })
     },
     submitForm() {
+      this.loading = true
       const vendorPersonalDetails = JSON.parse(
         localStorage.getItem('vendorPersonalDetails')
       )
@@ -130,12 +144,14 @@ export default {
       this.vendor.password_confirmation =
         vendorPersonalDetails.password_confirmation
       this.vendor.reference = this.$route.params.ref
-      this.vendor.type = this.referenceType
+      this.vendor.type = this.initialRequestType
       console.log(this.vendor)
       this.$axios
         .post('vendor/complete-registration', this.vendor)
         .then(response => {
           console.log('Registration form completed')
+          this.loading = false
+          this.$toast.success('Your registration is complete', 'Success')
         })
         .catch(error => {
           console.log('There is an error')
@@ -196,6 +212,9 @@ p {
 }
 .terms {
   color: #2f6deb !important;
+}
+.bank-detail {
+  font-size: 18px;
 }
 @media only screen and (max-width: 800px) {
   .form-area {
