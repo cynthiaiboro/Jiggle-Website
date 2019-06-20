@@ -86,7 +86,19 @@ module.exports = {
     '@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    [
+      'nuxt-validate',
+      {
+        lang: 'en',
+          classes:true,
+          classNames: {
+              valid: '',
+              invalid: 'is-invalid'
+          }
+        // regular vee-validate options
+      }
+    ]
   ],
   /*
   ** Axios module configuration

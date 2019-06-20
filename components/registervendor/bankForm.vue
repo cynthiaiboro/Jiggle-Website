@@ -20,6 +20,7 @@
         <select
           id="formGroupExampleInput"
           v-model="vendor.bank_id"
+          v-validate="'required'"
           name="bank_id"
           class="form-control form-control2 mb-2"
           required
@@ -46,11 +47,11 @@
         <input
           id="formGroupExampleInput"
           v-model="vendor.account_no"
-          type="number"
-          name="account-number"
-          class="form-control form-control2 mb-2"
+          v-validate="'required|numeric|length:10'"
+          type="text"
+          name="account_number"
+          class="form-control form-control2 mb-2 text-dark"
           placeholder="0000000000"
-          required
         >
       </div>
 
@@ -62,9 +63,10 @@
         <input
           id="formGroupExampleInput"
           v-model="vendor.bvn"
-          type="number"
+          v-validate="'required|numeric|length:11'"
+          type="text"
           name="bvn"
-          class="form-control form-control2 mb-2"
+          class="form-control form-control2 mb-2 text-dark"
           placeholder="0000000000"
           required
         >
@@ -73,6 +75,7 @@
 
       <div class="pt-4 pb-1 d-flex justify-content-center">
         <button
+          :disabled="hasErrors"
           type="submit"
           class="btn buttonS btn-primary text-center submit-button"
           value="Submit"
@@ -115,6 +118,11 @@ export default {
       loading: false
     }
   },
+  computed: {
+    hasErrors() {
+      return this.errors.items.length !== 0
+    }
+  },
   mounted() {
     this.getBanks()
   },
@@ -129,6 +137,7 @@ export default {
         })
         .catch(error => {
           console.log('Error getting banks')
+          console.log(error.response.data)
         })
     },
     submitForm() {
@@ -151,10 +160,17 @@ export default {
         .then(response => {
           console.log('Registration form completed')
           this.loading = false
+          swal('Success', 'Registration Form Completed Successfully', 'success')
           this.$toast.success('Your registration is complete', 'Success')
         })
         .catch(error => {
           console.log('There is an error')
+          console.log(error.response.data)
+          swal(
+            'Error',
+            'An error occured while trying to complete your registration',
+            'error'
+          )
         })
     }
   }
@@ -200,6 +216,7 @@ h4 {
 .form-control2 {
   height: 40px;
   border: 1px solid #abb4bd;
+  color: black !important;
 }
 input {
   color: #abb4bd !important;
