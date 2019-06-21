@@ -15,13 +15,15 @@
           First Name
         </label>
         <input
-          id="formGroupExampleInput"
+          id="first-name"
           v-model="vendor.first_name"
           v-validate="'required'"
+          @keyup="checkInputs"
           name="first_name"
           type="text"
           class="form-control form-control2 mb-2"
           placeholder="Enter First Name"
+          required
         >
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12 col-12 pl-lg-2 pl-md-2 pl-sm-3 pl-3">
@@ -32,6 +34,7 @@
           id="formGroupExampleInput"
           v-model="vendor.last_name"
           v-validate="'required'"
+          @keyup="checkInputs"
           type="text"
           name="last_name"
           class="form-control form-control2 mb-2"
@@ -51,7 +54,8 @@
       <input
         id="formGroupExampleInput"
         v-model="vendor.phone"
-        v-validate="'required'"
+        v-validate="'required|numeric|'"
+        @keyup="checkInputs"
         type="text"
         name="phone"
         class="form-control form-control2"
@@ -69,6 +73,7 @@
           id="formGroupExampleInput"
           v-model="vendor.password"
           v-validate="'required'"
+          @keyup="checkInputs"
           name="password"
           type="password"
           class="form-control form-control2 mb-2"
@@ -84,6 +89,7 @@
           id="formGroupExampleInput"
           v-model="vendor.password_confirmation"
           v-validate="'required'"
+          @keyup="checkInputs"
           type="password"
           name="password_confirmation"
           class="form-control form-control2 mb-2"
@@ -97,6 +103,7 @@
       <input
         @click.prevent.default="nextForm"
         :disabled="hasErrors"
+        :class="{'button-is-inactive': disableButton}"
         type="submit"
         class="btn buttonS btn-primary text-center submit-button"
         value="Continue"
@@ -111,7 +118,7 @@
 export default {
   name: 'Vendorform',
   components: {},
-  props: ['vendorDetails'],
+  props: ['vendorDetails', 'disableButton'],
   data() {
     return {
       vendor: {
@@ -121,8 +128,7 @@ export default {
         phone: '',
         password: '',
         password_confirmation: ''
-      },
-      disableButton: true
+      }
     }
   },
   computed: {
@@ -130,26 +136,43 @@ export default {
       return this.errors.items.length !== 0
     }
   },
+  created() {
+    // this.watchInputs()
+  },
   methods: {
     nextForm() {
       console.log('I am called')
-
-      localStorage.setItem('vendorPersonalDetails', JSON.stringify(this.vendor))
-      this.$emit('changeRequestType')
-    },
-    checkErrors() {
-      if (this.errors.items.length > 0) {
-      }
-    },
-    checkButton() {
       if (
         this.vendor.first_name &&
         this.vendor.last_name &&
+        this.vendor.phone &&
         this.vendor.password &&
-        this.vendor.password_confirmation &&
-        this.vendor.phone === ''
+        this.vendor.password_confirmation
       ) {
-        this.disableButton = false
+        if (this.vendor.password === this.vendor.password_confirmation) {
+          localStorage.setItem(
+            'vendorPersonalDetails',
+            JSON.stringify(this.vendor)
+          )
+          this.$emit('changeRequestType')
+        } else {
+            swal('Error!', 'Passwords do not match')
+        }
+      } else {
+          swal('Error', 'All fields are required')
+      }
+    },
+    checkInputs() {
+      if (
+        this.vendor.first_name &&
+        this.vendor.last_name &&
+        this.vendor.phone &&
+        this.vendor.password &&
+        this.vendor.password_confirmation
+      ) {
+        if (this.vendor.password === this.vendor.password_confirmation) {
+          this.disableButton = false
+        }
       }
     }
   }
@@ -213,6 +236,11 @@ p {
 }
 .form-control2 {
   color: black !important;
+}
+.button-is-inactive {
+  pointer-events: none;
+  background-color: #2f6deb !important;
+  opacity: 0.5;
 }
 @media only screen and (max-width: 800px) {
   .form-area {

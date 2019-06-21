@@ -2,17 +2,46 @@
   <div id="header">
     <navbar />
     <section class="mt-5 pt-2 pb-5">
-      <div class="container mt-4">
+      <div class="container">
         <div v-if="loading" class="text-center d-flex align-items-center justify-content-center" style="height: 80vh">
           <div>
-          <loading />
-          <p class="loading">Loading...</p>
+            <loading />
+            <p class="loading">
+              Loading...
+            </p>
           </div>
         </div>
-        <div v-else-if="showError" class="text-danger text-center d-flex align-items-center justify-content-center" style="height: 80vh">
-          <div>
-            <h4>{{ errorMessage.title }}</h4>
-            <p>{{ errorMessage.body }}</p>
+        <div v-else-if="showSuccess">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-none col-none" />
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 bg-white mt-5 shadow-sm text-dark bg-white shadow-sm d-flex align-items-center justify-content-center" style="height: 82vh">
+              <div>
+                <div class="text-center mb-2"><img src="../../assets/gifs/great_job.gif" alt="" style="height: 150px;"></div>
+                <h4 class="text-center">
+                  {{ successMessage.title }}
+                </h4>
+                <p class="text-center">
+                  {{ successMessage.body }}
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-none col-none" />
+          </div>
+        </div>
+        <div v-else-if="showError" class="">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-none col-none" />
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-danger d-flex align-items-center justify-content-center" style="height: 80vh">
+              <div>
+                <h4 class="text-center">
+                  {{ errorMessage.title }}
+                </h4>
+                <p class="text-center">
+                  {{ errorMessage.body }}
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-none col-none" />
           </div>
         </div>
         <div v-else class="row">
@@ -25,7 +54,7 @@
                 </p>
                 <div class="row">
                   <div class="col-lg-3 col-md-3 col-sm-3 col-12">
-                    <img src="../../static/budgetier.png" alt="Vendor Logo" style="height: 90%; width: 90%">
+                    <img src="https://res.cloudinary.com/dv0n2umcd/image/upload/v1556011070/restaurant-cutlery-circular-symbol-of-a-spoon-and-a-fork-in-a-circle_rfuxk9.svg" alt="Vendor Logo" style="height: 90%; width: 90%; border-radius: 50%;">
                   </div>
                   <div class="col-lg-9 col-md-9 col-sm-9 col-9">
                     <h5 class="mb-1">
@@ -34,9 +63,7 @@
                     <p class="mb-1 vendor-email">
                       {{ vendorDetails.email }}
                     </p>
-                    <p class="text-danger">
-                      Unverified
-                    </p>
+                    <span class="badge badge-danger">Unverified</span>
                   </div>
                 </div>
                 <div class="row">
@@ -49,10 +76,10 @@
                   </div>
                 </div>
                 <div v-if="currentRequestType === 'bank_details'">
-                  <bank-form @submitForm="submitForm" :initial-request-type="initialRequestType" :reference-type="currentRequestType" />
+                  <bank-form @submitForm="submitForm" :disable-button="disableButton" :initial-request-type="initialRequestType" :reference-type="currentRequestType" />
                 </div>
                 <div v-else>
-                  <personal-form :vendor-details="vendorDetails" @changeRequestType="changeRequestType" />
+                  <personal-form :vendor-details="vendorDetails" :disable-button="disableButton" @changeRequestType="changeRequestType" />
                 </div>
               </div>
             </div>
@@ -65,6 +92,7 @@
 </template>
 
 <script>
+import swal from 'sweetalert'
 import navbar from '../../components/registervendor/navbar'
 import personalForm from '../../components/registervendor/vendorForm'
 import bankForm from '../../components/registervendor/bankForm'
@@ -85,8 +113,14 @@ export default {
         title: '',
         body: ''
       },
+      successMessage: {
+        title: '',
+        body: ''
+      },
       showError: false,
-      loading: false
+      showSuccess: false,
+      loading: false,
+      disableButton: false
     }
   },
   created() {
@@ -95,7 +129,8 @@ export default {
   },
   methods: {
     checkReference(reference) {
-        this.loading = true
+      this.disableButton = true
+      this.loading = true
       this.$axios
         .get('vendor/invitation-details/' + reference)
         .then(response => {
@@ -104,24 +139,57 @@ export default {
           console.log(response.data)
           console.log(this.currentRequestType)
           this.vendorDetails = response.data.data
-            this.loading = false
+          this.loading = false
         })
         .catch(error => {
+          console.log(error)
           this.error(
-            'Invalid Reference',
-            'Please check that you were sent a valid reference and try again'
+            'Oops! An Error Occured',
+            'Please check that your internet connection is good and that you have not already completed your registration'
           )
+            this.loading = false
         })
     },
     changeRequestType() {
-      console.log('Am called')
       return (this.currentRequestType = 'bank_details')
     },
     error(title, body) {
       this.errorMessage.title = title
       this.errorMessage.body = body
       this.showError = true
-        this.loading = false
+      this.loading = false
+    },
+    successResponse(title, body) {
+      console.log('success message called')
+      this.successMessage.title = title
+      this.successMessage.body = body
+      this.showSuccess = true
+      this.loading = false
+      console.log(this.successMessage.title)
+      console.log(this.successMessage.body)
+    },
+    submitForm(vendor) {
+      console.log('axios submit form method is called')
+      this.$axios
+        .post('vendor/complete-registration', vendor)
+        .then(response => {
+          console.log('Registration form completed')
+          swal('Success', 'Registration Form Completed Successfully', 'success')
+          this.successResponse(
+            'Congratulations ' + this.vendorDetails.vendor,
+            'Your registration was successfully completed. Please proceed to login to your account on Jiggle vendor mobile app'
+          )
+        })
+        .catch(error => {
+          console.log('There is an error')
+          console.log(error.response.data)
+          swal(
+            'Error',
+            'An error occured while trying to complete your registration',
+            'error'
+          )
+          this.loading = false
+        })
     }
   }
 }
