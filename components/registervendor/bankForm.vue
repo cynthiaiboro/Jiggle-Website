@@ -1,9 +1,15 @@
 <template>
   <div>
-    <!--<div v-if="loading">-->
-    <!--<loading />-->
-    <!--</div>-->
+    <div v-if="gettingBanks" class="d-flex justify-content-center align-items-center" style="height: 30vh;">
+      <div>
+        <loading />
+        <p class="text-center" style="font-size: 16px;">
+          Loading...
+        </p>
+      </div>
+    </div>
     <form
+      v-else
       @submit.prevent="submitForm"
       method="post"
       class="needs-validation"
@@ -20,6 +26,7 @@
         <select
           id="formGroupExampleInput"
           v-model="vendor.bank_id"
+          @keyup="checkInputs"
           v-validate="'required'"
           name="bank_id"
           class="form-control form-control2 mb-2"
@@ -47,11 +54,13 @@
         <input
           id="formGroupExampleInput"
           v-model="vendor.account_no"
+          @keyup="checkInputs"
           v-validate="'required|numeric|length:10'"
           type="text"
           name="account_number"
           class="form-control form-control2 mb-2 text-dark"
           placeholder="0000000000"
+          required
         >
       </div>
 
@@ -62,6 +71,7 @@
         </label>
         <input
           id="formGroupExampleInput"
+          @keyup="checkInputs"
           v-model="vendor.bvn"
           v-validate="'required|numeric|length:11'"
           type="text"
@@ -76,12 +86,13 @@
       <div class="pt-4 pb-1 d-flex justify-content-center">
         <button
           :disabled="hasErrors"
+          :class="{'button-is-inactive':disableButton}"
           type="submit"
           class="btn buttonS btn-primary text-center submit-button"
           value="Submit"
         >
           <span v-if="loading" class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true" />
-          Submit
+          Update
         </button>
       </div>
       <p class="text-center">
@@ -92,12 +103,11 @@
 </template>
 
 <script>
-import axios from 'axios'
+import swal from 'sweetalert'
 import Loading from '../shared/Loading'
-const BASE_URL = 'https://api.jiggle.ng/'
 export default {
   components: { Loading },
-  props: ['currentRequestType', 'initialRequestType'],
+  props: ['currentRequestType', 'initialRequestType', 'disableButton'],
   data() {
     return {
       banks: [],
@@ -115,7 +125,8 @@ export default {
         reference: '',
         type: ''
       },
-      loading: false
+      loading: false,
+      gettingBanks: false
     }
   },
   computed: {
@@ -128,12 +139,14 @@ export default {
   },
   methods: {
     getBanks() {
+      this.gettingBanks = true
       this.$axios
         .get('setting/banks/list')
         .then(response => {
           this.banks = response.data.data
           console.log('Getting bank details')
           console.log(response.data)
+          this.gettingBanks = false
         })
         .catch(error => {
           console.log('Error getting banks')
@@ -155,23 +168,16 @@ export default {
       this.vendor.reference = this.$route.params.ref
       this.vendor.type = this.initialRequestType
       console.log(this.vendor)
-      this.$axios
-        .post('vendor/complete-registration', this.vendor)
-        .then(response => {
-          console.log('Registration form completed')
-          this.loading = false
-          swal('Success', 'Registration Form Completed Successfully', 'success')
-          this.$toast.success('Your registration is complete', 'Success')
-        })
-        .catch(error => {
-          console.log('There is an error')
-          console.log(error.response.data)
-          swal(
-            'Error',
-            'An error occured while trying to complete your registration',
-            'error'
-          )
-        })
+      this.$emit('submitForm', this.vendor)
+    },
+    checkInputs() {
+      if (this.vendor.account_no && this.vendor.bvn && this.vendor.bank_id) {
+        if (this.vendor.account_no.length === 10) {
+          if (this.vendor.bvn.length === 11) {
+            this.disableButton = false
+          }
+        }
+      }
     }
   }
 }
@@ -232,6 +238,11 @@ p {
 }
 .bank-detail {
   font-size: 18px;
+}
+.button-is-inactive {
+  pointer-events: none;
+  background-color: #2f6deb !important;
+  opacity: 0.5;
 }
 @media only screen and (max-width: 800px) {
   .form-area {
