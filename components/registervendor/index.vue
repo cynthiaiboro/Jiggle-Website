@@ -177,7 +177,7 @@ export default {
           swal('Success', 'Registration Form Completed Successfully', 'success')
           this.successResponse(
             'Congratulations ' + this.vendorDetails.vendor,
-            'Your registration was successfully completed. Please proceed to login to your account on Jiggle vendor mobile app'
+            "Your registration was successfully completed. You'll receive an email once your account is activated"
           )
         })
         .catch(error => {
