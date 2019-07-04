@@ -5,13 +5,13 @@
     <h3 class="text-center"> Our Team </h3>
     <hr class="blue-hr">
     <p class="text-center">We are a team of experienced business professionals and engineers</p>
-        <div class="row py-4 cards">
-          <div class="col-md-3 image-card">
+        <div class="row py-lg-3 py-md-3 py-sm-0 py-0 cards">
+          <div class="col-md-3 image-card pl-3">
           <b-card
             no-body
-            style="max-width: 20rem; border-radius:8px"
-            img-src="/dinyang.svg"
-            class="team-member"
+            style="border-radius:8px"
+            img-src="/mr-david.jpg"
+            class="team-member m-0"
             img-alt="Image"
             img-top
           > 
@@ -22,11 +22,11 @@
           </b-card>
           </div>
 
-          <div class="col-md-3 image-card">
+          <div class="col-md-3 image-card pl-3">
           <b-card
             no-body
-            style="max-width: 20rem; border-radius:8px"
-            img-src="/dinyang.svg"
+            style="border-radius:8px"
+            img-src="/mr-david.jpg"
             class="team-member"
             img-alt="Image"
             img-top
@@ -38,11 +38,11 @@
           </b-card>
           </div>
 
-          <div class="col-md-3 image-card">
+          <div class="col-md-3 image-card pl-3">
           <b-card
             no-body
-            style="max-width: 20rem; border-radius:8px"
-            img-src="/dinyang.svg"
+            style="border-radius:8px"
+            img-src="/mr-david.jpg"
             class="team-member"
             img-alt="Image"
             img-top
@@ -55,12 +55,12 @@
           </div>
         </div>
 
-        <div class="row py-md-4 cards">
-          <div class="col-md-3 image-card">
+        <div class="row py-lg-3 py-md-3 py-sm-0 py-0 cards">
+          <div class="col-md-3 image-card pl-3">
           <b-card
             no-body
-            style="max-width: 20rem; border-radius:8px"
-            img-src="/dinyang.svg"
+            style=" border-radius:8px"
+            img-src="/mr-david.jpg"
             class="team-member"
             img-alt="Image"
             img-top
@@ -72,11 +72,11 @@
           </b-card>
           </div>
 
-          <div class="col-md-3 image-card">
+          <div class="col-md-3 image-card pl-3">
           <b-card
             no-body
-            style="max-width: 20rem; border-radius:8px"
-            img-src="/dinyang.svg"
+            style="border-radius:8px"
+            img-src="/mr-david.jpg"
             class="team-member"
             img-alt="Image"
             img-top
@@ -88,11 +88,11 @@
           </b-card>
           </div>
 
-          <div class="col-md-3 image-card">
+          <div class="col-md-3 image-card pl-3">
           <b-card
             no-body
-            style="max-width: 20rem; border-radius:8px"
-            img-src="/dinyang.svg"
+            style="border-radius:8px"
+            img-src="/mr-david.jpg"
             class="team-member"
             img-alt="Image"
             img-top
@@ -137,7 +137,6 @@ p {
   font-family: 'Circularmedium';
 }
 .footer {
-  max-width: 20rem;
   border-radius: 4px;
   border:none;
   box-shadow: 0px 0px 20px rgba(20, 52, 101, 0.25);
