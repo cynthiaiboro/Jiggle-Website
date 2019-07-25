@@ -153,7 +153,8 @@ export default {
 .goto-list li {
   list-style: none;
   margin-top: 1px;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: "Circularmedium" !important;
 }
 ul li a {
   text-decoration: none;
@@ -195,10 +196,9 @@ ul li:first-of-type {
 .sub-nav {
   z-index: 800;
 }
-  .sub-nav-background {
-    background-color: transparent;
-  }
-
+.sub-nav-background {
+  background-color: transparent;
+}
 
 
 

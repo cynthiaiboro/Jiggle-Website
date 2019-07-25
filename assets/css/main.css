@@ -162,3 +162,6 @@
   .nav-link:hover {
     color: #2f6deb !important;
   }
+  .section-header {
+    font-family: "Circularmedium" !important;
+  }

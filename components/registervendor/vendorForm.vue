@@ -101,7 +101,7 @@
 
     <div class="pt-4 pb-1 d-flex justify-content-center">
       <input
-        @click.prevent.default="nextForm"
+        @click.prevent="nextForm"
         :disabled="hasErrors"
         :class="{'button-is-inactive': disableButton}"
         type="submit"

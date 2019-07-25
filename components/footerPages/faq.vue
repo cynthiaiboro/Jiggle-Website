@@ -245,6 +245,9 @@ export default {
     border-color: #f5f3f3;
     font-family: 'Circularbook';
 }
+p {
+  font-family: 'Circularbook';
+}
 .btn {
     text-align: left !important;
     padding-top: 1rem;
@@ -259,13 +262,18 @@ export default {
   background-color: #2f6deb;
 }
 .answer {
-  color:#2d3448; 
+  color:#2d3448;
+  font-family: 'Circularbook';
 }
 .card-body {
     background: #f5f3f3;
 }
-h4 {
+h5 {
     color: #2d3448;
+    font-family: 'Circularmedium';
+}
+.question {
+  font-family: 'Circularbook';
 }
 .question:hover, :active {
     text-decoration: none;
