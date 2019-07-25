@@ -152,7 +152,8 @@ span {
 
 @media only screen and (max-width: 600px) {
   #footer {
-    margin: 0px 2rem !important
+    padding-left: 1rem !important;
+    padding-right: 1rem !important
   }
   span {
     font-size: 1rem !important;
