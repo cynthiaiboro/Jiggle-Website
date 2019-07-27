@@ -50,9 +50,9 @@
 </template>
 
 <script>
-  import Header from '../../../../components/vendor/header'
-  import Loading from '../../../../components/shared/Loading'
-  import SignUpForm from '../../../../components/shared/SignUpForm'
+  import Header from '~/components/vendor/header'
+  import Loading from '~/components/shared/Loading'
+  import SignUpForm from '~/components/shared/SignUpForm'
 
   const baseURl = 'https://api.jiggle.ng/'
   export default {
