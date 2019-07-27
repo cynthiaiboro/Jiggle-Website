@@ -96,7 +96,7 @@
         this.showSignUp = false
         console.log("Accept invite loading")
         this.$axios
-          .$post(baseURl + 'account/vendor/employee-invite/' + reference)
+          .post(baseURl + 'account/vendor/employee-invite/' + reference)
           .then(res => {
             console.log(res)
             console.log("Employee invite successful")
