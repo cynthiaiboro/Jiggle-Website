@@ -4,8 +4,7 @@
     <div class="my-5">
       <div class="container mt-5">
         <div class="row">
-          <div class="col-lg-3 col-md-3 col-sm-3 col-3 sub-nav position-fixed">
-   
+          <div class="col-lg-3 col-md-3 col-sm-3 col-3 sub-nav">
             <nav class="mt-4 sub-nav-background">
               <div id="sub-nav">
                 <ul class="mr-auto goto-list">
@@ -21,7 +20,7 @@
                 </ul>
               </div>
             </nav>
-            <ul v-if="subNavToggler" class="mr-auto goto-list pl-0 bg-white">
+            <!-- <ul v-if="subNavToggler" class="mr-auto goto-list pl-0 bg-white">
               <li class="nav-item active">
                 <a @click="viewGetStarted" class="nav-link" href="#">Get started <span class="sr-only">(current)</span></a>
               </li>
@@ -31,9 +30,9 @@
               <li class="nav-item">
                 <a @click="viewTransactions" class="nav-link" href="#">Track Transaction</a>
               </li>
-            </ul>
+            </ul> -->
           </div>
-          <div class="col-lg-9 col-md-9 col-sm-9 col-9 bg-light py-4 px-lg-5 px-md-5 px-sm-0 px-0 ml-auto content-section">
+          <div class="col-lg-9 col-md-9 col-sm-8 col-8 bg-light py-4 px-lg-5 px-md-5 px-sm-0 px-0 ml-auto content-section">
             <div class="container pt-2">
               <div v-if="ourServices">
                 <our-services />
@@ -166,6 +165,10 @@ ul li:first-of-type {
 }
 .sub-nav {
   z-index: 800;
+  position: sticky;
+  height: 40vh;
+  top: 50px;
+  left: -5px;
 }
 .sub-nav-background {
   background-color: transparent;
@@ -182,5 +185,6 @@ ul li:first-of-type {
     .goto-list {
       padding-left: 0px !important;
     }
+
   }
 </style>
