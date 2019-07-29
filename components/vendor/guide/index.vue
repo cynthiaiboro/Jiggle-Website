@@ -4,39 +4,10 @@
     <div class="my-5">
       <div class="container mt-5">
         <div class="row">
-          <div class="col-lg-3 col-md-3 col-sm-12 col-12 sub-nav position-fixed">
-            <!--<ul class="goto-list">-->
-            <!--<li>-->
-            <!--<a @click="viewOurServices" href="#our-services" class="active">Our Services</a>-->
-            <!--</li>-->
-            <!--<li>-->
-            <!--<a @click="viewGetStarted" href="#get-started">Get Started</a>-->
-            <!--</li>-->
-            <!--<li>-->
-            <!--<a @click="viewManageEmployees" href="#manage-employees">Manage Employees</a>-->
-            <!--</li>-->
-            <!--<li>-->
-            <!--<a @click="viewTransactions" href="#transactions">Transactions</a>-->
-            <!--</li>-->
-            <!--</ul>-->
-
-
-
-            <nav class="navbar navbar-expand-lg navbar-light mt-4 sub-nav-background">
-              <button
-                @click="showToggle"
-                class="navbar-toggler d-lg-none d-md-none d-sm-block d-block"
-                type="button"
-                data-toggle="collapse"
-                data-target="#sub-nav"
-                aria-controls="sub-nav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon" />
-              </button>
-
-              <div id="sub-nav" class="navbar-collapse collapse">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-3 sub-nav position-fixed">
+   
+            <nav class="mt-4 sub-nav-background">
+              <div id="sub-nav">
                 <ul class="mr-auto goto-list">
                   <li class="nav-item active">
                     <a @click="viewGetStarted" class="nav-link" href="#">Get started <span class="sr-only">(current)</span></a>
@@ -50,7 +21,7 @@
                 </ul>
               </div>
             </nav>
-            <ul v-if="subNavToggler" class="mr-auto goto-list d-block pl-0 bg-white">
+            <ul v-if="subNavToggler" class="mr-auto goto-list pl-0 bg-white">
               <li class="nav-item active">
                 <a @click="viewGetStarted" class="nav-link" href="#">Get started <span class="sr-only">(current)</span></a>
               </li>
@@ -62,7 +33,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-9 col-md-9 col-sm-12 col-12 bg-light py-4 px-lg-5 px-md-5 px-sm-0 px-0 ml-auto content-section">
+          <div class="col-lg-9 col-md-9 col-sm-9 col-9 bg-light py-4 px-lg-5 px-md-5 px-sm-0 px-0 ml-auto content-section">
             <div class="container pt-2">
               <div v-if="ourServices">
                 <our-services />
@@ -201,16 +172,15 @@ ul li:first-of-type {
 }
 
 
-
-
-
-
-
-
-
   @media only screen and (max-width: 700px) {
     .sub-nav-background {
       background-color: #ffffff;
+    }
+     a {
+      padding-left: 0px !important;
+    }
+    .goto-list {
+      padding-left: 0px !important;
     }
   }
 </style>
