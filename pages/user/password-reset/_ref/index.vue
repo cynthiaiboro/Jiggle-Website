@@ -94,7 +94,7 @@ export default {
       this.loading = true
     //   this.showPasswordReset = false
       this.$axios
-        .$get(baseURl + 'account/forgot-password/' + this.reference)
+        .get(baseURl + 'account/forgot-password/' + this.reference)
         .then(res => {
           console.log(res)
           this.showPasswordReset = true
