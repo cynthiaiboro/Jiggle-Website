@@ -2,7 +2,7 @@
   <div>
     <!-- <Header /> -->
     <stickyNav />
-
+<!-- password reset -->
     <div class="main">
       <div class="row mt-5">
         <div class="col-md-5 mx-auto mt-5">
