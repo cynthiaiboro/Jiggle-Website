@@ -2,7 +2,7 @@
   <div>
     <!-- <Header /> -->
     <stickyNav />
-
+<!-- password reset -->
     <div class="main">
       <div class="row mt-5">
         <div class="col-md-5 mx-auto mt-5">
@@ -16,14 +16,13 @@
               </p>
             </div>
           </div>
-
           <div v-if="loading" class="loading mt-5">
             <Loading />
             <p class="text-center">
               Please Wait...
             </p>
           </div>
-
+<!-- Reset password -->
           <div v-if="showPasswordReset" class="form mt-4">
             <password-reset-form :loading="formLoading" @formSubmitted="resetPassword" />
           </div>
@@ -94,7 +93,7 @@ export default {
       this.loading = true
     //   this.showPasswordReset = false
       this.$axios
-        .$get(baseURl + 'account/forgot-password/' + this.reference)
+        .get(baseURl + 'account/forgot-password/' + this.reference)
         .then(res => {
           console.log(res)
           this.showPasswordReset = true

@@ -3,7 +3,8 @@
       <vendorModal
       ref="vendorModal"
     />
-  <section class="navHeader">
+    <navbar />
+  <!-- <section class="navHeader">
       <div class="container py-1">
         <b-navbar toggleable class="navbar-expand-lg px-0">
           <b-navbar-brand>
@@ -23,7 +24,7 @@
           </b-collapse>
         </b-navbar>
       </div>
-    </section>
+    </section> -->
 
     <section class="navHeader pt-2 pb-5">
       <div class="container">
@@ -67,6 +68,7 @@
 <script>
 // Display modal to update vendor details
 import vendorModal from './/vendorModal'
+// import navbar from ''
 export default {
   components: {
     vendorModal
