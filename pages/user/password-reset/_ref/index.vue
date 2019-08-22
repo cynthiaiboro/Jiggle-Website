@@ -16,14 +16,13 @@
               </p>
             </div>
           </div>
-
           <div v-if="loading" class="loading mt-5">
             <Loading />
             <p class="text-center">
               Please Wait...
             </p>
           </div>
-
+<!-- Reset password -->
           <div v-if="showPasswordReset" class="form mt-4">
             <password-reset-form :loading="formLoading" @formSubmitted="resetPassword" />
           </div>
