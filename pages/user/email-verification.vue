@@ -61,8 +61,8 @@ export default {
         axios
           .get(
             `https://api.jiggle.ng/account/verify-email?expires=${
-              this.expires
-            }&user_id=${this.user_id}&signature=${this.signature}`
+              expires
+            }&user_id=${user_id}&signature=${signature}`
           )
           .then(res => {
             return { title: res.data.title }
