@@ -8,7 +8,7 @@
             <div class="error" v-show="!loading && errorOccurred">
               <div class="card shadow text-center" style="width: auto;height:auto;">
                 <div class="card-body">
-                  <img src="../../static/exclamation-256.jpg" class="icon m-4" alt />
+                  <img src="../../static/warning.png" class="icon m-4" alt />
                   <h4 class="card-title mt-3 mb-3">Unverified!</h4>
                   <p class="card-text m-4">{{errorMessage}}</p>
                 </div>
@@ -56,7 +56,7 @@ export default {
       const user_id = this.$route.query.user_id
       if (!expires && !signature && !user_id) {
         this.errorOccurred = true
-        this.errorMessage = 'Invalid email verification link'
+        this.errorMessage = 'Link Expired'
       } else {
         axios
           .get(
