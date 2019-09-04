@@ -1,23 +1,18 @@
 <template>
   <div>
-    <div v-if="gettingBanks" class="d-flex justify-content-center align-items-center" style="height: 30vh;">
+    <div
+      v-if="gettingBanks"
+      class="d-flex justify-content-center align-items-center"
+      style="height: 30vh;"
+    >
       <div>
         <loading />
-        <p class="text-center" style="font-size: 16px;">
-          Loading...
-        </p>
+        <p class="text-center" style="font-size: 16px;">Loading...</p>
       </div>
     </div>
-    <form
-      v-else
-      @submit.prevent="submitForm"
-      method="post"
-      class="needs-validation"
-    >
-      <p style="color: #2D3448;" class="mb-2 bank-detail">
-        Bank Details
-      </p>
-      <hr>
+    <form v-else @submit.prevent="submitForm" method="post" class="needs-validation">
+      <p style="color: #2D3448;" class="mb-2 bank-detail">Bank Details</p>
+      <hr />
       <div class>
         <label class="col-form-label" for="formGroupExampleInput">
           <!-- <i class="fa fa-university" /> -->
@@ -32,17 +27,16 @@
           class="form-control form-control2 mb-2"
           required
         >
-          <option value="" class="text-dark" disabled>
-            <span v-if="loading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" />
+          <option value class="text-dark" disabled>
+            <span
+              v-if="loading"
+              class="spinner-border spinner-border-sm"
+              role="status"
+              aria-hidden="true"
+            />
             Select Bank
           </option>
-          <option
-            v-for="(bank, key) in banks"
-            :key="key"
-            :value="bank.id"
-          >
-            {{ bank.name }}
-          </option>
+          <option v-for="(bank, key) in banks" :key="key" :value="bank.id">{{ bank.name }}</option>
         </select>
       </div>
 
@@ -61,7 +55,26 @@
           class="form-control form-control2 mb-2 text-dark"
           placeholder="0000000000"
           required
-        >
+        />
+      </div>
+
+
+      <div class>
+        <label class="col-form-label" for="formGroupExampleInput">
+          <!-- <i class="fa fa-user" /> -->
+          Account Name
+        </label>
+        <input
+          id="formGroupExampleInput"
+          v-model="vendor.account_name"
+          @keyup="checkInputs"
+          v-validate="'required'"
+          type="text"
+          name="account_name"
+          class="form-control form-control2 mb-2 text-dark"
+          placeholder="John Doe"
+          required
+        />
       </div>
 
       <div class>
@@ -79,24 +92,31 @@
           class="form-control form-control2 mb-2 text-dark"
           placeholder="0000000000"
           required
-        >
+        />
       </div>
-
 
       <div class="pt-4 pb-1 d-flex justify-content-center">
         <button
           :disabled="hasErrors"
-          :class="{'button-is-inactive':disableButton}"
+          :class="{'button-is-inactive':disableButton }"
           type="submit"
           class="btn buttonS btn-primary text-center submit-button"
           value="Submit"
         >
-          <span v-if="loading" class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true" />
+          <span
+            v-if="loading"
+            class="spinner-border spinner-border-sm mr-2"
+            role="status"
+            aria-hidden="true"
+          />
           Update
         </button>
       </div>
       <p class="text-center">
-        By registering you have chosen to accept the <span class="terms"> Terms of Service and Privacy policy </span>
+        By registering you have chosen to accept the
+        <span
+          class="terms"
+        >Terms of Service and Privacy policy</span>
       </p>
     </form>
   </div>
@@ -112,12 +132,8 @@ export default {
     return {
       banks: [],
       vendor: {
-        first_name: '',
-        last_name: '',
-        email: '',
-        account_name: 'Eyimenarolu Freedom',
-        phone: '',
-        password: '',
+       
+        account_name: '',
         password_confirmation: '',
         bank_id: '',
         account_no: '',
@@ -155,19 +171,8 @@ export default {
     },
     submitForm() {
       this.loading = true
-      const vendorPersonalDetails = JSON.parse(
-        localStorage.getItem('vendorPersonalDetails')
-      )
-      this.vendor.first_name = vendorPersonalDetails.first_name
-      this.vendor.last_name = vendorPersonalDetails.last_name
-      this.vendor.email = vendorPersonalDetails.email
-      this.vendor.phone = vendorPersonalDetails.phone
-      this.vendor.password = vendorPersonalDetails.password
-      this.vendor.password_confirmation =
-        vendorPersonalDetails.password_confirmation
-      this.vendor.reference = this.$route.params.ref
+       this.vendor.reference = this.$route.params.ref
       this.vendor.type = this.initialRequestType
-      console.log(this.vendor)
       this.$emit('submitForm', this.vendor)
     },
     checkInputs() {

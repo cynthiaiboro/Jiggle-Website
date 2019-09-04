@@ -3,42 +3,44 @@
     <navbar />
     <section class="mt-5 pt-2 pb-5">
       <div class="container">
-        <div v-if="loading" class="text-center d-flex align-items-center justify-content-center" style="height: 80vh">
+        <div
+          v-if="loading"
+          class="text-center d-flex align-items-center justify-content-center"
+          style="height: 80vh"
+        >
           <div>
             <loading />
-            <p class="loading">
-              Loading...
-            </p>
+            <p class="loading">Loading...</p>
           </div>
         </div>
         <div v-else-if="showSuccess">
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-none col-none" />
-            <div class="col-lg-6 col-md-6 col-sm-12 col-12 bg-white mt-5 shadow-sm text-dark bg-white shadow-sm d-flex align-items-center justify-content-center" style="height: 82vh">
+            <div
+              class="col-lg-6 col-md-6 col-sm-12 col-12 bg-white mt-5 shadow-sm text-dark bg-white shadow-sm d-flex align-items-center justify-content-center"
+              style="height: 82vh"
+            >
               <div>
-                <div class="text-center mb-2"><img src="../../assets/gifs/great_job.gif" alt="" style="height: 150px;"></div>
-                <h4 class="text-center">
-                  {{ successMessage.title }}
-                </h4>
-                <p class="text-center">
-                  {{ successMessage.body }}
-                </p>
+                <div class="text-center mb-2">
+                  <img src="../../assets/gifs/great_job.gif" alt style="height: 150px;" />
+                </div>
+                <h4 class="text-center">{{ successMessage.title }}</h4>
+                <p class="text-center">{{ successMessage.body }}</p>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-none col-none" />
           </div>
         </div>
-        <div v-else-if="showError" class="">
+        <div v-else-if="showError" class>
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-none col-none" />
-            <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-danger d-flex align-items-center justify-content-center" style="height: 80vh">
+            <div
+              class="col-lg-6 col-md-6 col-sm-12 col-12 text-danger d-flex align-items-center justify-content-center"
+              style="height: 80vh"
+            >
               <div>
-                <h4 class="text-center">
-                  {{ errorMessage.title }}
-                </h4>
-                <p class="text-center">
-                  {{ errorMessage.body }}
-                </p>
+                <h4 class="text-center">{{ errorMessage.title }}</h4>
+                <p class="text-center">{{ errorMessage.body }}</p>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-none col-none" />
@@ -49,37 +51,44 @@
           <div class="col-md-6 col-12 d-md-block pb-3 form">
             <div class="d-flex justify-content-center align-items-center mt-md-5">
               <div class="form-area shadow w-100">
-                <p class="welcome mb-3">
-                  Welcome!
-                </p>
+                <p class="welcome mb-3">Welcome!</p>
                 <div class="row">
                   <div class="col-lg-3 col-md-3 col-sm-3 col-12">
-                    <img src="https://res.cloudinary.com/dv0n2umcd/image/upload/v1556011070/restaurant-cutlery-circular-symbol-of-a-spoon-and-a-fork-in-a-circle_rfuxk9.svg" alt="Vendor Logo" style="height: 90%; width: 90%; border-radius: 50%;">
+                    <img
+                      src="https://res.cloudinary.com/dv0n2umcd/image/upload/v1556011070/restaurant-cutlery-circular-symbol-of-a-spoon-and-a-fork-in-a-circle_rfuxk9.svg"
+                      alt="Vendor Logo"
+                      style="height: 90%; width: 90%; border-radius: 50%;"
+                    />
                   </div>
                   <div class="col-lg-9 col-md-9 col-sm-9 col-9">
-                    <h5 class="mb-1">
-                      {{ vendorDetails.vendor }}
-                    </h5>
-                    <p class="mb-1 vendor-email">
-                      {{ vendorDetails.email }}
-                    </p>
+                    <h5 class="mb-1">{{ vendorDetails.vendor }}</h5>
+                    <p class="mb-1 vendor-email">{{ vendorDetails.email }}</p>
                     <span class="badge badge-danger">Unverified</span>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-12">
                     <div class="alert alert-warning">
-                      <h6 class="warning-message text-center">
-                        Kindly Complete the Jiggle Vendor Registration Form Bellow
-                      </h6>
+                      <h6
+                        class="warning-message text-center"
+                      >Kindly Complete the Jiggle Vendor Registration Form Bellow</h6>
                     </div>
                   </div>
                 </div>
                 <div v-if="currentRequestType === 'bank_details'">
-                  <bank-form @submitForm="submitForm" :disable-button="disableButton" :initial-request-type="initialRequestType" :reference-type="currentRequestType" />
+                  <bank-form
+                    @submitForm="submitForm"
+                    :disable-button="disableButton"
+                    :initial-request-type="initialRequestType"
+                    :reference-type="currentRequestType"
+                  />
                 </div>
                 <div v-else>
-                  <personal-form :vendor-details="vendorDetails" :disable-button="disableButton" @changeRequestType="changeRequestType" />
+                  <personal-form
+                    :vendor-details="vendorDetails"
+                    :disable-button="disableButton"
+                    @changeRequestType="changeRequestType($event)"
+                  />
                 </div>
               </div>
             </div>
@@ -108,7 +117,7 @@ export default {
     return {
       currentRequestType: '',
       initialRequestType: '',
-      vendorDetails: '',
+      vendorDetails: {},
       errorMessage: {
         title: '',
         body: ''
@@ -120,7 +129,8 @@ export default {
       showError: false,
       showSuccess: false,
       loading: false,
-      disableButton: false
+      disableButton: false,
+      vendorData: {}
     }
   },
   created() {
@@ -147,10 +157,12 @@ export default {
             'Oops! An Error Occured',
             'Please check that your internet connection is good and that you have not already completed your registration'
           )
-            this.loading = false
+          this.loading = false
         })
     },
-    changeRequestType() {
+    changeRequestType(userData) {
+      this.vendorData = { ...this.vendorData, ...userData }
+
       return (this.currentRequestType = 'bank_details')
     },
     error(title, body) {
@@ -169,6 +181,10 @@ export default {
       console.log(this.successMessage.body)
     },
     submitForm(vendor) {
+      let requestData = { ...this.vendorData, ...vendor }
+
+      console.log(requestData)
+
       console.log('axios submit form method is called')
       this.$axios
         .post('vendor/complete-registration', vendor)

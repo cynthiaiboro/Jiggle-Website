@@ -154,7 +154,7 @@ export default {
             'vendorPersonalDetails',
             JSON.stringify(this.vendor)
           )
-          this.$emit('changeRequestType')
+          this.$emit('changeRequestType',this.vendor)
         } else {
             swal('Error!', 'Passwords do not match')
         }
