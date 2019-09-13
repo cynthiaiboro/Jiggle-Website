@@ -77,7 +77,7 @@
                 </div>
                 <div v-if="currentRequestType === 'bank_details'">
                   <bank-form
-                    @submitForm="submitForm"
+                    @submitForm="submitForm($event)"
                     :disable-button="disableButton"
                     :initial-request-type="initialRequestType"
                     :reference-type="currentRequestType"
@@ -181,13 +181,15 @@ export default {
       console.log(this.successMessage.body)
     },
     submitForm(vendor) {
+      console.log('showing vendor')
+      console.log(vendor)
       let requestData = { ...this.vendorData, ...vendor }
 
       console.log(requestData)
 
       console.log('axios submit form method is called')
       this.$axios
-        .post('vendor/complete-registration', vendor)
+        .post('vendor/complete-registration', requestData)
         .then(response => {
           console.log('Registration form completed')
           swal('Success', 'Registration Form Completed Successfully', 'success')
