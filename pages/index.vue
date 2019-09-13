@@ -42,7 +42,7 @@ export default {
     window.addEventListener('scroll', this.handleNavDisplay)
     function initFreshChat() {
     window.fcWidget.init({
-      token: "8b40c1c0-c70a-4b09-9563-d9648de0b98d",
+      token: "3f6ad468-e86f-4df6-902c-8c75a5a7e280",
       host: "https://wchat.freshchat.com"
     });
   }
