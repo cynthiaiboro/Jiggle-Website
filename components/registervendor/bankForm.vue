@@ -134,7 +134,7 @@ export default {
       vendor: {
        
         account_name: '',
-        password_confirmation: '',
+        // password_confirmation: '',
         bank_id: '',
         account_no: '',
         bvn: '',
