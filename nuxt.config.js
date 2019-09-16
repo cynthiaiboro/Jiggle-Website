@@ -40,8 +40,14 @@ module.exports = {
       //   type: 'text/javascript'
       // },
       {
-        src: 'https://wchat.freshchat.com/js/widget.js',
+        src: 'https://snippets.freshchat.com/js/fc-pre-chat-form-v2.js',
         type: 'text/javascript'
+      },
+      {
+        src: 'https://wchat.freshchat.com/js/widget.js',
+        type: 'text/javascript',
+        async: true,
+        body: true
       },
       {
         src: '@/assets/css/main.js'
