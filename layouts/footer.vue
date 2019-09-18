@@ -23,9 +23,9 @@
                 <p class="mb-3 footer-text">
                   <router-link to ="/footer/faqs" class="footer-text-link">FAQ's</router-link>
                 </p>
-                <p class="mb-3 footer-text">
+                <!-- <p class="mb-3 footer-text">
                   <router-link to ="/vendor/guide" class="footer-text-link">Vendor Guide</router-link>
-                </p>
+                </p> -->
               </div>
               <div class="col-xs-6 col-6 footer-jiggle">
                 <h6 class="mb-2 last-footer-header-color" style="font-weight:550">

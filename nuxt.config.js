@@ -101,15 +101,62 @@ module.exports = {
       'nuxt-validate',
       {
         lang: 'en',
-          classes:true,
-          classNames: {
-              valid: '',
-              invalid: 'is-invalid'
-          }
+        classes: true,
+        classNames: {
+          valid: '',
+          invalid: 'is-invalid'
+        }
         // regular vee-validate options
       }
     ]
   ],
+  manifest: {
+    name: 'Jiggle',
+    title: 'Jiggle',
+    'og:title': 'Jiggle',
+    short_name: 'Jiggle',
+    description: 'Jiggle',
+    'og:description': 'Jiggle',
+    start_url: `/`,
+
+    icons: [
+      {
+        src: '/favicon.png',
+        sizes: '64x64',
+        type: 'image/png'
+      },
+      {
+        src: '/favicon.png',
+        sizes: '120x120',
+        type: 'image/png'
+      },
+      {
+        src: '/favicon.png',
+        sizes: '144x144',
+        type: 'image/png'
+      },
+      {
+        src: '/favicon.png',
+        sizes: '152x152',
+        type: 'image/png'
+      },
+      {
+        src: '/favicon.png',
+        sizes: '192x192',
+        type: 'image/png'
+      },
+      {
+        src: '/favicon.png',
+        sizes: '384x384',
+        type: 'image/png'
+      },
+      {
+        src: '/favicon.png',
+        size: '512x512',
+        type: 'image/png'
+      }
+    ]
+  },
   /*
   ** Axios module configuration
   */
