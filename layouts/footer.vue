@@ -53,7 +53,7 @@
                     Terms and conditions
                   </p>
                   <p class="mb-3 footer-text">
-                    Privacy Policy
+                    <router-link to ="/privacy" class="footer-text-link">Privacy Policy</router-link>
                   </p>
                 </div>
                 <div class="col-xs-6 col-6 footer-jiggle">
