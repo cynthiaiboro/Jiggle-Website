@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="footer">
-      <div class="text-dark">
+      <div class="container text-dark">
         <div class="row">
           <div class="col-md-4 col-sm-12 footer-jiggle-head mb-4">
             <router-link to="/"><img src="/jiggle logo blue.svg" height="25px"></router-link>
@@ -21,7 +21,7 @@
                   Blog
                 </p>
                 <p class="mb-3 footer-text">
-                  <router-link to ="/footer/faqs" class="footer-text-link">FAQ's</router-link>
+                  <router-link to ="/footer/faqs" class="footer-text-link">FAQs</router-link>
                 </p>
                 <!-- <p class="mb-3 footer-text">
                   <router-link to ="/vendor/guide" class="footer-text-link">Vendor Guide</router-link>
@@ -97,9 +97,6 @@ export default {
 </script>
 
 <style scoped>
-body {
-  background: #fafbff;
-}
 #footer {
   padding: 40px 0px 15px 0px;
   background: #fafbff;
