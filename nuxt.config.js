@@ -40,15 +40,17 @@ module.exports = {
       //   type: 'text/javascript'
       // },
       {
-        src: 'https://wchat.freshchat.com/js/widget.js',
+        src: 'https://snippets.freshchat.com/js/fc-pre-chat-form-v2.js',
         type: 'text/javascript'
       },
       {
-        src: 'https://cdn.jsdelivr.net/npm/pwacompat@2.0.6/pwacompat.min.js',
-        integrity:
-          'sha384-GOaSLecPIMCJksN83HLuYf9FToOiQ2Df0+0ntv7ey8zjUHESXhthwvq9hXAZTifA',
-        crossorigin: 'anonymous',
-        defer: true
+        src: 'https://wchat.freshchat.com/js/widget.js',
+        type: 'text/javascript',
+        async: true,
+        body: true
+      },
+      {
+        src: '@/assets/css/main.js'
       }
       // {
       //   src:
