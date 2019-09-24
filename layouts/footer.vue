@@ -21,7 +21,7 @@
                   Blog
                 </p>
                 <p class="mb-3 footer-text">
-                  <router-link to ="/footer/faqs" class="footer-text-link">FAQs</router-link>
+                  <a href="http://support.jiggle.ng/" class="footer-text-link">FAQs</a>
                 </p>
                 <!-- <p class="mb-3 footer-text">
                   <router-link to ="/vendor/guide" class="footer-text-link">Vendor Guide</router-link>
