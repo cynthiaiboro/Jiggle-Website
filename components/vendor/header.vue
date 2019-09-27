@@ -4,7 +4,7 @@
       ref="vendorModal"
     />
     <navbar />
-  <!-- <section class="navHeader">
+  <section class="navHeader">
       <div class="container py-1">
         <b-navbar toggleable class="navbar-expand-lg px-0">
           <b-navbar-brand>
@@ -24,7 +24,7 @@
           </b-collapse>
         </b-navbar>
       </div>
-    </section> -->
+    </section>
 
     <section class="navHeader pt-2 pb-5">
       <div class="container">
@@ -44,12 +44,12 @@
                     height="45px"
                     class="d-md-inline-block pr-2"
                   >
-                  <button
+                  <!-- <button
                     to="/vendor"
                     class="call-to-action btnStarted"
                     style="font-weight:400; font-size: 0.9rem;"
                     @click="inviteVendor"
-                  >BECOME A VENDOR</button>
+                  >BECOME A VENDOR</button> -->
                 </div>
               </div>
             </div>

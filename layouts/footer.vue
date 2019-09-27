@@ -3,12 +3,12 @@
     <section id="footer">
       <div class="container text-dark">
         <div class="row">
-          <div class="col-md-3 col-sm-12 footer-jiggle-head mb-4">
+          <div class="col-md-4 col-sm-12 footer-jiggle-head mb-4">
             <router-link to="/"><img src="/jiggle logo blue.svg" height="25px"></router-link>
             <p class="py-2 pr-md-4 footer-note">Jiggle is a meal budgeting platform where users pay once to eat whenever and wherever</p>
             <img src="/googleplay dark.svg" class="mb-3" alt="" height="40px;">
           </div>
-          <div class="col-md-4 col-xs-12 pb-4">
+          <div class="col-md-5 col-xs-12 pb-4">
             <div class="row">
               <div class="col-xs-6 col-6 footer-jiggle">
                 <h6 class="mb-1 last-footer-header-color" style="font-weight:550">
@@ -21,31 +21,28 @@
                   Blog
                 </p>
                 <p class="mb-3 footer-text">
-                  <router-link to ="/footer/faqs" class="footer-text-link">FAQ's</router-link>
+                  <a href="http://support.jiggle.ng/" class="footer-text-link">FAQs</a>
                 </p>
                 <!-- <p class="mb-3 footer-text">
                   <router-link to ="/vendor/guide" class="footer-text-link">Vendor Guide</router-link>
                 </p> -->
               </div>
               <div class="col-xs-6 col-6 footer-jiggle">
-                <h6 class="mb-2 last-footer-header-color" style="font-weight:550">
-                  <span>Products</span>
-                </h6>
-                <p class="mb-3 footer-text mt-2">
-                  Budget
-                </p>
-                <p class="mb-3 footer-text">
-                  Payment
-                </p>
-                <p class="mb-3 footer-text">
-                  Wallet
-                </p>
-              </div>
+                  <h6 class="mb-2 last-footer-header-color" style="font-weight:550">
+                    <span>Legal</span>
+                  </h6>
+                  <p class="mb-3 mt-2 footer-text">
+                    Terms and conditions
+                  </p>
+                  <p class="mb-3 footer-text">
+                    <router-link to ="/privacy" class="footer-text-link">Privacy Policy</router-link>
+                  </p>
+                </div>
             </div>
           </div>
-            <div class="col-md-5 col-xs-12 mb-4">
+            <div class="col-md-3 col-xs-12 mb-4">
               <div class="row">
-                <div class="col-xs-6 col-6 footer-jiggle">
+                <!-- <div class="col-xs-6 col-6 footer-jiggle">
                   <h6 class="mb-2 last-footer-header-color" style="font-weight:550">
                     <span>Legal</span>
                   </h6>
@@ -55,8 +52,8 @@
                   <p class="mb-3 footer-text">
                     <router-link to ="/privacy" class="footer-text-link">Privacy Policy</router-link>
                   </p>
-                </div>
-                <div class="col-xs-6 col-6 footer-jiggle">
+                </div> -->
+                <div class="col-xs-6 col-12 footer-jiggle">
                   <h6 class="mb-2 last-footer-header-color" style="font-weight:550">
                     <span>Connect with us</span>
                   </h6>                    
