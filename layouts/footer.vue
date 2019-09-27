@@ -50,7 +50,7 @@
                     <span>Legal</span>
                   </h6>
                   <p class="mb-3 mt-2 footer-text">
-                    Terms and conditions
+                    <router-link to ="/terms" class="footer-text-link">Terms and Condition</router-link>
                   </p>
                   <p class="mb-3 footer-text">
                     <router-link to ="/privacy" class="footer-text-link">Privacy Policy</router-link>
