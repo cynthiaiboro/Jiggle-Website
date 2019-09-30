@@ -12,7 +12,7 @@
               Let’s take care of payments so you can focus on running your business.
             </p>
             <b-button to="/vendor" class="call-to-action" style="font-weight:400; font-size: 0.8rem;">
-              BECOME A VENDOR
+              LEARN MORE
             </b-button>
           </div>
           <!-- <div class="col-md-3" />
