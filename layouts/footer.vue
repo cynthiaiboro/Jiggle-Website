@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="container footerBg">
     <section id="footer">
-      <div class="container text-dark">
+      <div class="text-dark">
         <div class="row">
           <div class="col-md-3 col-sm-12 footer-jiggle-head mb-4">
             <router-link to="/"><img src="/jiggle logo blue.svg" height="25px"></router-link>
@@ -102,9 +102,11 @@ export default {
 <style scoped>
 #footer {
   padding: 40px 0px 15px 0px;
-  background: #fafbff;
   color: #ffffff;
   overflow-x: hidden;
+}
+.footerBg {
+  background: #fafbff;
 }
 span {
   font-family: 'Circularmedium';

@@ -2,8 +2,9 @@
   <div>
     <Nav />
     <stickyNav v-if="enableStickyNav" />
+    <div class="container">
     <section id="about-us-nav">
-      <div class="container about-us py-md-5 mt-md-5">
+      <div class="about-us mt-md-5">
         <h4 class="text-center best-solution pt-md-5">
           Terms and Condition
         </h4>
@@ -112,6 +113,7 @@ This contract is based on Nigerian law. These Terms are subject to, and shall be
 </p>
     </div>
     </section>
+  </div>
 <Footer />
   </div>
 </template>
@@ -172,9 +174,8 @@ a:hover {
 }
 p {
   color: #00255E;
-  font-family: 'Circularbook';
-  padding: 5px 40px;
-  font-size: 20px !
+  font-family: 'Circularbook'; 
+  font-size: 20px;
 }
 .best-solution {
   display: flex;
@@ -187,7 +188,6 @@ p {
 h5 {
     font-family: 'Circularbold';
    color: #00255E;
-   padding: 5px 40px;
 }
 @media only screen and (max-width: 700px) {
   .get-started {
@@ -203,9 +203,14 @@ h5 {
   .best-solution {
     font-size: 25px !important;
   }
-  #about-us-nav {
- padding: 0px 13px !important;
+   #about-us-nav {
+ padding: 0px 15px !important;
 }
-
+h5 {
+  font-size: 1rem !important;
+}
+p {
+  font-size: 0.9rem !important;
+}
 }
 </style>
