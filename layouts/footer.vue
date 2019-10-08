@@ -61,7 +61,7 @@
                     support@jiggle.ng
                   </p>                    
                   <p class="mb-3 footer-text">
-                    +234 000 0000 000
+                    +234 802 7999 102
                   </p>  
                     <i class="fa fa-twitter footer-icons" />                 
                     <i class="fa fa-instagram footer-fa-icon footer-icons" />                 
