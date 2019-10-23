@@ -21,7 +21,7 @@
                   Blog
                 </p>
                 <p class="mb-3 footer-text">
-                  <a href="http://support.jiggle.ng/" class="footer-text-link">FAQs</a>
+                  <a href="http://support.jiggle.ng/support/solutions/47000064127" class="footer-text-link">FAQs</a>
                 </p>
                 <!-- <p class="mb-3 footer-text">
                   <router-link to ="/vendor/guide" class="footer-text-link">Vendor Guide</router-link>
@@ -61,7 +61,7 @@
                     support@jiggle.ng
                   </p>                    
                   <p class="mb-3 footer-text">
-                    +234 000 0000 000
+                    +234 802 7999 102
                   </p>  
                     <i class="fa fa-twitter footer-icons" />                 
                     <i class="fa fa-instagram footer-fa-icon footer-icons" />                 
